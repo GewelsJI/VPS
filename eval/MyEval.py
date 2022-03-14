@@ -25,7 +25,6 @@ def evaluator(gt_pth_lst, pred_pth_lst):
     MAE = Measure.MAE()
     POLYP = Measure.POLYP(len(gt_pth_lst))
 
-
     assert len(gt_pth_lst) == len(pred_pth_lst)
 
     # evaluator
@@ -46,7 +45,6 @@ def evaluator(gt_pth_lst, pred_pth_lst):
             MAE.step(pred=pred_ary, gt=gt_ary)
             POLYP.step(pred=pred_ary, gt=gt_ary, idx=idx)
 
-
         fm = FM.get_results()['fm']
         wfm = WFM.get_results()['wfm']
         sm = SM.get_results()['sm']
@@ -63,8 +61,7 @@ def evaluator(gt_pth_lst, pred_pth_lst):
         meanIoU = polyp_res['meanIoU']
         maxIoU = polyp_res['maxIoU']
 
-
-    return fm, wfm, sm, em, mae, meanSen ,maxSen ,meanSpe ,maxSpe ,meanDic ,maxDic ,meanIoU ,maxIoU
+    return fm, wfm, sm, em, mae, meanSen, maxSen, meanSpe, maxSpe, meanDic, maxDic, meanIoU, maxIoU
 
 
 def eval_all(opt, txt_save_path):
@@ -121,28 +118,29 @@ def eval_polyp(opt, txt_save_path):
                     try:
                         case_gt_name_list.sort(
                             key=lambda name: (int(name.split('/')[-2]), int(name.split('/')[-1].rstrip('.png')))
-                            )
+                        )
                     except:
-                        case_gt_name_list.sort(key=lambda name: (int(name.split("/")[-2].split('case')[1].split('_')[0]),
-                                                                 0 if not len(name.split('/')[-2].split('_')) > 1 else int(
-                                                                     name.split('/')[-2].split('_')[1]),
+                        case_gt_name_list.sort(
+                            key=lambda name: (int(name.split("/")[-2].split('case')[1].split('_')[0]),
+                                              0 if not len(name.split('/')[-2].split('_')) > 1 else int(
+                                                  name.split('/')[-2].split('_')[1]),
 
-                                                                 int(name.split('/')[-1].split('_a')[1].split('_')[0]),
-                                                                 int(name.split('/')[-1].split('_image')[1].split('.png')[
-                                                                         0])))
+                                              int(name.split('/')[-1].split('_a')[1].split('_')[0]),
+                                              int(name.split('/')[-1].split('_image')[1].split('.png')[
+                                                      0])))
 
                     case_gt_name_list = case_gt_name_list[1:-1]
                     case_pred_name_list = [gt.replace(gt_src, pred_src) for gt in case_gt_name_list]
 
-                    fm, wfm, sm, em, mae, meanSen ,maxSen ,meanSpe ,maxSpe ,meanDic ,maxDic ,meanIoU ,maxIoU = evaluator(
+                    fm, wfm, sm, em, mae, meanSen, maxSen, meanSpe, maxSpe, meanDic, maxDic, meanIoU, maxIoU = evaluator(
                         gt_pth_lst=case_gt_name_list,
                         pred_pth_lst=case_pred_name_list
                     )
 
                     case_score_list.append([sm.round(3), wfm.round(3), mae.round(3), em['adp'].round(3),
                                             em['curve'].mean().round(3), em['curve'].max().round(3), fm['adp'].round(3),
-                                            fm['curve'].mean().round(3), fm['curve'].max().round(3)],
-                                            meanSen ,maxSen ,meanSpe ,maxSpe ,meanDic ,maxDic ,meanIoU ,maxIoU)
+                                            fm['curve'].mean().round(3), fm['curve'].max().round(3),
+                                            meanSen, maxSen, meanSpe, maxSpe, meanDic, maxDic, meanIoU, maxIoU], )
 
                 case_score_list = np.mean(np.array(case_score_list).T, axis=1)
                 tb.add_row([_data_name, _model_name] + list(case_score_list))
@@ -156,15 +154,15 @@ if __name__ == '__main__':
     parser.add_argument(
         '--gt_root', type=str, help='ground-truth root',
         # default='C:/Users/v-ychou/Dataset/_Dataset/')
-        default='/s1_md0/leiji/v-ychou/Dataset/_Dataset')
+        default='data/GT/')
     parser.add_argument(
         '--pred_root', type=str, help='prediction root',
         # default='C:/Users/v-ychou/Dataset/_Dataset/Benchmark/')
-        default='/s1_md0/leiji/v-ychou/Code/video-polyp-segmentation/lib/benchmark/video/PNS-Net/res/')
+        default='data/Pred/')
     parser.add_argument(
         '--data_lst', type=list, help='test dataset',
         # default=['CVC-ClinicDB-612', "TestHardDataset"],
-        default=['CVC-ColonDB-300',  "TestEasyDataset"],  #
+        default=['CVC-ColonDB-300'],  #
 
     )
     parser.add_argument(
@@ -173,11 +171,11 @@ if __name__ == '__main__':
         #          '2021-MICCAI-SANet', '2021-TPAMI-SINetV2'],
         # default=['2019-CVPR-STM', '2019-TPAMI-COSNet', '2020-TPAMI-CFBI', '2020-CVPR-Trans',],
         # default=['2021-ICCV-FSNet','2021-NIPS-STCN', '2021-NIPS-UniTrack'],
-        default=['PNS_TMI_series_abla7_epoch_15'],
+        default=['2019-TPAMI-COSNet'],
         choices=[])
     parser.add_argument(
         '--txt_name', type=str, help='candidate competitors',
-        default='PNS_TMI_series_abla7')
+        default='2019-TPAMI-COSNet')
     parser.add_argument(
         '--check_integrity', type=bool, help='whether to check the file integrity',
         default=False)
