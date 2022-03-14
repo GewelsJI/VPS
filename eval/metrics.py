@@ -459,20 +459,11 @@ class POLYP(object):
 
     def get_results(self):
         column_Sen = np.mean(self.threshold_Sensitivity, axis=0)
-        meanSen = np.mean(column_Sen)
-        maxSen = np.max(column_Sen)
 
         column_Spe = np.mean(self.threshold_Specificity, axis=0)
-        meanSpe = np.mean(column_Spe)
-        maxSpe = np.max(column_Spe)
 
         column_Dic = np.mean(self.threshold_Dice, axis=0)
-        meanDic = np.mean(column_Dic)
-        maxDic = np.max(column_Dic)
 
         column_IoU = np.mean(self.threshold_IoU, axis=0)
-        meanIoU = np.mean(column_IoU)
-        maxIoU = np.max(column_IoU)
 
-        return dict(meanSen=meanSen, maxSen=maxSen, meanSpe=meanSpe, maxSpe=maxSpe,
-                    meanDic=meanDic, maxDic=maxDic, meanIoU=meanIoU, maxIoU=maxIoU)
+        return dict(Sen=column_Sen, Spe=column_Spe, Dic=column_Dic, IoU=column_IoU)

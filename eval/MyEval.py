@@ -52,16 +52,12 @@ def evaluator(gt_pth_lst, pred_pth_lst):
         mae = MAE.get_results()['mae']
 
         polyp_res = POLYP.get_results()
-        meanSen = polyp_res['meanSen']
-        maxSen = polyp_res['maxSen']
-        meanSpe = polyp_res['meanSpe']
-        maxSpe = polyp_res['maxSpe']
-        meanDic = polyp_res['meanDic']
-        maxDic = polyp_res['maxDic']
-        meanIoU = polyp_res['meanIoU']
-        maxIoU = polyp_res['maxIoU']
+        Sen = polyp_res['Sen']
+        Spe = polyp_res['Spe']
+        Dic = polyp_res['Dic']
+        IoU = polyp_res['IoU']
 
-    return fm, wfm, sm, em, mae, meanSen, maxSen, meanSpe, maxSpe, meanDic, maxDic, meanIoU, maxIoU
+    return fm, wfm, sm, em, mae, Sen, Spe, Dic, IoU
 
 
 def eval_all(opt, txt_save_path):
@@ -132,7 +128,7 @@ def eval_polyp(opt, txt_save_path):
                     case_gt_name_list = case_gt_name_list[1:-1]
                     case_pred_name_list = [gt.replace(gt_src, pred_src) for gt in case_gt_name_list]
 
-                    fm, wfm, sm, em, mae, meanSen, maxSen, meanSpe, maxSpe, meanDic, maxDic, meanIoU, maxIoU = evaluator(
+                    fm, wfm, sm, em, mae, Sen, Spe, Dic, IoU = evaluator(
                         gt_pth_lst=case_gt_name_list,
                         pred_pth_lst=case_pred_name_list
                     )
@@ -140,7 +136,10 @@ def eval_polyp(opt, txt_save_path):
                     case_score_list.append([sm.round(3), wfm.round(3), mae.round(3), em['adp'].round(3),
                                             em['curve'].mean().round(3), em['curve'].max().round(3), fm['adp'].round(3),
                                             fm['curve'].mean().round(3), fm['curve'].max().round(3),
-                                            meanSen, maxSen, meanSpe, maxSpe, meanDic, maxDic, meanIoU, maxIoU], )
+                                            Sen.mean().round(3), Sen.max().round(3),
+                                            Spe.mean().round(3), Spe.max().round(3),
+                                            Dic.mean().round(3), Dic.max().round(3),
+                                            IoU.mean().round(3), IoU.max().round(3)], )
 
                 case_score_list = np.mean(np.array(case_score_list).T, axis=1)
                 tb.add_row([_data_name, _model_name] + list(case_score_list))
