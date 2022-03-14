@@ -133,15 +133,20 @@ def eval_polyp(opt, txt_save_path):
                         pred_pth_lst=case_pred_name_list
                     )
 
-                    case_score_list.append([sm.round(3), wfm.round(3), mae.round(3), em['adp'].round(3),
-                                            em['curve'].mean().round(3), em['curve'].max().round(3), fm['adp'].round(3),
-                                            fm['curve'].mean().round(3), fm['curve'].max().round(3),
-                                            Sen.mean().round(3), Sen.max().round(3),
-                                            Spe.mean().round(3), Spe.max().round(3),
-                                            Dic.mean().round(3), Dic.max().round(3),
-                                            IoU.mean().round(3), IoU.max().round(3)], )
+                    case_score_list.append([[sm.round(3)]*256, [wfm.round(3)]*256, [mae.round(3)]*256, [em['adp'].round(3)]*256,
+                                            em['curve'], [fm['adp'].round(3)]*256, fm['curve'],
+                                            Sen, Spe, Dic, IoU])
 
-                case_score_list = np.mean(np.array(case_score_list).T, axis=1)
+                case_score_list = np.mean(np.array(case_score_list), axis=0)
+                case_score_list = [case_score_list[0].mean().round(3), case_score_list[1].mean().round(3), case_score_list[2].mean().round(3),
+                                   case_score_list[3].mean().round(3), case_score_list[4].mean().round(3), case_score_list[4].max().round(3),
+                                   case_score_list[5].mean().round(3), case_score_list[6].mean().round(3), case_score_list[6].max().round(3),
+
+                                   case_score_list[7].mean().round(3), case_score_list[7].max().round(3),
+                                   case_score_list[8].mean().round(3), case_score_list[8].max().round(3),
+                                   case_score_list[9].mean().round(3), case_score_list[9].max().round(3),
+                                   case_score_list[10].mean().round(3), case_score_list[10].max().round(3),
+                                   ]
                 tb.add_row([_data_name, _model_name] + list(case_score_list))
             print(tb)
             file_to_write.write(str(tb))
