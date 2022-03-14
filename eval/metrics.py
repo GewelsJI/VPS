@@ -398,7 +398,6 @@ class WeightedFmeasure(object):
 
 
 class POLYP(object):
-
     def __init__(self, length):
         self.Thresholds = np.linspace(1, 0, 256)
 
@@ -459,11 +458,8 @@ class POLYP(object):
 
     def get_results(self):
         column_Sen = np.mean(self.threshold_Sensitivity, axis=0)
-
         column_Spe = np.mean(self.threshold_Specificity, axis=0)
-
         column_Dic = np.mean(self.threshold_Dice, axis=0)
-
         column_IoU = np.mean(self.threshold_IoU, axis=0)
 
         return dict(Sen=column_Sen, Spe=column_Spe, Dic=column_Dic, IoU=column_IoU)
