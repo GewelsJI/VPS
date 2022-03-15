@@ -148,10 +148,10 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument(
         '--gt_root', type=str, help='custom your ground-truth root',
-        default='data/GT/')
+        default='../data/GT/')
     parser.add_argument(
         '--pred_root', type=str, help='custom your prediction root',
-        default='data/Pred/')
+        default='../data/Pred/')
     parser.add_argument(
         '--data_lst', type=list, help='set the dataset what you wanna to test',
         default=['CVC-ColonDB-300'],
