@@ -53,6 +53,7 @@ def evaluator(gt_pth_lst, pred_pth_lst):
             EM.step(pred=pred_ary, gt=gt_ary)
             MAE.step(pred=pred_ary, gt=gt_ary)
             # TODO: 为什么这里需要idx？
+            # 源代码使用ndarray构建数据，非list
             POLYP.step(pred=pred_ary, gt=gt_ary, idx=idx)
 
         fm = FM.get_results()['fm']
@@ -69,36 +70,6 @@ def evaluator(gt_pth_lst, pred_pth_lst):
     return fm, wfm, sm, em, mae, Sen, Spe, Dic, IoU
 
 
-# TODO: 我理解这一段函数可以不需要？你有什么其他用途？
-def eval_all(opt, txt_save_path):
-    # evaluation for whole dataset
-    for _data_name in opt.data_lst:
-        print('#' * 20, _data_name, '#' * 20)
-        filename = os.path.join(txt_save_path, '{}_eval.txt'.format(_data_name))
-        with open(filename, 'w+') as file_to_write:
-            tb = pt.PrettyTable()
-            tb.field_names = ["Dataset", "Method", "Smeasure", "wFmeasure", "MAE", "adpEm", "meanEm", "maxEm", "adpFm",
-                              "meanFm", "maxFm"]
-            for _model_name in opt.model_lst:
-                gt_src = os.path.join(opt.gt_root, _data_name, 'GT')
-                pred_src = os.path.join(opt.pred_root, _model_name, _data_name, 'Frame')
-
-                # get the valid filename list
-                img_name_lst = os.listdir(gt_src)
-
-                fm, wfm, sm, em, mae = evaluator(
-                    gt_pth_lst=[os.path.join(gt_src, i) for i in img_name_lst],
-                    pred_pth_lst=[os.path.join(pred_src, i) for i in img_name_lst]
-                )
-                tb.add_row([_data_name, _model_name, sm.round(3), wfm.round(3), mae.round(3), em['adp'].round(3),
-                            em['curve'].mean().round(3), em['curve'].max().round(3), fm['adp'].round(3),
-                            fm['curve'].mean().round(3), fm['curve'].max().round(3)])
-            print(tb)
-            file_to_write.write(str(tb))
-            file_to_write.close()
-
-
-# TODO: 以sequence为粒度eval
 def eval_engine_vps(opt, txt_save_path):
     # evaluation for whole dataset
     for _data_name in opt.data_lst:
@@ -108,12 +79,12 @@ def eval_engine_vps(opt, txt_save_path):
             # initial settings for PrettyTable
             tb = pt.PrettyTable()
             tb.field_names = [
-                "Dataset", "Method", 
-                "Smeasure", "wFmeasure", "MAE", 
-                "adpEm", "meanEm", "maxEm", 
+                "Dataset", "Method",
+                "Smeasure", "wFmeasure", "MAE",
+                "adpEm", "meanEm", "maxEm",
                 "adpFm", "meanFm", "maxFm",
-                "meanSen", "maxSen", 
-                "meanSpe", "maxSpe", 
+                "meanSen", "maxSen",
+                "meanSpe", "maxSpe",
                 "meanDic", "maxDic",
                 "meanIoU", "maxIoU"]
             # iter each method for current dataset
@@ -140,7 +111,8 @@ def eval_engine_vps(opt, txt_save_path):
                                               int(name.split('/')[-1].split('_image')[1].split('.png')[
                                                       0])))
                     # for fair comparison, we remove the first frame and last frame in the video
-                    # TODO: reference: xxx 
+                    # reference: Shifting More Attention to Video Salient Object Detection
+                    # https://github.com/DengPingFan/DAVSOD/blob/master/EvaluateTool/main.m
                     case_gt_name_list = case_gt_name_list[1:-1]
                     case_pred_name_list = [gt.replace(gt_src, pred_src) for gt in case_gt_name_list]
 
@@ -149,18 +121,22 @@ def eval_engine_vps(opt, txt_save_path):
                         pred_pth_lst=case_pred_name_list
                     )
                     # TODO: 这里提前使用round会不会让精度降低？
+                    # 不会
                     # calculate all the metrics at frame-level
                     case_score_list.append([
-                        [sm.round(3)]*256, [wfm.round(3)]*256, [mae.round(3)]*256, 
-                        [em['adp'].round(3)]*256, em['curve'], 
-                        [fm['adp'].round(3)]*256, fm['curve'],
+                        [sm.round(3)] * 256, [wfm.round(3)] * 256, [mae.round(3)] * 256,
+                        [em['adp'].round(3)] * 256, em['curve'],
+                        [fm['adp'].round(3)] * 256, fm['curve'],
                         Sen, Spe, Dic, IoU])
                 # calculate all the metrics at sequence-level
                 case_score_list = np.mean(np.array(case_score_list), axis=0)
                 case_score_list = [
-                    case_score_list[0].mean().round(3), case_score_list[1].mean().round(3), case_score_list[2].mean().round(3),
-                    case_score_list[3].mean().round(3), case_score_list[4].mean().round(3), case_score_list[4].max().round(3),
-                    case_score_list[5].mean().round(3), case_score_list[6].mean().round(3), case_score_list[6].max().round(3),
+                    case_score_list[0].mean().round(3), case_score_list[1].mean().round(3),
+                    case_score_list[2].mean().round(3),
+                    case_score_list[3].mean().round(3), case_score_list[4].mean().round(3),
+                    case_score_list[4].max().round(3),
+                    case_score_list[5].mean().round(3), case_score_list[6].mean().round(3),
+                    case_score_list[6].max().round(3),
                     case_score_list[7].mean().round(3), case_score_list[7].max().round(3),
                     case_score_list[8].mean().round(3), case_score_list[8].max().round(3),
                     case_score_list[9].mean().round(3), case_score_list[9].max().round(3),
@@ -172,31 +148,26 @@ def eval_engine_vps(opt, txt_save_path):
 
 
 if __name__ == '__main__':
-    # TODO: 是否可以考虑把所有的潜在对象（例如：default=['2021-ICCV-FSNet','2021-NIPS-STCN', '2021-NIPS-UniTrack']）放入choice参数中
     parser = argparse.ArgumentParser()
     parser.add_argument(
         '--gt_root', type=str, help='custom your ground-truth root',
-        # default='C:/Users/v-ychou/Dataset/_Dataset/')
         default='data/GT/')
     parser.add_argument(
         '--pred_root', type=str, help='custom your prediction root',
-        # default='C:/Users/v-ychou/Dataset/_Dataset/Benchmark/')
         default='data/Pred/')
     parser.add_argument(
         '--data_lst', type=list, help='set the dataset what you wanna to test',
-        # default=['CVC-ClinicDB-612', "TestHardDataset"],
-        default=['CVC-ColonDB-300'])
+        default=['CVC-ColonDB-300'],
+        choices=['CVC-ColonDB-300', 'CVC-ClinicDB-612', 'SUNSEG-Easy', 'SUNSEG-Hard'])
     parser.add_argument(
         '--model_lst', type=list, help='candidate competitors',
-        # default=['2015-MICCAI-UNet', '2018-TMI-UNet++', '2020-MICCAI-ACSNet', '2020-MICCAI-PraNet',
-        #          '2021-MICCAI-SANet', '2021-TPAMI-SINetV2'],
-        # default=['2019-CVPR-STM', '2019-TPAMI-COSNet', '2020-TPAMI-CFBI', '2020-CVPR-Trans',],
-        # default=['2021-ICCV-FSNet','2021-NIPS-STCN', '2021-NIPS-UniTrack'],
-        default=['2019-TPAMI-COSNet'],
-        choices=[])
+        choices=['2015-MICCAI-UNet', '2018-TMI-UNet++', '2020-MICCAI-ACSNet', '2020-MICCAI-PraNet',
+                 '2020-MICCAI-PraNet', '2021-MICCAI-SANet', '2021-TPAMI-SINetV2',
+                 '2019-TPAMI-COSNet', '2020-AAAI-PCSA', '2020-MICCAI-23DCNN', '2020-TIP-MATNet',
+                 '2021-ICCV-DCFNet', '2021-ICCV-FSNet', '2021-MICCAI-PNSNet', '2021-NIPS-AMD'])
     parser.add_argument(
         '--txt_name', type=str, help='logging root',
-        default='2019-TPAMI-COSNet')
+        default='Benchmark')
     parser.add_argument(
         '--check_integrity', type=bool, help='whether to check the file integrity',
         default=True)
@@ -213,9 +184,10 @@ if __name__ == '__main__':
                 pred_pth = os.path.join(opt.pred_root, _model_name, _data_name)
                 if not sorted(os.listdir(gt_pth)) == sorted(os.listdir(pred_pth)):
                     print(len(sorted(os.listdir(gt_pth))), len(sorted(os.listdir(pred_pth))))
-                    print('The {} Dataset of {} Model is not matching to the ground-truth'.format(_data_name, _model_name))
+                    print('The {} Dataset of {} Model is not matching to the ground-truth'.format(_data_name,
+                                                                                                  _model_name))
     else:
         print('>>> Skip check the integrity of each candidates ...')
-    
+
     # start eval engine
     eval_engine_vps(opt, txt_save_path)
