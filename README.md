@@ -13,12 +13,16 @@ Authors: Ge-Peng Ji, Guobao Xiao, Yu-Cheng Chou, Deng-Ping Fan
 
 # Features
 
-- We recognize the importance of annotated medical data for substantial progress in research on intelligent systems’ development. 
-- **Open Access:** This is an open access, non-profit database of high-quality, large-scale, densely-annotated dataset, dubbed SUN-SEG, for faciliating video polyp segmentation (VPS) task. Our vision aims to provide data and knowledge to aid and educate clinicians, and also for the development of automated medical decision support systems. 
+- **Open Access:** We recognize the importance of annotated medical data for substantial progress in research on medical AI systems’ development. And thus, SUN-SEG is an open access, non-profit database of high-quality, large-scale, densely-annotated dataset for faciliating the colonoscopy diagnosis, localization, and derivative tasks. Our vision aims to provide data and knowledge to aid and educate clinicians, and also for the development of automated medical decision support systems. 
+- **Strong Baseline:** To insipre the, we propose a simple but strong baseline, which outperforms the other competitors and run in super real-time (170fps).
+- **Online Benchmarking:** To advance the development of this field, we build an online leaderboard to keep up with new progress of competitors.
+- **Track Trends:** We elaborately build a paper reading list to continuously track the latest updates in this rapidly advancing field.
 
 # VPS Dataset
 
 ![](https://drive.google.com//uc?export=view&id=1RU6kIRn3ZcZiI1sw4WA19mBQkqAt851U)
+
+Based on some necessary privacy-perserving considerations, we could not directly share the . And please inform us of your institution and the purpose of using SUN-SEG in the email. If you have any questions, please feel free to contact us by e-mail (gepengai.ji@gmail.com). Thank you for your kind understanding!
 
 ## Dataset Preparation
 
