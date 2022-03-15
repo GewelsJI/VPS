@@ -11,9 +11,7 @@ import argparse
 from tqdm import tqdm
 import prettytable as pt
 import numpy as np
-
 import torch
-
 import metrics as Measure
 
 
@@ -44,7 +42,6 @@ def evaluator(gt_pth_lst, pred_pth_lst):
             gt_ary = cv2.imread(gt_pth, cv2.IMREAD_GRAYSCALE)
             # ensure the shape of prediction is matched to gt
             if not gt_ary.shape == pred_ary.shape:
-                # print(gt_ary.shape, pred_ary.shape)
                 pred_ary = cv2.resize(pred_ary, (gt_ary.shape[1], gt_ary.shape[0]))
 
             FM.step(pred=pred_ary, gt=gt_ary)
@@ -108,8 +105,7 @@ def eval_engine_vps(opt, txt_save_path):
                                               int(name.split('/')[-1].split('_a')[1].split('_')[0]),
                                               int(name.split('/')[-1].split('_image')[1].split('.png')[
                                                       0])))
-                    # for fair comparison, we remove the first frame and last frame in the video
-                    # reference: Shifting More Attention to Video Salient Object Detection
+                    # for fair comparison, we remove the first frame and last frame in the video suggested by reference: Shifting More Attention to Video Salient Object Detection
                     # https://github.com/DengPingFan/DAVSOD/blob/master/EvaluateTool/main.m
                     case_gt_name_list = case_gt_name_list[1:-1]
                     case_pred_name_list = [gt.replace(gt_src, pred_src) for gt in case_gt_name_list]

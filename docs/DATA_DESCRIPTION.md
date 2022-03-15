@@ -182,28 +182,7 @@ We also provide the attribute label for each frame including:
 | OV   | Out-of-view                  | Object is partially clipped by the image boundaries.         |
 | SV   | Scale-Variation              | The area ratio among any pair of boundingboxes enclosing the target object is smaller than  sv = 0.5. |
 
-## Original statement
 
-- Video Source
-
-SUN (Showa University and Nagoya University) Colonoscopy Video Database is the colonoscopy-video 
-database for the evaluation of an automated colorectal-polyp detection. The database comprises of 
-still images of videos, which are collected at the Showa University Northern Yokohama Hospital.
-Mori Laboratory, Graduate School of Informatics, Nagoya University developed this database. 
-Every frame in the database was annotated by the expert endoscopists at Showa University.
-
-- Intended Use
-
-This database is available for only non-commercial use in research or educational purpose. 
-As long as you use the database for these purposes, you can edit or process images and annotations in this database. 
-Without permission from Mori Lab., commercial use of this dataset is prohibited even after copying, editing, 
-processing or any operations of this database. Please contact us for commercial use or if you are uncertain about
-the decision.
-
-- Distribution
-
-It is prohibited to sell, transfer, lend, lease, resell, distribute, etc., as it is, or copy, edit, or process this 
-database, in whole or in part.
 
 ## Reference
 
