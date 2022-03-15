@@ -52,8 +52,6 @@ def evaluator(gt_pth_lst, pred_pth_lst):
             SM.step(pred=pred_ary, gt=gt_ary)
             EM.step(pred=pred_ary, gt=gt_ary)
             MAE.step(pred=pred_ary, gt=gt_ary)
-            # TODO: 为什么这里需要idx？
-            # 源代码使用ndarray构建数据，非list
             POLYP.step(pred=pred_ary, gt=gt_ary, idx=idx)
 
         fm = FM.get_results()['fm']
@@ -120,13 +118,11 @@ def eval_engine_vps(opt, txt_save_path):
                         gt_pth_lst=case_gt_name_list,
                         pred_pth_lst=case_pred_name_list
                     )
-                    # TODO: 这里提前使用round会不会让精度降低？
-                    # 不会
                     # calculate all the metrics at frame-level
                     case_score_list.append([
-                        [sm.round(3)] * 256, [wfm.round(3)] * 256, [mae.round(3)] * 256,
-                        [em['adp'].round(3)] * 256, em['curve'],
-                        [fm['adp'].round(3)] * 256, fm['curve'],
+                        [sm] * 256, [wfm] * 256, [mae] * 256,
+                        [em['adp']] * 256, em['curve'],
+                        [fm['adp']] * 256, fm['curve'],
                         Sen, Spe, Dic, IoU])
                 # calculate all the metrics at sequence-level
                 case_score_list = np.mean(np.array(case_score_list), axis=0)
@@ -141,7 +137,8 @@ def eval_engine_vps(opt, txt_save_path):
                     case_score_list[8].mean().round(3), case_score_list[8].max().round(3),
                     case_score_list[9].mean().round(3), case_score_list[9].max().round(3),
                     case_score_list[10].mean().round(3), case_score_list[10].max().round(3)]
-                tb.add_row([_data_name, _model_name] + list(case_score_list))
+                final_score_list = ['{:.3f}'.format(case) for case in case_score_list]
+                tb.add_row([_data_name, _model_name] + list(final_score_list))
             print(tb)
             file_to_write.write(str(tb))
             file_to_write.close()
@@ -161,6 +158,7 @@ if __name__ == '__main__':
         choices=['CVC-ColonDB-300', 'CVC-ClinicDB-612', 'SUNSEG-Easy', 'SUNSEG-Hard'])
     parser.add_argument(
         '--model_lst', type=list, help='candidate competitors',
+        default=['2019-TPAMI-COSNet'],
         choices=['2015-MICCAI-UNet', '2018-TMI-UNet++', '2020-MICCAI-ACSNet', '2020-MICCAI-PraNet',
                  '2020-MICCAI-PraNet', '2021-MICCAI-SANet', '2021-TPAMI-SINetV2',
                  '2019-TPAMI-COSNet', '2020-AAAI-PCSA', '2020-MICCAI-23DCNN', '2020-TIP-MATNet',
