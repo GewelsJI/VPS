@@ -1,12 +1,10 @@
 # <p align=center>`Deep Video Polyp Segmentation (VPS)`</p>
 
+<img src="assets/background-min.gif"/>
+
 - **Title:** Deep Learning for Video Polyp Segmentation: A Comprehensive Study
 - **Authors:** [Ge-Peng Ji](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=oaxKYKUAAAAJ)^, Guobao Xiao^, [Yu-Cheng Chou](https://scholar.google.com/citations?user=YVNRBTcAAAAJ&hl=en)^, [Deng-Ping Fan](https://dengpingfan.github.io/)*, [Kai Zhao](https://kaizhao.net/), [Geng Chen](https://scholar.google.com/citations?user=sJGCnjsAAAAJ&hl=en), [Huazhu Fu](https://hzfu.github.io/), and [Luc Van Gool](https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en).
 - Paper link: [arXiv]()
-
-
-[//]: # (<img src="assets/background-min.gif" style="zoom:200%;" />)
-<img src="assets/background-min.gif"/>
 
 
 - **Contact:** We believe that the power of one man is limited, so we are welcome to receive your suggestions and contributions to our project. And if you have any questions about our project, please feel free contact us via e-mail (gepengai.ji@gmail.com) or directly report it in the issue or push a PR. Your star is my motivation, thank you again!
@@ -30,7 +28,7 @@
 
 # VPS Dataset
 
-![](https://drive.google.com//uc?export=view&id=1RU6kIRn3ZcZiI1sw4WA19mBQkqAt851U)
+<img src="assets/Pathological-min.gif"/>
 
 Based on some necessary privacy-perserving considerations, we could not directly share the download link of ground-truth with you. And please inform us of your institution and the purpose of using SUN-SEG in the email. If you have any questions, please feel free to contact us by e-mail (gepengai.ji@gmail.com). Thank you for your understanding! 
 
