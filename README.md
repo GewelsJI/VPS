@@ -1,6 +1,11 @@
 # <p align=center>`Deep Video Polyp Segmentation (VPS)`</p>
 
-<img src="assets/background-min.gif"/>
+<p align="center">
+    <img src="./assets/background-min.gif"/> <br />
+    <em> 
+    Figure 2: 
+    </em>
+</p>
 
 - **Title:** Deep Learning for Video Polyp Segmentation: A Comprehensive Study ([arXiv]())
 - **Authors:** [Ge-Peng Ji](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=oaxKYKUAAAAJ)^, Guobao Xiao^, [Yu-Cheng Chou](https://scholar.google.com/citations?user=YVNRBTcAAAAJ&hl=en)^, [Deng-Ping Fan](https://dengpingfan.github.io/)*, [Kai Zhao](https://kaizhao.net/), [Geng Chen](https://scholar.google.com/citations?user=sJGCnjsAAAAJ&hl=en), [Huazhu Fu](https://hzfu.github.io/), and [Luc Van Gool](https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en).
@@ -39,7 +44,12 @@ this issue, we first introduce a high-quality per-frame annotated VPS dataset. T
 
 # 3. VPS Dataset
 
-<img src="assets/Pathological-min.gif"/>
+<p align="center">
+    <img src="./assets/Pathological-min.gif"/> <br />
+    <em> 
+    Figure 2: 
+    </em>
+</p>
 
 Notably, based on some necessary privacy-preserving considerations from the SUN dataset, we could not directly share the download link of the video dataset with you without authorization. And please inform us of your institution and the purpose of using SUN-SEG in the email. Thank you for your understanding! 
 
