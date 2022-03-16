@@ -1,4 +1,4 @@
-# <p align=center>`Deep Learning for Video Polyp Segmentation (VPS)`</p>
+# <p align=center>`Deep Video Polyp Segmentation (VPS)`</p>
 
 <img src="assets/background-min.gif"/>
 
@@ -8,8 +8,6 @@
 
 # Contents
 
-- [<p align=center>`Deep Learning for Video Polyp Segmentation (VPS)`</p>](#deep-learning-for-video-polyp-segmentation-vps)
-- [Contents](#contents)
 - [1. Features](#1-features)
 - [2. News](#2-news)
 - [3. VPS Dataset](#3-vps-dataset)
