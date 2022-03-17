@@ -1,5 +1,7 @@
 # <span id="Awesome_Video_Polyp_Segmentation"> Awesome Video Polyp Segmentation</span>
 
+![](../assets/the-reading-list.png)
+
 Contributed by *Ge-Peng Ji*, *Yu-Cheng Chou* and [*Deng-Ping Fan*](https://dpfan.net/).
 
 ## <span id="1._Preview"> 1. Preview</span>
