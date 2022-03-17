@@ -2,13 +2,16 @@
 
 We first introduce a high-quality per-frame annotated VPS dataset, named SUN-SEG, which includes 158,690 frames elected from the famous [SUN dataset](http://amed8k.sundatabase.org). We extend the labels with diverse types, i.e., object mask, boundary, scribble, and polygon.
 
-## Request 
+## Step-1: Request
 
-We do not distribute the dataset because of the license issue. Please follow the instruction on [SUN dataset](http://amed8k.sundatabase.org) to request SUN-dataset and download the dataset by yourself.
+We could not distribute the video data in SUN-SEG due to the strict license issue of SUN. 
 
-## Download
+- Please follow the instruction on [SUN dataset](http://amed8k.sundatabase.org) to request SUN-dataset and download the dataset by yourself. Thank you for your understanding!
+- xxxx google drive link
 
-After request SUN dataset, you first move the positive images by cases to `./data/SUN/`. The file structure will be the same as below:
+## Step-2: Download
+
+After request and download the SUN dataset, you first unzip it via `aaa` and move the positive images by cases to `./data/SUN/`. The file structure will be the same as below:
 
 ```
 ├──data
@@ -20,9 +23,9 @@ After request SUN dataset, you first move the positive images by cases to `./dat
         |...
 ```
 
-## Re-organize the file structure
+## Step-3: Re-organize the file structure
 
-By running the script `download_and_reorganize.sh`, the SUN-SEG dataset will be downloaded and the original file structure in SUN-dataset will be re-organized to the same as SUN-SEG for better length balance. In the end, the folder `Frame` and `GT` will share the same file structure as shown below:
+By running the script `download_and_reorganize.sh`, the original file structure in SUN-dataset will be re-organized to the same as SUN-SEG for better length balance. To the end, the folder `Frame` and `GT` will share the same file structure as shown below:
 
 ```
 ├──data
@@ -40,6 +43,7 @@ By running the script `download_and_reorganize.sh`, the SUN-SEG dataset will be 
                     |...
                 ├──case1_3
                 |...
+            ├──[details other labels] johnson here
         ├──TestEasyDataset
             ├──Frame
                 ├──case2_3
@@ -54,5 +58,19 @@ By running the script `download_and_reorganize.sh`, the SUN-SEG dataset will be 
             ├──GT
                 ├──case1_2
                 |...
-
 ```
+
+file path 
+
+train.txt
+easy.txt
+hard.txt
+
+classifcation 
+train
+    class1
+        frame.png, ... [glob]
+    class2
+        img1.png, ..
+    class3
+        img1.png, ...

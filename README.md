@@ -1,20 +1,14 @@
-# <p align=center>`Deep Video Polyp Segmentation (VPS)`</p>
+# <p align=center>`Deep Video Polyp Segmentation (VPS)`</p><!-- omit in toc -->
 
 <p align="center">
     <img src="./assets/background-min.gif"/> <br />
-    <em> 
-    Figure 2: 
-    </em>
 </p>
 
 - **Title:** Deep Learning for Video Polyp Segmentation: A Comprehensive Study ([arXiv]())
 - **Authors:** [Ge-Peng Ji](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=oaxKYKUAAAAJ)^, Guobao Xiao^, [Yu-Cheng Chou](https://scholar.google.com/citations?user=YVNRBTcAAAAJ&hl=en)^, [Deng-Ping Fan](https://dengpingfan.github.io/)*, [Kai Zhao](https://kaizhao.net/), [Geng Chen](https://scholar.google.com/citations?user=sJGCnjsAAAAJ&hl=en), [Huazhu Fu](https://hzfu.github.io/), and [Luc Van Gool](https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en).
 - **Contact:** Our ability is limited, so we are welcome to receive your suggestions and contributions to our project. Or if you have any questions about our project, please feel free to drop us an e-mail (gepengai.ji@gmail.com, johnson111788@gmail.com, dengpfan@gmail.com) or directly report it in the issue or push a PR. Your star is our motivation, thank you first, let's enjoy it!
 
-# Contents
-
-- [<p align=center>`Deep Video Polyp Segmentation (VPS)`</p>](#deep-video-polyp-segmentation-vps)
-- [Contents](#contents)
+# Contents<!-- omit in toc -->
 - [1. Features](#1-features)
 - [2. News](#2-news)
 - [3. VPS Dataset](#3-vps-dataset)
