@@ -1,9 +1,3 @@
-wget OUR_DATAURL --http-user=OUR_USERNAME  --http-passwd=OUR_PASSWORD
+python ./utils/reorganize.py
 
-unzip SUN-SEG.zip
-
-mv ./SUN-SEG ../data
-
-python reorganize.py
-
-rm -rf ../data/SUN
+rm -rf ./data/SUN
