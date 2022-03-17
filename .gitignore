@@ -9,4 +9,4 @@ tmp/nanoc/
 # Crash Log
 crash.log
 
-./data/
+./data/*
