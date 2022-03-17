@@ -11,9 +11,9 @@ import argparse
 from tqdm import tqdm
 import prettytable as pt
 import numpy as np
-import torch
 import metrics as Measure
 
+import torch
 
 def get_competitors(root):
     for model_name in os.listdir(root):
@@ -32,35 +32,33 @@ def evaluator(gt_pth_lst, pred_pth_lst):
     assert len(gt_pth_lst) == len(pred_pth_lst)
 
     # evaluator
-    with torch.no_grad():
-        # calculate metric value
-        for idx in tqdm(range(len(gt_pth_lst))):
-            gt_pth = gt_pth_lst[idx]
-            pred_pth = pred_pth_lst[idx]
-            assert os.path.isfile(gt_pth) and os.path.isfile(pred_pth)
-            pred_ary = cv2.imread(pred_pth, cv2.IMREAD_GRAYSCALE)
-            gt_ary = cv2.imread(gt_pth, cv2.IMREAD_GRAYSCALE)
-            # ensure the shape of prediction is matched to gt
-            if not gt_ary.shape == pred_ary.shape:
-                pred_ary = cv2.resize(pred_ary, (gt_ary.shape[1], gt_ary.shape[0]))
+    for idx in tqdm(range(len(gt_pth_lst))):
+        gt_pth = gt_pth_lst[idx]
+        pred_pth = pred_pth_lst[idx]
+        assert os.path.isfile(gt_pth) and os.path.isfile(pred_pth)
+        pred_ary = cv2.imread(pred_pth, cv2.IMREAD_GRAYSCALE)
+        gt_ary = cv2.imread(gt_pth, cv2.IMREAD_GRAYSCALE)
+        # ensure the shape of prediction is matched to gt
+        if not gt_ary.shape == pred_ary.shape:
+            pred_ary = cv2.resize(pred_ary, (gt_ary.shape[1], gt_ary.shape[0]))
 
-            FM.step(pred=pred_ary, gt=gt_ary)
-            WFM.step(pred=pred_ary, gt=gt_ary)
-            SM.step(pred=pred_ary, gt=gt_ary)
-            EM.step(pred=pred_ary, gt=gt_ary)
-            MAE.step(pred=pred_ary, gt=gt_ary)
-            POLYP.step(pred=pred_ary, gt=gt_ary, idx=idx)
+        FM.step(pred=pred_ary, gt=gt_ary)
+        WFM.step(pred=pred_ary, gt=gt_ary)
+        SM.step(pred=pred_ary, gt=gt_ary)
+        EM.step(pred=pred_ary, gt=gt_ary)
+        MAE.step(pred=pred_ary, gt=gt_ary)
+        POLYP.step(pred=pred_ary, gt=gt_ary, idx=idx)
 
-        fm = FM.get_results()['fm']
-        wfm = WFM.get_results()['wfm']
-        sm = SM.get_results()['sm']
-        em = EM.get_results()['em']
-        mae = MAE.get_results()['mae']
-        polyp_res = POLYP.get_results()
-        Sen = polyp_res['Sen']
-        Spe = polyp_res['Spe']
-        Dic = polyp_res['Dic']
-        IoU = polyp_res['IoU']
+    fm = FM.get_results()['fm']
+    wfm = WFM.get_results()['wfm']
+    sm = SM.get_results()['sm']
+    em = EM.get_results()['em']
+    mae = MAE.get_results()['mae']
+    polyp_res = POLYP.get_results()
+    Sen = polyp_res['Sen']
+    Spe = polyp_res['Spe']
+    Dic = polyp_res['Dic']
+    IoU = polyp_res['IoU']
 
     return fm, wfm, sm, em, mae, Sen, Spe, Dic, IoU
 
@@ -144,17 +142,15 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument(
         '--gt_root', type=str, help='custom your ground-truth root',
-        default='../data/GT/')
+        default='../data/SUN-SEG/GT/')
     parser.add_argument(
         '--pred_root', type=str, help='custom your prediction root',
         default='../data/Pred/')
     parser.add_argument(
         '--data_lst', type=list, help='set the dataset what you wanna to test',
-        default=['CVC-ColonDB-300'],
-        choices=['CVC-ColonDB-300', 'CVC-ClinicDB-612', 'SUNSEG-Easy', 'SUNSEG-Hard'])
+        choices=['CVC-ColonDB-300', 'CVC-ClinicDB-612', 'TestEasyDataset', 'TestHardDataset'])
     parser.add_argument(
         '--model_lst', type=list, help='candidate competitors',
-        default=['2019-TPAMI-COSNet'],
         choices=['2015-MICCAI-UNet', '2018-TMI-UNet++', '2020-MICCAI-ACSNet', '2020-MICCAI-PraNet',
                  '2020-MICCAI-PraNet', '2021-MICCAI-SANet', '2021-TPAMI-SINetV2',
                  '2019-TPAMI-COSNet', '2020-AAAI-PCSA', '2020-MICCAI-23DCNN', '2020-TIP-MATNet',

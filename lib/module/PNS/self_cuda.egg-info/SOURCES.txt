@@ -1,8 +1,0 @@
-setup.py
-PNS_Module/reference.cpp
-PNS_Module/sa.cu
-PNS_Module/sa_ext.cpp
-self_cuda.egg-info/PKG-INFO
-self_cuda.egg-info/SOURCES.txt
-self_cuda.egg-info/dependency_links.txt
-self_cuda.egg-info/top_level.txt

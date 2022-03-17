@@ -12,33 +12,21 @@ parser.add_argument('--decay_epoch', type=int, default=50, help='every n epochs 
 parser.add_argument('--clip', type=float, default=0.5, help='gradient clipping margin')
 
 # train schedule
-parser.add_argument('--pretrain_epoches', type=int, default=100)
-parser.add_argument('--finetune_epoches', type=int, default=15)
-parser.add_argument('--log_inteval', type=int, default=50)
+parser.add_argument('--epoches', type=int, default=15)
 
 # data
 parser.add_argument('--data_statistics', type=str,
                     default="utils/statistics.pth", help='The normalization statistics.')
-parser.add_argument('--img_dataset', type=str,
-                    default=["IVPS-TrainSet"])
-parser.add_argument('--video_dataset', type=str,
+parser.add_argument('--dataset', type=str,
                     default="TrainDataset")
-parser.add_argument('--test_dataset', type=str,
-                    default="TestHardDataset")
-parser.add_argument('--img_dataset_root', type=str,
-                    default="dataset/")
-parser.add_argument('--video_dataset_root', type=str,
-                    default="/home/Dataset/_Dataset/")
+parser.add_argument('--dataset_root', type=str,
+                    default="./data")
 parser.add_argument('--size', type=tuple,
                     default=(256, 448))
-parser.add_argument('--pretrain_batchsize', type=int, default=24)  # 8BS == 16G
-parser.add_argument('--video_batchsize', type=int, default=24)
+parser.add_argument('--batchsize', type=int, default=24)
 parser.add_argument('--video_time_clips', type=int, default=5)
-parser.add_argument('--video_testset_root', type=str, default="/home/Dataset/_Dataset/")
 
-# pretrain
-parser.add_argument('--pretrain_state_dict', type=str, default=None)
-# parser.add_argument('--save_path', type=str, default='snapshot/PNS_TMI_series/')
-parser.add_argument('--save_path', type=str, default='snapshot/PNS_TMI_series/')
+
+parser.add_argument('--save_path', type=str, default='snapshot/PNSPlus/')
 
 config = parser.parse_args()
