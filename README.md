@@ -77,7 +77,7 @@ We also build an online leaderboard to keep up with the new progress of other co
     <img src="./assets/the-reading-list.png"/> <br />
 </p>
 
-In order to better understand the development of this field and to help researchers in their research process, we build the comprehensive **Paper Reading List**. It includes **119** colonoscopy imaging-based AI scientific research in recent **12** years. It includes several fields, such as image polyp segmentation, video polyp segmentation, image polyp detection, video polyp detection, and image polyp classification. We also list some interesting resources about human colonoscopy.
+In order to better understand the development of this field and to help researchers in their research process, we build the comprehensive **Paper Reading List**. It includes **119** colonoscopy imaging-based AI scientific research in recent **12** years. It includes several fields, such as image polyp segmentation, video polyp segmentation, image polyp detection, video polyp detection, and image polyp classification. Besides, we will provide some interesting resources about human colonoscopy.
 
 - The latest paper reading list and some interesting resources refer to [`Awesome-Video-Polyp-Segmentation.md`](https://github.com/GewelsJI/VPS/blob/main/docs/AWESOME_VPS.md)
 

@@ -1,10 +1,13 @@
 # Dataset Preparation
 
-
+# Contents
+- [Step-1: Request and Download](#step-1--request-and-download)
+- [Step-2: Unzip SUN dataset](#step-2--unzip-sun-dataset)
+- [Step-3: Re-organize the file structure](#step-3--re-organize-the-file-structure)
 
 We first introduce a high-quality per-frame annotated VPS dataset, named SUN-SEG, which includes 158,690 frames elected from the famous [SUN dataset](http://amed8k.sundatabase.org). We extend the labels with diverse types, i.e., object mask, boundary, scribble, and polygon.
 
-## Step-1: Request and Download
+# Step-1: Request and Download
 
 > **Note:** The origin colonoscopy video frames in our SUN-SEG dataset are selected from [SUN dataset](http://amed8k.sundatabase.org), while we could not distribute the video data due to the strict license. 
 
@@ -16,7 +19,7 @@ And then, you can feel free to download the complete annotation provided by our 
 
 - **Request for annotations from SUN-SEG:** Our re-organized annotations could be downloaded at [google drive]().
 
-## Step-2: Unzip SUN dataset
+# Step-2: Unzip SUN dataset
 
 As for video frames in SUN dataset, these are two groups of samples, which are divided into multiple compressed file format as zip files. To decompress each zip file downloaded, please input the password provided by origin authors of SUN dataset (i.e., the same as the password that you used for login).
 
@@ -75,7 +78,7 @@ Then, your file structure will be the same as below:
 ```
 
 
-## Step-3: Re-organize the file structure
+# Step-3: Re-organize the file structure
 
 By running `python ./utils/reorganize.py`, the original file structure in SUN-dataset will be re-organized to the same as SUN-SEG for better length balance. Finally, the folder `Frame` and `GT` will share the same file structure as shown below:
 

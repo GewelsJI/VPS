@@ -9,8 +9,4 @@ tmp/nanoc/
 # Crash Log
 crash.log
 
-<<<<<<< HEAD
 data/
-=======
-./data/*
->>>>>>> 83003f7b5862a2ee2200c99fa8ed985d2461b3d3
