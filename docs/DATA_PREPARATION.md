@@ -1,17 +1,18 @@
 # Dataset Preparation
 
+We introduce a high-quality per-frame annotated VPS dataset, named SUN-SEG, which includes 158,690 frames elected from the famous [SUN dataset](http://amed8k.sundatabase.org). Then, we extend the labels with diverse types, i.e., object mask, boundary, scribble, and polygon.
+
 # Contents
 - [Step-1: Request and Download](#step-1--request-and-download)
 - [Step-2: Unzip SUN dataset](#step-2--unzip-sun-dataset)
 - [Step-3: Re-organize the file structure](#step-3--re-organize-the-file-structure)
 
-We first introduce a high-quality per-frame annotated VPS dataset, named SUN-SEG, which includes 158,690 frames elected from the famous [SUN dataset](http://amed8k.sundatabase.org). We extend the labels with diverse types, i.e., object mask, boundary, scribble, and polygon.
 
 # Step-1: Request and Download
 
 > **Note:** The origin colonoscopy video frames in our SUN-SEG dataset are selected from [SUN dataset](http://amed8k.sundatabase.org), while we could not distribute the video data due to the strict license. 
 
-So first, you guys need to request the origin colonoscopy video frame from them. In this step, you should download the polyp samples of 100 cases and non-polyp samples of 13 cases from the links provided by SUN dataset. 
+So first, you guys need to request the origin colonoscopy video frame from them. In this step, you should download the polyp samples of 100 cases and non-polyp samples of 13 cases from the links provided by the SUN dataset. 
 
 - **Request for video frames from SUN:** Please follow the instruction on [SUN dataset](http://amed8k.sundatabase.org) to request SUN-dataset and download the dataset by yourself. Thank you for your understanding!
 
@@ -38,7 +39,7 @@ As for the annotations from our SUN-SGE, you are happy to execute:
 - Put it at path `./data/SUN-SEG-Annotation/` 
 
 
-After prepare all the files,  your file structure will be the same as below:
+After prepare all the files, your file structure will be the same as below:
 
 ```
 ├──data
