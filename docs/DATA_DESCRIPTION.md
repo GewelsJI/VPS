@@ -4,9 +4,7 @@
     <img src="../assets/video_v2-min.gif"/> <br />
 </p>
 
-Our SUN-SEG dataset including 49,136 polyp frames (i.e., postive part) and 109,554 non-polyp frames (i.e., negative part) taken from 
-different 285 and 728 colonoscopy videos clips, which were densely annotated with diversified labels for each frame, 
-such as object-level segmentation mask, bounding box, category, attribute, and three weak label (ie. edge, scribble , 
+Our SUN-SEG dataset including 49,136 polyp frames (i.e., postive part) and 109,554 non-polyp frames (i.e., negative part) taken from  different 285 and 728 colonoscopy videos clips, which were densely annotated with diversified labels for each frame, such as object-level segmentation mask, bounding box, category, attribute, and three weak label (ie. edge, scribble , 
 polygon). More details refer to SUN dataset: http://sundatabase.org/
 
 ## Data Format
@@ -68,13 +66,13 @@ As for the `bbox_annotation.json` and `classfication.txt` text file, we follow t
 
 - The positive part of SUN-SEG has 285 video clips (30 fps), which has 49,136 frames totally.
 
-- Details of polyp samples refer to `./assets/positive_samples_table.md`
+- More details of each polyp video clips refer to [`INFO_POSITIVE_CASES.md`]().
 
 ### Negative Part
 
 - The negative part of SUN-SEG has 728 video clips (30 fps), which has 109,554 frames totally.
 
-- Details of non-polyp samples refer to `./assets/negative_samples_table.md`
+- More details of each non-polyp video clips refer to [`INFO_NEGATIVE_CASES.md`]()
 
 ## Label Description
 
@@ -165,20 +163,12 @@ The evaluation is conducted with the segmentation mask in `./GT/` or the boundin
 
 ## Attributes Description
 
-We also provide the attribute label for each frame including:
+Next, we provide the complete attributes for our SUN-SEG dataset.
+
+- **Pathological Patterns**
 
 | ID   | Name                         | Description                                                                                                                                                                                   |
 | ---- | ---------------------------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Ip   | Pedunculated                 | Base is more narrow that top of lesion.                                                                                                                                                       |
-| Isp  | Subpedunculated              | Intermediate and broad-based. Same management as (0-Is) sessile polyps                                                                                                                        |
-| Is   | Sessile                      | Base and top of lesion have same diameter.                                                                                                                                                    |
-| IIa  | Slightly elevated            | Lesion is slightly higher than adjacent mucosa.                                                                                                                                               |
-| C    | Cecum                        | Lesion is located in Cecum          .                                                                                                                                                         |
-| A    | Ascending colon              | Lesion is located in Ascending colon.                                                                                                                                                         |
-| T    | Transverse colon             | Lesion is located in Transverse colon.                                                                                                                                                        |
-| D    | Descending colon             | Lesion is located in Descending colon.                                                                                                                                                        |
-| S    | Sigmoid colon                | Lesion is located in Sigmoid colon.                                                                                                                                                           |
-| R    | Rectum                       | Lesion is located in Rectum.                                                                                                                                                                  |
 | LA   | Low-grade adenoma            | The polyp with low-grade dysplasia often show nuclear changes, such as palisading and darkening of the nucleus.                                                                               |
 | HA   | High-grade adenoma           | The polyp with high-grade dysplasia, which has more severe cellular and nuclear changes.                                                                                                      |
 | HP   | Hyperplastic polyp           | The polyp has small vessels or sparse network, with unrecognizable pattern and is lighter than or similar to the surroundings.                                                                |
@@ -186,6 +176,33 @@ We also provide the attribute label for each frame including:
 | SSL  | Sessile serrated lesion      | A neoplastic polyp characterised by serrated architectural features and lack of cytological dysplasia.                                                                                        |
 | IC   | Invasive cancer (T1b)        | Its color is darker than the surroundings, brownish, sometimes with lighter patches. The vessel of areas with interrupted or absent vessels. The surface is amorphous ofr no surface pattern. |
 | SI   | Surgical Instruments         | The endoscopic surgical procedures involving positioning of instruments, such as snares, forceps, knives and electrodes.                                                                      |
+
+- **Shape**
+
+> We follow the Narrow Band Imaging International Colorectal Endoscopic (NICE) classification criteria. It uses staining, vascular patterns, and surface patterns to distinguish between hyperplastic and adenomatous colon polyps. More details refer to [link-1](https://www.endoscopy-campus.com/en/classifications/polyp-classification-nice/) and [link-2](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5369434/)
+
+| ID   | Name                         | Description                                                                                                                                                                                   |
+| ---- | ---------------------------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Ip   | Pedunculated                 | Base is more narrow that top of lesion.                                                                                                                                                       |
+| Isp  | Subpedunculated              | Intermediate and broad-based. Same management as (0-Is) sessile polyps.                                                                                                                       |
+| Is   | Sessile                      | Base and top of lesion have same diameter.                                                                                                                                                    |
+| IIa  | Slightly elevated            | Lesion is slightly higher than adjacent mucosa.                                                                                                                                               |
+
+- **Location**
+
+| ID   | Name                         | Description                                                                                                                                                                                   |
+| ---- | ---------------------------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| C    | Cecum                        | Lesion is located in Cecum.                                                                                                                                                                   |
+| A    | Ascending colon              | Lesion is located in Ascending colon.                                                                                                                                                         |
+| T    | Transverse colon             | Lesion is located in Transverse colon.                                                                                                                                                        |
+| D    | Descending colon             | Lesion is located in Descending colon.                                                                                                                                                        |
+| S    | Sigmoid colon                | Lesion is located in Sigmoid colon.                                                                                                                                                           |
+| R    | Rectum                       | Lesion is located in Rectum.                                                                                                                                                                  |
+
+- **Visual Attributes**
+
+| ID   | Name                         | Description                                                                                                                                                                                   |
+| ---- | ---------------------------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | IB   | Indefinable Boundaries       | The foreground and background areas around the object have similar color.                                                                                                                     |
 | HO   | Heterogeneous Object         | Object regions have distinct colors.                                                                                                                                                          |
 | GH   | Ghosting                     | Object has anomaly RGB-colored boundary due to fast moving or insufficient refresh rate.                                                                                                      |

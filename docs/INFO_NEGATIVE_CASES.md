@@ -1,4 +1,4 @@
-## Statistic Table
+# Information of Negative Cases in our SUN-SEG
 
 | Clip-ID | Number of Frames | Duration (seconds) |
 |----|------------------|-------------------------------|

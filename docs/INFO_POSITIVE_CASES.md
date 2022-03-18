@@ -1,4 +1,4 @@
-#
+# Information of Positive Cases in our SUN-SEG
 
 ## Abbreviation Illustration
 
@@ -23,17 +23,6 @@
     - TSA - Traditional serrated adenoma
     - SSL - Sessile serrated lesion
     - IC - Invasive cancer (T1b)
-
-The shape classification according to:
-
-    @article{lambert2003paris,
-      title={The Paris endoscopic classification of superficial neoplastic lesions: esophagus, stomach, and colon: November 30 to December 1, 2002},
-      author={Lambert, R},
-      journal={Gastrointest Endosc},
-      volume={58},
-      pages={S3--S43},
-      year={2003}
-    }
     
 ## Statistic Table
 

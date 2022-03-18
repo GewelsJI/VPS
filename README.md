@@ -6,7 +6,7 @@
 
 - **Title:** Deep Learning for Video Polyp Segmentation: A Comprehensive Study ([arXiv]())
 - **Authors:** [Ge-Peng Ji](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=oaxKYKUAAAAJ)^, Guobao Xiao^, [Yu-Cheng Chou](https://scholar.google.com/citations?user=YVNRBTcAAAAJ&hl=en)^, [Deng-Ping Fan](https://dengpingfan.github.io/)*, [Kai Zhao](https://kaizhao.net/), [Geng Chen](https://scholar.google.com/citations?user=sJGCnjsAAAAJ&hl=en), [Huazhu Fu](https://hzfu.github.io/), and [Luc Van Gool](https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en).
-- **Contact:** Our ability is limited, so we are welcome to receive your suggestions and contributions to our project. Or if you have any questions about our project, please feel free to drop us an e-mail (gepengai.ji@gmail.com, johnson111788@gmail.com, dengpfan@gmail.com) or directly report it in the issue or push a PR. Your star is our motivation, thank you first, let's enjoy it!
+- **Contact:** Our ability is limited, so we are welcome to receive your constructive suggestions and contributions to our project. Or if you have any questions about our project, please feel free to drop us an e-mail (gepengai.ji@gmail.com, johnson111788@gmail.com, dengpfan@gmail.com) or directly report it in the issue or push a PR. Your star is our motivation, thank you first, let's enjoy it!
 
 # Contents<!-- omit in toc -->
 - [1. Features](#1-features)
@@ -33,8 +33,8 @@ this issue, we first introduce a high-quality per-frame annotated VPS dataset. T
 
 # 2. News
 
-- *[March/16/2022]* Upload the training/testing code for our enhanced model PNS+.
-- *[March/15/2022]* Release the evaluation toolbox for the VPS task. Add the [AWESOME_VPS.md] for tracking this field.
+- *[March/18/2022]* Upload the whole training/testing code for our enhanced model PNS+.
+- *[March/15/2022]* Release the evaluation toolbox for the VPS task. Add a [Awesome_Video_Polyp_Segmentation.md](https://github.com/GewelsJI/VPS/blob/main/docs/AWESOME_VPS.md) for tracking latest trends of this community.
 - *[March/14/2022]* Create the project page.
 
 
@@ -70,15 +70,19 @@ We also build an online leaderboard to keep up with the new progress of other co
 
 - Online leaderboard is publicly avaliable at [`PaperWithCode`](). 
 
+
 # 6. Tracking Trends
 
 <p align="center">
     <img src="./assets/the-reading-list.png"/> <br />
 </p>
 
-In order to better understand the development of this field and to help researchers in their research process, we build the comprehensive **Paper Reading List**. It includes **119** colonoscopy imaging-based AI scientific research in recent **12** years. It includes several fields, such as image polyp segmentation, video polyp segmentation, image polyp detection, video polyp detection, and image polyp classification. Besides, we will provide some interesting resources about human colonoscopy.
+To better understand the development of this field and to quickly push researchers in their research process, we elaborately build a **Paper Reading List**. It includes **119** colonoscopy imaging-based AI scientific research in recent 12 years. It includes several fields, such as image polyp segmentation, video polyp segmentation, image polyp detection, video polyp detection, and image polyp classification. Besides, we will provide some interesting resources about human colonoscopy. 
+
+> **Note:** If we miss some treasure works, please let me know via e-mail or directly push a PR. We will work on it as soon as possible. Many thanks for your active feedbacks.
 
 - The latest paper reading list and some interesting resources refer to [`Awesome-Video-Polyp-Segmentation.md`](https://github.com/GewelsJI/VPS/blob/main/docs/AWESOME_VPS.md)
+
 
 # 7. Citations
 
@@ -99,6 +103,7 @@ If you have found our work useful, please use the following reference to cite th
         year={2021}
     }
 
+
 # 8. License
 
 The dataset and source code is free for research and education use only. Any commercial usage should get formal permission first.
@@ -112,7 +117,6 @@ processing or any operations of this database. Please contact us for commercial 
 the decision.
 
 - **Distribution:** It is prohibited to sell, transfer, lend, lease, resell, distribute, etc., as it is, or copy, edit, or process this database, in whole or in part.
-
 
 
 # 9. Acknowledgements
