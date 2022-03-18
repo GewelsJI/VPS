@@ -1,6 +1,6 @@
 # Dataset Preparation
 
-We introduce a high-quality per-frame annotated VPS dataset, named SUN-SEG, which includes 158,690 frames elected from the famous [SUN dataset](http://amed8k.sundatabase.org). Then, we extend the labels with diverse types, i.e., object mask, boundary, scribble, and polygon.
+We introduce a high-quality per-frame annotated VPS dataset, named SUN-SEG, which includes 158,690 frames elected from the famous [SUN dataset](http://amed8k.sundatabase.org). Then, we extend the labels with diverse types, i.e., object mask, boundary, scribble, and polygon. If you wanna to get access to our whole dataset, you should follow the next three steps.
 
 # Contents
 - [Step-1: Request and Download](#step-1--request-and-download)

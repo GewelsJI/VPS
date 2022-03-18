@@ -1,22 +1,15 @@
 # Dataset Description
 
 <p align="center">
-    <img src="../assets/background-min.gif"/> <br />
-</p>
-
-## Introduction
-
-<p align="center">
     <img src="../assets/video_v2-min.gif"/> <br />
 </p>
 
-The SUN-SEG dataset including 49,136 polyp frames (postive part) and 109,554 non-polyp frames (negative part) taken from 
+Our SUN-SEG dataset including 49,136 polyp frames (i.e., postive part) and 109,554 non-polyp frames (i.e., negative part) taken from 
 different 285 and 728 colonoscopy videos clips, which were densely annotated with diversified labels for each frame, 
 such as object-level segmentation mask, bounding box, category, attribute, and three weak label (ie. edge, scribble , 
 polygon). More details refer to SUN dataset: http://sundatabase.org/
 
 ## Data Format
-
 
 ```
 ├──data
@@ -65,7 +58,7 @@ polygon). More details refer to SUN dataset: http://sundatabase.org/
 The `Frame` folder contains the frames and the rest folders contain the corresponding ground truth. 
 As for the `bbox_annotation.json` and `classfication.txt` text file, we follow the same format as COCO and ImageNet for generality.
 
-## Statistics
+## Dataset Statistics
 
 <p align="center">
     <img src="../assets/statistic-min.png"/> <br />

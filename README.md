@@ -55,7 +55,6 @@ Notably, based on some necessary privacy-preserving considerations from the SUN 
 
 # 4. VPS Baseline
 
-
 This work is the extension version of our conference paper (Progressively Normalized Self-Attention Network for Video Polyp Segmentation) accepted at MICCAI-2021. More details could refer to [arXiv](https://arxiv.org/abs/2105.08468) and [Github Link](https://github.com/GewelsJI/PNS-Net)
 
 

@@ -81,7 +81,6 @@ if __name__ == '__main__':
         model.load_backbone(torch.load(config.pretrain_state_dict, map_location=torch.device('cpu')), logging)
         print('load model from ', config.pretrain_state_dict)
 
-
     if config.gpu_id == '0':
         os.environ["CUDA_VISIBLE_DEVICES"] = "0"
         print('USE GPU 0')
