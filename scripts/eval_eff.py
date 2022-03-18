@@ -32,12 +32,11 @@ if __name__=="__main__":
 
     torch.backends.cudnn.benchmark = True
 
-    from lib.PNS_Network_TMI_series import PNSNet as Network
+    from lib.module.PNSPlusNetwork import PNSNet as Network
 
     model = Network().cuda()
     
     with torch.cuda.device(0):
-        # TODO: Multi-Input by inner-model manipulation
         macs, params = get_model_complexity_info(model, (6, 3, 256, 448), as_strings=True,
                                                  print_per_layer_stat=False, verbose=True)
     inputs = torch.randn(1, 6, 3, 256, 448)

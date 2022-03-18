@@ -4,7 +4,7 @@
 
 We first introduce a high-quality per-frame annotated VPS dataset, named SUN-SEG, which includes 158,690 frames elected from the famous [SUN dataset](http://amed8k.sundatabase.org). We extend the labels with diverse types, i.e., object mask, boundary, scribble, and polygon.
 
-## Step-1: Request
+## Step-1: Request and Download
 
 > **Note:** The origin colonoscopy video frames in our SUN-SEG dataset are selected from [SUN dataset](http://amed8k.sundatabase.org), while we could not distribute the video data due to the strict license. 
 
@@ -29,7 +29,7 @@ As for video frames in SUN dataset, these are two groups of samples, which are d
     - unzip negative cases: `unzip -P sun_password -d ./SUN-Negative sundatabase_positive_part\*`, which will take up 11.6 + 10.7 + 11.5 + 10.5 GB of storage space. (This data partition is optional if we have no requirments to use them.)
     - check if correct: `find ./SUN-Negative -type f -name "*.jgp" | wc -l`, which should output 109,554 in your terminal.
 
-Then, your file structure will be the same as below:
+After prepare all the files,  your file structure will be the same as below:
 
 ```
 ├──data
@@ -39,6 +39,28 @@ Then, your file structure will be the same as below:
             |...
         ├──case2
         |...
+    ├──SUN-SEG
+        ├──TrainDataset
+            ├──GT
+                ├──case1_1
+                    ├──IMAGE_NAME.png
+                    |...
+            ├──Edge
+                |...
+            ├──Scribble
+                |...
+            ├──Polygon
+                |...
+            ├──Classification
+                ├──classification.txt
+            ├──Detection
+                ├──bbox_annotation.json
+        ├──TestEasyDataset
+            ├──GT
+            |...
+        ├──TestHardDataset
+            ├──GT
+            |...
 ```
 
 As for the annotations from our SUN-SGE, you are happy to execute:
@@ -73,7 +95,16 @@ By running `python ./utils/reorganize.py`, the original file structure in SUN-da
                     |...
                 ├──case1_3
                 |...
-            ├──[details other labels] johnson here
+            ├──Edge
+                |...
+            ├──Scribble
+                |...
+            ├──Polygon
+                |...
+            ├──Classification
+                ├──classification.txt
+            ├──Detection
+                ├──bbox_annotation.json
         ├──TestEasyDataset
             ├──Frame
                 ├──case2_3

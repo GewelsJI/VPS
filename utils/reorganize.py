@@ -1,7 +1,7 @@
 import os, shutil, glob
 
-SUN_root = '../data/SUN/'
-SUNSEG_root = '../data/SUN-SEG/'
+SUN_root = './data/SUN/'
+SUNSEG_root = './data/SUN-SEG/'
 
 SUN_split_dict = {}
 SUNSEG_split_dict = {}
