@@ -20,33 +20,45 @@ polygon). More details refer to SUN dataset: http://sundatabase.org/
 
 ```
 ├──data
-    ├──SUN
-        ├──case1
-            ├──IMAGE_NAME.jpg
-            |...
-        ├──case2
-        |...
     ├──SUN-SEG
         ├──TrainDataset
-            ├──GT
+            ├──Frame  # The images from SUN dataset
                 ├──case1_1
-                    ├──IMAGE_NAME.png
+                    ├──image_name_00001.jpg
                     |...
-            ├──Edge
+                ├──case1_3
                 |...
-            ├──Scribble
+            ├──GT  # Object-level segmentation mask
+                ├──case1_1
+                    ├──image_name_00001.png
+                    |...
+                ├──case1_3
                 |...
-            ├──Polygon
+            ├──Edge  # object-level segmentation mask
                 |...
-            ├──Classification
+            ├──Scribble  # Weak label with scribble
+                |...
+            ├──Polygon  # Weak label with Polygon
+                |...
+            ├──Classification  # Category classification annotation
                 ├──classification.txt
-            ├──Detection
+            ├──Detection  # Bounding box
                 ├──bbox_annotation.json
         ├──TestEasyDataset
+            ├──Frame
+                ├──case2_3
+                |...
             ├──GT
+                ├──case2_3
+                |...
             |...
         ├──TestHardDataset
+            ├──Frame
+                ├──case1_2
+                |...
             ├──GT
+                ├──case1_2
+                |...
             |...
 ```
 
@@ -73,7 +85,7 @@ As for the `bbox_annotation.json` and `classfication.txt` text file, we follow t
 
 ## Label Description
 
-### Label-I: Pathological Diagnosis Classification
+### Label-I: Category Classification Annotation
 
 <p align="center">
     <img src="../assets/classification-min.png"/> <br />
@@ -98,7 +110,7 @@ Here are an example:
     image_dir_00003.jpg	sessile_serrated_lesion
     ...
 
-### Label-II: Video Polyp Segmentation
+### Label-II: Object-level Segmentation Mask
 
 <p align="center">
     <img src="../assets/video_v2-min.gif"/> <br />
@@ -109,7 +121,7 @@ In polyp-existing frames, each polyp is annotated with a segmentation mask as sh
 The annotation is in `./data/DATASET/GT/`. Each image's name has direct correspondance with the annotation file name. 
 For example, the segmentation mask for `image_dir_00001.jpg` is `image_dir_00001.png`.
 
-### Label-III: Video Polyp Detection
+### Label-III: Bounding Box
 
 <p align="center">
     <img src="../assets/bbox-min.gif"/> <br />
@@ -144,7 +156,7 @@ Here are an example:
 
 ```
 
-### Label-IV: Weakly-Supervised Video Polyp Segmentation/Detection (WVPS/D) with edge/polygon/scribble labels
+### Label-IV: Weak-labels with Edge/Polygon/Scribble
 
 <p align="center">
     <img src="../assets/weak-min.gif"/> <br />
@@ -181,15 +193,15 @@ We also provide the attribute label for each frame including:
 | SSL  | Sessile serrated lesion      | A neoplastic polyp characterised by serrated architectural features and lack of cytological dysplasia.                                                                                        |
 | IC   | Invasive cancer (T1b)        | Its color is darker than the surroundings, brownish, sometimes with lighter patches. The vessel of areas with interrupted or absent vessels. The surface is amorphous ofr no surface pattern. |
 | SI   | Surgical Instruments         | The endoscopic surgical procedures involving positioning of instruments, such as snares, forceps, knives and electrodes.                                                                      |
-| IB   | Indefinable Boundaries       | The foreground and background areas around the object have similar color                                                                                                                      |
-| HO   | Heterogeneous Object          | Object regions have distinct colors.                                                                                                                                                          |
-| GH   | Ghosting                     | Object has anomaly RGB-colored boundary due to fast motion and refresh rate.                                                                                                                  |
-| FM   | Fast-Motion                  | The average, per-frame object motion, computed as centroids Euclidean distance, is larger than  fm = 20 pixels.                                                                               |
-| SO   | Small Object                 | The ratio between the average object bounding-box area and the image area is smaller than tlr = 0.???.                                                                                        |
-| LO   | Large Object                 | The ratio between the average object bounding-box area and the image area is larger than tlr = 0.???.                                                                                         |
+| IB   | Indefinable Boundaries       | The foreground and background areas around the object have similar color.                                                                                                                     |
+| HO   | Heterogeneous Object         | Object regions have distinct colors.                                                                                                                                                          |
+| GH   | Ghosting                     | Object has anomaly RGB-colored boundary due to fast moving or insufficient refresh rate.                                                                                                      |
+| FM   | Fast-Motion                  | The average per-frame object motion, computed as the Euclidean distance of polyp centroids between consecutive frames, is larger than $20$ pixels.                                            |
+| SO   | Small Object                 | The average ratio between the average object size and the image area is smaller than 0.05.                                                                                                    |
+| LO   | Large Object                 | The average ratio between the average object bounding-box area and the image area is larger than tlr = 0.15.                                                                                  |
 | OCC  | Occlusion                    | Object becomes partially or fully occluded.                                                                                                                                                   |
 | OV   | Out-of-view                  | Object is partially clipped by the image boundaries.                                                                                                                                          |
-| SV   | Scale-Variation              | The area ratio among any pair of boundingboxes enclosing the target object is smaller than  sv = 0.5.                                                                                         |
+| SV   | Scale-Variation              | The average area ratio among any pair of bounding boxes enclosing the target object is smaller than $0.5$.                                                                                    |
 
 
 

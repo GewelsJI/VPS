@@ -32,21 +32,27 @@ As for video frames in SUN dataset, these are two groups of samples, which are d
     - unzip negative cases: `unzip -P sun_password -d ./SUN-Negative sundatabase_positive_part\*`, which will take up 11.6 + 10.7 + 11.5 + 10.5 GB of storage space. (This data partition is optional if we have no requirments to use them.)
     - check if correct: `find ./SUN-Negative -type f -name "*.jgp" | wc -l`, which should output 109,554 in your terminal.
 
+As for the annotations from our SUN-SGE, you are happy to execute:
+
+- Unzip it via `unzip SUN-SEG-Annotation.zip`
+- Put it at path `./data/SUN-SEG-Annotation/` 
+
+
 After prepare all the files,  your file structure will be the same as below:
 
 ```
 ├──data
     ├──SUN-Positive
         ├──case1
-            ├──IMAGE_NAME.jpg
+            ├──image_name.jpg
             |...
         ├──case2
         |...
-    ├──SUN-SEG
+    ├──SUN-SEG-Annotation
         ├──TrainDataset
             ├──GT
                 ├──case1_1
-                    ├──IMAGE_NAME.png
+                    ├──image_name.png
                     |...
             ├──Edge
                 |...
@@ -66,47 +72,37 @@ After prepare all the files,  your file structure will be the same as below:
             |...
 ```
 
-As for the annotations from our SUN-SGE, you are happy to execute:
-
-- Unzip it via `unzip SUN-SEG-Annotation.zip`
-- Put it at path `./data/SUN-SEG-Annotation/` 
-
-Then, your file structure will be the same as below:
-
-```
-昱程：添加你的文件结构在这里
-```
-
+You will notice that the file structure of images in `SUN-Positive` is different from the one of annotation in `SUN-SEG-Annotation`. To reconcile the file structure, you need to follow next step to finish the data preparation.
 
 # Step-3: Re-organize the file structure
 
-By running `python ./utils/reorganize.py`, the original file structure in SUN-dataset will be re-organized to the same as SUN-SEG for better length balance. Finally, the folder `Frame` and `GT` will share the same file structure as shown below:
+By running `sh ./utils/reorganize.sh`, the original file structure in SUN-dataset will be re-organized to the same as SUN-SEG for better length balance. Finally, the folder `Frame` which is originated from `SUN-Positive`, and `GT`, as long as other annoations' folder, will share the same file structure as shown below:
 
 ```
 ├──data
     ├──SUN-SEG
         ├──TrainDataset
-            ├──Frame
+            ├──Frame  # The images from SUN dataset
                 ├──case1_1
-                    ├──IMAGE_NAME.jpg
+                    ├──image_name_00001.jpg
                     |...
                 ├──case1_3
                 |...
-            ├──GT
+            ├──GT  # Object-level segmentation mask
                 ├──case1_1
-                    ├──IMAGE_NAME.png
+                    ├──image_name_00001.png
                     |...
                 ├──case1_3
                 |...
-            ├──Edge
+            ├──Edge  # Weak label with edge
                 |...
-            ├──Scribble
+            ├──Scribble  # Weak label with scribble
                 |...
-            ├──Polygon
+            ├──Polygon  # Weak label with Polygon
                 |...
-            ├──Classification
+            ├──Classification  # Category classification annotation
                 ├──classification.txt
-            ├──Detection
+            ├──Detection  # Bounding box
                 ├──bbox_annotation.json
         ├──TestEasyDataset
             ├──Frame
@@ -115,6 +111,7 @@ By running `python ./utils/reorganize.py`, the original file structure in SUN-da
             ├──GT
                 ├──case2_3
                 |...
+            |...
         ├──TestHardDataset
             ├──Frame
                 ├──case1_2
@@ -122,4 +119,5 @@ By running `python ./utils/reorganize.py`, the original file structure in SUN-da
             ├──GT
                 ├──case1_2
                 |...
+            |...
 ```

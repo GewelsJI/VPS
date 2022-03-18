@@ -43,7 +43,7 @@ this issue, we first introduce a high-quality per-frame annotated VPS dataset. T
 <p align="center">
     <img src="./assets/Pathological-min.gif"/> <br />
     <em> 
-    Figure 2: 
+    Figure 1: Annotation of SUN-SEG dataset. The object-level segmentation masks in SUN-SEG dataset of different pathological categories, which is densely annotated with experienced annotators and verified by colonoscopy-related researchers to ensure the quality of the proposed dataset. 
     </em>
 </p>
 
