@@ -7,7 +7,7 @@
 ## Introduction
 
 <p align="center">
-    <img src="../assets/video-min.gif"/> <br />
+    <img src="../assets/video_v2-min.gif"/> <br />
 </p>
 
 The SUN-SEG dataset including 49,136 polyp frames (postive part) and 109,554 non-polyp frames (negative part) taken from 
@@ -101,7 +101,7 @@ Here are an example:
 ### Label-II: Video Polyp Segmentation
 
 <p align="center">
-    <img src="../assets/vid_seg-min.gif"/> <br />
+    <img src="../assets/video_v2-min.gif"/> <br />
 </p>
 
 In polyp-existing frames, each polyp is annotated with a segmentation mask as shown above. 
