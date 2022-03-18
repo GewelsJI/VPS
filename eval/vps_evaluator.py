@@ -2,7 +2,7 @@
 # @Time     : 2022/03/14
 # @Author   : Johnson-Chou
 # @Email    : johnson111788@gmail.com
-# @FileName : metrics.py
+# @FileName : vps_evaluator.py
 
 import glob
 import os
@@ -180,6 +180,7 @@ if __name__ == '__main__':
                     print(len(sorted(os.listdir(gt_pth))), len(sorted(os.listdir(pred_pth))))
                     print('The {} Dataset of {} Model is not matching to the ground-truth'.format(_data_name,
                                                                                                   _model_name))
+        # raise Exception('check done')
     else:
         print('>>> Skip check the integrity of each candidates ...')
 
