@@ -2,7 +2,7 @@
 
 ![](../assets/the-reading-list.png)
 
-Contributed by *Ge-Peng Ji*, *Yu-Cheng Chou* and [*Deng-Ping Fan*](https://dpfan.net/).
+Contributed by *Yu-Cheng Chou*, *Ge-Peng Ji*, and [*Deng-Ping Fan*](https://dpfan.net/).
 
 ## <span id="1._Preview"> 1. Preview</span>
 
@@ -14,7 +14,7 @@ Besides, we present the collection of **12** polyp related datasets, including *
 
 In addition, we provide links to each paper and its repository whenever possible. * denotes the corresponding paper cannot be downloaded or the link is connect to the journal.
 
-> If you have paper to recommend or any suggestions, please feel free to contact us via e-mail (gepengai.ji@gmail) or directly pull the request . 
+> Note that this page is under construction. If you have anythings to recommend or any suggestions, please feel free to contact us via e-mail (gepengai.ji@gmail) or directly push a PR. 
 
 
 --- *Last updated: 08/12/2021* --- 

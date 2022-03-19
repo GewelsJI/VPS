@@ -74,8 +74,17 @@ There are three simple-to-use steps to access our project code (PNS+):
     cd ./lib/PNS
     python setup.py build develop
     ```
-- Training: run `./scripts/my_train.py`
-- Testing: run `./scripts/my_test.py`
+- Training:
+
+    ```bash
+    python ./scripts/my_train.py`
+    ```
+
+- Testing:
+
+    ```bash
+    python ./scripts/my_test.py`
+    ```
 
 
 # 5. VPS Benchmark
