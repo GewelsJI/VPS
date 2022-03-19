@@ -59,8 +59,21 @@ Notably, based on some necessary privacy-preserving considerations from the SUN 
 
 There are three simple-to-use steps to access our project code (PNS+):
 
-- Prerequisites: Install Pytorch xxx and necessary libraries xxx
-- Compiling: xxxx
+- Prerequisites: 
+
+  ```bash
+    conda create -n PNS+ python=3.6
+    conda activate PNS+
+    conda install pytorch=1.1.0 torchvision -c pytorch
+    pip install tensorboardX tqdm Pillow==6.2.2
+    pip install git+https://github.com/pytorch/tnt.git@master
+    ```
+
+- Compiling:
+    ```bash
+    cd ./lib/PNS
+    python setup.py build develop
+    ```
 - Training: run `./scripts/my_train.py`
 - Testing: run `./scripts/my_test.py`
 
