@@ -1,4 +1,4 @@
-# Dataset Description
+# SUN-SEG Dataset Description
 
 <p align="center">
     <img src="../assets/video_v2-min.gif"/> <br />
@@ -66,13 +66,13 @@ As for the `bbox_annotation.json` and `classfication.txt` text file, we follow t
 
 - The positive part of SUN-SEG has 285 video clips (30 fps), which has 49,136 frames totally.
 
-- More details of each polyp video clips refer to [`INFO_POSITIVE_CASES.md`]().
+- More details of each polyp video clips refer to [`INFO_POSITIVE_CASES.md`](https://github.com/GewelsJI/VPS/blob/main/docs/INFO_POSITIVE_CASES.md).
 
 ### Negative Part
 
 - The negative part of SUN-SEG has 728 video clips (30 fps), which has 109,554 frames totally.
 
-- More details of each non-polyp video clips refer to [`INFO_NEGATIVE_CASES.md`]()
+- More details of each non-polyp video clips refer to [`INFO_NEGATIVE_CASES.md`](https://github.com/GewelsJI/VPS/blob/main/docs/INFO_NEGATIVE_CASES.md)
 
 ## Label Description
 

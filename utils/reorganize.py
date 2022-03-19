@@ -33,6 +33,3 @@ for image in image_list:
 
     shutil.move(os.path.join(SUN_root, SUN_case, image + '.jpg'),
                 os.path.join(SUNSEG_root, dataset_split, 'Frame', SUNSEG_case, image + '.jpg'))
-
-
-

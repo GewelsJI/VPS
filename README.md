@@ -6,7 +6,7 @@
 
 - **Title:** Deep Learning for Video Polyp Segmentation: A Comprehensive Study ([arXiv]())
 - **Authors:** [Ge-Peng Ji](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=oaxKYKUAAAAJ)^, Guobao Xiao^, [Yu-Cheng Chou](https://scholar.google.com/citations?user=YVNRBTcAAAAJ&hl=en)^, [Deng-Ping Fan](https://dengpingfan.github.io/)*, [Kai Zhao](https://kaizhao.net/), [Geng Chen](https://scholar.google.com/citations?user=sJGCnjsAAAAJ&hl=en), [Huazhu Fu](https://hzfu.github.io/), and [Luc Van Gool](https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en).
-- **Contact:** Our ability is limited, so we are welcome to receive your constructive suggestions and contributions to our project. Or if you have any questions about our project, please feel free to drop us an e-mail (gepengai.ji@gmail.com, johnson111788@gmail.com, dengpfan@gmail.com) or directly report it in the issue or push a PR. Your star is our motivation, thank you first, let's enjoy it!
+- **Contact:** Our ability is limited, so we are welcome to receive your constructive suggestions and contributions to our project. Or if you have any questions about our project, please feel free to drop us an e-mail (gepengai.ji@gmail.com, johnson111788@gmail.com, dengpfan@gmail.com) or directly report it in the issue or push a PR. Your star is our motivation, let's enjoy it!
 
 # Contents<!-- omit in toc -->
 - [1. Features](#1-features)
@@ -55,7 +55,14 @@ Notably, based on some necessary privacy-preserving considerations from the SUN 
 
 # 4. VPS Baseline
 
-This work is the extension version of our conference paper (Progressively Normalized Self-Attention Network for Video Polyp Segmentation) accepted at MICCAI-2021. More details could refer to [arXiv](https://arxiv.org/abs/2105.08468) and [Github Link](https://github.com/GewelsJI/PNS-Net)
+> This work is the extension version of our conference paper (Progressively Normalized Self-Attention Network for Video Polyp Segmentation) accepted at MICCAI-2021. More details could refer to [arXiv](https://arxiv.org/abs/2105.08468) and [Github Link](https://github.com/GewelsJI/PNS-Net)
+
+There are three simple-to-use steps to access our project code (PNS+):
+
+- Prerequisites: Install Pytorch xxx and necessary libraries xxx
+- Compiling: xxxx
+- Training: run `./scripts/my_train.py`
+- Testing: run `./scripts/my_test.py`
 
 
 # 5. VPS Benchmark
