@@ -77,13 +77,13 @@ There are three simple-to-use steps to access our project code (PNS+):
 - Training:
 
     ```bash
-    python ./scripts/my_train.py`
+    python ./scripts/my_train.py
     ```
 
 - Testing:
 
     ```bash
-    python ./scripts/my_test.py`
+    python ./scripts/my_test.py
     ```
 
 
