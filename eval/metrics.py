@@ -30,14 +30,14 @@ def _get_adaptive_threshold(matrix: np.ndarray, max_value: float = 1) -> float:
 
 
 class Fmeasure(object):
-    def __init__(self, beta: float = 0.3):
+    def __init__(self, length, beta: float = 0.3):
         self.beta = beta
         self.precisions = []
         self.recalls = []
         self.adaptive_fms = []
         self.changeable_fms = []
 
-    def step(self, pred: np.ndarray, gt: np.ndarray):
+    def step(self, pred: np.ndarray, gt: np.ndarray, idx):
         pred, gt = _prepare_data(pred, gt)
 
         adaptive_fm = self.cal_adaptive_fm(pred=pred, gt=gt)
@@ -78,20 +78,21 @@ class Fmeasure(object):
         changeable_fms = numerator / denominator
         return precisions, recalls, changeable_fms
 
-    def get_results(self) -> dict:
+    def get_results(self):
         adaptive_fm = np.mean(np.array(self.adaptive_fms, _TYPE))
+        # precision = np.mean(np.array(self.precisions, dtype=_TYPE), axis=0)  # N, 256
+        # recall = np.mean(np.array(self.recalls, dtype=_TYPE), axis=0)  # N, 256
         changeable_fm = np.mean(np.array(self.changeable_fms, dtype=_TYPE), axis=0)
-        precision = np.mean(np.array(self.precisions, dtype=_TYPE), axis=0)  # N, 256
-        recall = np.mean(np.array(self.recalls, dtype=_TYPE), axis=0)  # N, 256
-        return dict(fm=dict(adp=adaptive_fm, curve=changeable_fm),
-                    pr=dict(p=precision, r=recall))
+        # return dict(fm=dict(adp=adaptive_fm, curve=changeable_fm),
+        #             pr=dict(p=precision, r=recall))
+        return dict(adpFm=adaptive_fm, meanFm=changeable_fm, maxFm=changeable_fm)
 
 
 class MAE(object):
-    def __init__(self):
+    def __init__(self, length):
         self.maes = []
 
-    def step(self, pred: np.ndarray, gt: np.ndarray):
+    def step(self, pred: np.ndarray, gt: np.ndarray, idx):
         pred, gt = _prepare_data(pred, gt)
 
         mae = self.cal_mae(pred, gt)
@@ -101,17 +102,17 @@ class MAE(object):
         mae = np.mean(np.abs(pred - gt))
         return mae
 
-    def get_results(self) -> dict:
+    def get_results(self):
         mae = np.mean(np.array(self.maes, _TYPE))
-        return dict(mae=mae)
+        return dict(MAE=mae)
 
 
 class Smeasure(object):
-    def __init__(self, alpha: float = 0.5):
+    def __init__(self, length, alpha: float = 0.5):
         self.sms = []
         self.alpha = alpha
 
-    def step(self, pred: np.ndarray, gt: np.ndarray):
+    def step(self, pred: np.ndarray, gt: np.ndarray, idx):
         pred, gt = _prepare_data(pred=pred, gt=gt)
 
         sm = self.cal_sm(pred, gt)
@@ -212,17 +213,17 @@ class Smeasure(object):
             score = 0
         return score
 
-    def get_results(self) -> dict:
+    def get_results(self):
         sm = np.mean(np.array(self.sms, dtype=_TYPE))
-        return dict(sm=sm)
+        return dict(Smeasure=sm)
 
 
 class Emeasure(object):
-    def __init__(self):
+    def __init__(self, length):
         self.adaptive_ems = []
         self.changeable_ems = []
 
-    def step(self, pred: np.ndarray, gt: np.ndarray):
+    def step(self, pred: np.ndarray, gt: np.ndarray, idx):
         pred, gt = _prepare_data(pred=pred, gt=gt)
         self.gt_fg_numel = np.count_nonzero(gt)
         self.gt_size = gt.shape[0] * gt.shape[1]
@@ -324,18 +325,18 @@ class Emeasure(object):
         ]
         return parts_numel, combinations
 
-    def get_results(self) -> dict:
+    def get_results(self):
         adaptive_em = np.mean(np.array(self.adaptive_ems, dtype=_TYPE))
         changeable_em = np.mean(np.array(self.changeable_ems, dtype=_TYPE), axis=0)
-        return dict(em=dict(adp=adaptive_em, curve=changeable_em))
+        return dict(adpEm=adaptive_em, meanEm=changeable_em, maxEm=changeable_em)
 
 
 class WeightedFmeasure(object):
-    def __init__(self, beta: float = 1):
+    def __init__(self, length, beta: float = 1):
         self.beta = beta
         self.weighted_fms = []
 
-    def step(self, pred: np.ndarray, gt: np.ndarray):
+    def step(self, pred: np.ndarray, gt: np.ndarray, idx):
         pred, gt = _prepare_data(pred=pred, gt=gt)
 
         if np.all(~gt):
@@ -392,12 +393,12 @@ class WeightedFmeasure(object):
             h /= sumh
         return h
 
-    def get_results(self) -> dict:
+    def get_results(self):
         weighted_fm = np.mean(np.array(self.weighted_fms, dtype=_TYPE))
-        return dict(wfm=weighted_fm)
+        return dict(wFmeasure=weighted_fm)
 
 
-class POLYP(object):
+class Medical(object):
     def __init__(self, length):
         self.Thresholds = np.linspace(1, 0, 256)
 
@@ -462,4 +463,5 @@ class POLYP(object):
         column_Dic = np.mean(self.threshold_Dice, axis=0)
         column_IoU = np.mean(self.threshold_IoU, axis=0)
 
-        return dict(Sen=column_Sen, Spe=column_Spe, Dic=column_Dic, IoU=column_IoU)
+        return dict(meanSen=column_Sen, meanSpe=column_Spe, meanDic=column_Dic, meanIoU=column_IoU,
+                    maxSen=column_Sen, maxSpe=column_Spe, maxDic=column_Dic, maxIoU=column_IoU)
