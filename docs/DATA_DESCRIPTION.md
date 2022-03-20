@@ -201,17 +201,17 @@ Next, we provide the complete attributes for our SUN-SEG dataset.
 
 - **Visual Attributes**
 
-| ID   | Name                         | Description                                                                                                                                                                                   |
-| ---- | ---------------------------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| IB   | Indefinable Boundaries       | The foreground and background areas around the object have similar color.                                                                                                                     |
-| HO   | Heterogeneous Object         | Object regions have distinct colors.                                                                                                                                                          |
-| GH   | Ghosting                     | Object has anomaly RGB-colored boundary due to fast moving or insufficient refresh rate.                                                                                                      |
-| FM   | Fast-Motion                  | The average per-frame object motion, computed as the Euclidean distance of polyp centroids between consecutive frames, is larger than $20$ pixels.                                            |
-| SO   | Small Object                 | The average ratio between the average object size and the image area is smaller than 0.05.                                                                                                    |
-| LO   | Large Object                 | The average ratio between the average object bounding-box area and the image area is larger than tlr = 0.15.                                                                                  |
-| OCC  | Occlusion                    | Object becomes partially or fully occluded.                                                                                                                                                   |
-| OV   | Out-of-view                  | Object is partially clipped by the image boundaries.                                                                                                                                          |
-| SV   | Scale-Variation              | The average area ratio among any pair of bounding boxes enclosing the target object is smaller than $0.5$.                                                                                    |
+| ID   | Name                         | Description                                                                                                                                      |
+| ---- | ---------------------------- |--------------------------------------------------------------------------------------------------------------------------------------------------|
+| IB   | Indefinable Boundaries       | The foreground and background areas around the object have similar color.                                                                        |
+| HO   | Heterogeneous Object         | Object regions have distinct colors.                                                                                                             |
+| GH   | Ghosting                     | Object has anomaly RGB-colored boundary due to fast moving or insufficient refresh rate.                                                         |
+| FM   | Fast-Motion                  | The average per-frame object motion, computed as the Euclidean distance of polyp centroids between consecutive frames, is larger than 20 pixels. |
+| SO   | Small Object                 | The average ratio between the object size and the image area is smaller than 0.05.                                                               |
+| LO   | Large Object                 | The average ratio between the object bounding-box area and the image area is larger than tlr = 0.15.                                             |
+| OCC  | Occlusion                    | Object becomes partially or fully occluded.                                                                                                      |
+| OV   | Out-of-view                  | Object is partially clipped by the image boundaries.                                                                                             |
+| SV   | Scale-Variation              | The average area ratio among any pair of bounding boxes enclosing the target object is smaller than $0.5$.                                       |
 
 
 
