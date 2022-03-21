@@ -183,7 +183,7 @@ if __name__ == '__main__':
     txt_save_path = './eval-result/{}/'.format(opt.txt_name)
     os.makedirs(txt_save_path, exist_ok=True)
 
-    # check the integrity of each candidates
+    # TODO: check the integrity of each candidates @Johnson-Chou
     if opt.check_integrity:
         for _data_name in opt.data_lst[0]:
             for _model_name in opt.model_lst[0]:
