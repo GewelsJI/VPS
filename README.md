@@ -4,7 +4,7 @@
     <img src="./assets/background-min.gif"/> <br />
 </p>
 
-- **Title:** Deep Learning for Video Polyp Segmentation: A Comprehensive Study ([arXiv]())
+- **Title:** Deep Learning for Video Polyp Segmentation ([arXiv]())
 - **Authors:** [Ge-Peng Ji](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=oaxKYKUAAAAJ)^, Guobao Xiao^, [Yu-Cheng Chou](https://scholar.google.com/citations?user=YVNRBTcAAAAJ&hl=en)^, [Deng-Ping Fan](https://dengpingfan.github.io/)*, [Kai Zhao](https://kaizhao.net/), [Geng Chen](https://scholar.google.com/citations?user=sJGCnjsAAAAJ&hl=en), [Huazhu Fu](https://hzfu.github.io/), and [Luc Van Gool](https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en).
 - **Contact:** Our ability is limited, so we are welcome to receive your constructive suggestions and contributions to our project. Or if you have any questions about our project, please feel free to drop us an e-mail (gepengai.ji@gmail.com, johnson111788@gmail.com, dengpfan@gmail.com) or directly report it in the issue or push a PR. Your star is our motivation, let's enjoy it!
 
@@ -57,9 +57,19 @@ Notably, based on some necessary privacy-preserving considerations from the SUN 
 
 > This work is the extension version of our conference paper (Progressively Normalized Self-Attention Network for Video Polyp Segmentation) accepted at MICCAI-2021. More details could refer to [arXiv](https://arxiv.org/abs/2105.08468) and [Github Link](https://github.com/GewelsJI/PNS-Net)
 
+
+<p align="center">
+    <img src="./assets/PNSPlus-Framework.png"/> <br />
+    <em> 
+    Figure 2: The pipeline of the proposed (a) PNS+ network, which is based on (b) the normalized self-attention (NS) block.
+    </em>
+</p>
+
+
+
 There are three simple-to-use steps to access our project code (PNS+):
 
-- Prerequisites: 
+- Prerequisites of environment: 
 
   ```bash
     conda create -n PNS+ python=3.6
@@ -69,7 +79,7 @@ There are three simple-to-use steps to access our project code (PNS+):
     pip install git+https://github.com/pytorch/tnt.git@master
     ```
 
-- Compiling:
+- Compiling the project:
     ```bash
     cd ./lib/PNS
     python setup.py build develop
@@ -89,15 +99,38 @@ There are three simple-to-use steps to access our project code (PNS+):
 
 # 5. VPS Benchmark
 
-[insert a benchmark table]
-
-We provide an out-of-the-box evaluation toolbox for the VPS task, which is written in python style. You can just run it to generate the evaluation results on your custom approach. Or you can directly download the complete VPS benchmark toolbox (including ground-truth, prediction map of each competitor, and evaluation toolbox code) at [`DownloadLink`](). 
+We provide an out-of-the-box evaluation toolbox for the VPS task, which is written in Python style. You can just run it to generate the evaluation results on your custom approach. Or you can directly download the complete VPS benchmark toolbox (including ground-truth, prediction map of each competitor, and evaluation toolbox code) at [`DownloadLink`]().
 
 - More instructions about **Evaluation Toolbox** refer to [`PageLink`](https://github.com/GewelsJI/VPS/tree/main/eval).
 
 We also build an online leaderboard to keep up with the new progress of other competitors. We believe this is a fun way to learn about new research directions and stay in tune with our VPS community.
 
 - Online leaderboard is publicly avaliable at [`PaperWithCode`](). 
+
+Here, we present various quantitative and qualitative results of VPS benchamrk:
+
+- Model-based performance:
+
+<p align="center">
+    <img src="./assets/ModelPerformance.png"/> <br />
+    <em> 
+    Figure 3: Quantitative comparison on two testing sub-datasets, i.e., SUN-SEG-Easy and SUN-SEG-Hard. `R/T' represents we re-train the non-public model, whose code is provided by the original authors. The best scores are highlighted in bold.
+    </em>
+</p>
+
+- Attribute-based performance:
+
+<p align="center">
+    <img src="./assets/AttributePerformance.png"/> <br />
+    <em> 
+    Figure 4: Visual attributes-based performance on our SUN-SEG-Easy and SUN-SEG-Hard in terms of structure measure.
+    </em>
+</p>
+
+- Visualization results:
+
+[@Yucheng put YouTube Link here]
+
 
 
 # 6. Tracking Trends
