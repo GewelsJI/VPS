@@ -1,4 +1,4 @@
-# <p align=center>`Deep Video Polyp Segmentation (VPS)`</p><!-- omit in toc -->
+# <p align=center>`Deep Learning for Video Polyp Segmentation (VPS)`</p><!-- omit in toc -->
 
 <p align="center">
     <img src="./assets/background-min.gif"/> <br />
