@@ -22,7 +22,7 @@ def evaluator(gt_pth_lst, pred_pth_lst, metrics):
                        "adpEm": "Emeasure", "meanEm": "Emeasure", "maxEm": "Emeasure",
                        "adpFm": "Fmeasure", "meanFm": "Fmeasure", "maxFm": "Fmeasure",
                        "meanSen": "Medical", "maxSen": "Medical", "meanSpe": "Medical", "maxSpe": "Medical",
-                       "meanDic": "Medical", "maxDic": "Medical", "meanIoU": "Medical", "maxIoU": "Medical"}
+                       "meanDice": "Medical", "maxDice": "Medical", "meanIoU": "Medical", "maxIoU": "Medical"}
     res, metric_module = {}, {}
     metric_module_list = [module_map_name[metric] for metric in metrics]
     metric_module_list = list(set(metric_module_list))
@@ -83,8 +83,6 @@ def eval_engine_vps(opt, txt_save_path):
                 # get the sequence list for current dataset
                 case_list = os.listdir(gt_src)
                 mean_case_score_list, max_case_score_list = [], []
-                mean_score_list, max_score_list = [], []
-                mean_score_ind, max_score_ind = [], []
                 # iter each video frame for current method-dataset
                 for case in case_list:
                     case_gt_name_list = glob.glob(gt_src + '/{}/*.png'.format(case))
@@ -112,6 +110,8 @@ def eval_engine_vps(opt, txt_save_path):
                         pred_pth_lst=case_pred_name_list,
                         metrics=opt.metric_list
                     )
+                    mean_score_ind, max_score_ind = [], []
+                    mean_score_list, max_score_list = [], []
                     for i, (name, value) in enumerate(result.items()):
                         if 'max' in name or 'mean' in name:
                             if 'max' in name:
@@ -160,7 +160,7 @@ if __name__ == '__main__':
         '--metric_list', type=list, help='set the evaluating metrics',
         default=['Smeasure', 'maxEm', 'wFmeasure', 'maxFm', 'maxDice', 'maxIoU'],
         choices=["Smeasure", "wFmeasure", "MAE", "adpEm", "meanEm", "maxEm", "adpFm", "meanFm", "maxFm",
-                 "meanSen", "maxSen", "meanSpe", "maxSpe", "meanDic", "maxDic", "meanIoU", "maxIoU"])
+                 "meanSen", "maxSen", "meanSpe", "maxSpe", "meanDice", "maxDice", "meanIoU", "maxIoU"])
     parser.add_argument(
         '--data_lst', type=str, help='set the dataset what you wanna to test',
         nargs='+', action='append',
