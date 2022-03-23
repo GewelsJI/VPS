@@ -64,7 +64,7 @@ class Fmeasure(object):
     def cal_pr(self, pred: np.ndarray, gt: np.ndarray) -> tuple:
         pred = (pred * 255).astype(np.uint8)
         bins = np.linspace(0, 256, 257)
-        fg_hist, _ = np.histogram(pred[gt], bins=bins)  
+        fg_hist, _ = np.histogram(pred[gt], bins=bins)
         bg_hist, _ = np.histogram(pred[~gt], bins=bins)
         fg_w_thrs = np.cumsum(np.flip(fg_hist), axis=0)
         bg_w_thrs = np.cumsum(np.flip(bg_hist), axis=0)
@@ -464,5 +464,5 @@ class Medical(object):
         column_Dic = np.mean(self.threshold_Dice, axis=0)
         column_IoU = np.mean(self.threshold_IoU, axis=0)
 
-        return dict(meanSen=column_Sen, meanSpe=column_Spe, meanDic=column_Dic, meanIoU=column_IoU,
-                    maxSen=column_Sen, maxSpe=column_Spe, maxDic=column_Dic, maxIoU=column_IoU)
+        return dict(meanSen=column_Sen, meanSpe=column_Spe, meanDice=column_Dic, meanIoU=column_IoU,
+                    maxSen=column_Sen, maxSpe=column_Spe, maxDice=column_Dic, maxIoU=column_IoU)

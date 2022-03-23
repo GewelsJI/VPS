@@ -1,13 +1,18 @@
-# SUN-SEG Dataset Description
+# The Descriptions of SUN-SEG Dataset 
 
 <p align="center">
     <img src="../assets/video_v2-min.gif"/> <br />
 </p>
 
-Our SUN-SEG dataset including 49,136 polyp frames (i.e., postive part) and 109,554 non-polyp frames (i.e., negative part) taken from  different 285 and 728 colonoscopy videos clips, which were densely annotated with diversified labels for each frame, such as object-level segmentation mask, bounding box, category, attribute, and three weak label (ie. edge, scribble , 
-polygon). More details refer to SUN dataset: http://sundatabase.org/
+We first introduce a high-quality per-frame annotated VPS dataset, named SUN-SEG, which includes 158,690 frames from the famous SUN dataset. We extend the labels with diverse types, i.e., object mask, boundary, scribble, polygon, and visual attribute. We also introduce the pathological informations from the original [SUN dataset](http://sundatabase.org/), including pathological classification labels, location information, and shape information. 
 
-## Data Format
+Notably, the origin SUN dataset has 113 colonoscopy videos, including 100 positive cases with 49, 136 polyp frames and 13 negative cases with 109, 554 non-polyp frames. We manually trim them into 378 positive and 728 negative short clips, meanwhile maintaining their intrinsic consecutive relationship. Such data pre-processing ensures each clip has around 3~11s duration at a real-time frame rate (i.e., 30 fps), which promotes the fault-tolerant margin for various algorithms and devices. To this end, the re-organized SUN-SEG contains 1, 106 short video clips with 158, 690 video frames totally, offering a solid foundation to build a representative benchmark.
+
+As such, it yeilds the final version of our SUN-SEG dataset, which includes 49,136 polyp frames (i.e., postive part) and 109,554 non-polyp frames (i.e., negative part) taken from  different 285 and 728 colonoscopy videos clips, as well as the corresponding annotations. The following sections will provide details about it point-by-point.
+
+# File Tree Organization
+
+The `Frame` folder contains the frames and the rest folders contain the corresponding ground truth. As for the `bbox_annotation.json` and `classfication.txt` text file, we follow the same format as COCO and ImageNet for generality.
 
 ```
 ├──data
@@ -53,30 +58,30 @@ polygon). More details refer to SUN dataset: http://sundatabase.org/
             |...
 ```
 
-The `Frame` folder contains the frames and the rest folders contain the corresponding ground truth. 
-As for the `bbox_annotation.json` and `classfication.txt` text file, we follow the same format as COCO and ImageNet for generality.
 
-## Dataset Statistics
+
+# Dataset Statistics
 
 <p align="center">
     <img src="../assets/statistic-min.png"/> <br />
 </p>
 
-### Positive Part
+## Positive Part
 
 - The positive part of SUN-SEG has 285 video clips (30 fps), which has 49,136 frames totally.
 
 - More details of each polyp video clips refer to [`INFO_POSITIVE_CASES.md`](https://github.com/GewelsJI/VPS/blob/main/docs/INFO_POSITIVE_CASES.md).
 
-### Negative Part
+## Negative Part
 
 - The negative part of SUN-SEG has 728 video clips (30 fps), which has 109,554 frames totally.
 
 - More details of each non-polyp video clips refer to [`INFO_NEGATIVE_CASES.md`](https://github.com/GewelsJI/VPS/blob/main/docs/INFO_NEGATIVE_CASES.md)
 
-## Label Description
 
-### Label-I: Category Classification Annotation
+# Label Description
+
+## Label-I: Category Classification Annotation
 
 <p align="center">
     <img src="../assets/classification-min.png"/> <br />
@@ -101,7 +106,7 @@ Here are an example:
     image_dir_00003.jpg	sessile_serrated_lesion
     ...
 
-### Label-II: Object-level Segmentation Mask
+## Label-II: Object Mask
 
 <p align="center">
     <img src="../assets/video_v2-min.gif"/> <br />
@@ -112,54 +117,50 @@ In polyp-existing frames, each polyp is annotated with a segmentation mask as sh
 The annotation is in `./data/DATASET/GT/`. Each image's name has direct correspondance with the annotation file name. 
 For example, the segmentation mask for `image_dir_00001.jpg` is `image_dir_00001.png`.
 
-### Label-III: Bounding Box
+## Label-III: Bounding Box
 
 <p align="center">
     <img src="../assets/bbox-min.gif"/> <br />
 </p>
 
-We present the bounding box annotation for each polyp-existing frame. 
-In `./data/DATASET/bbox_annotation.json` file, we follow the same format as COCO dataset. 
+We present the bounding box annotation for each polyp-existing frame. In `./data/DATASET/bbox_annotation.json` file, we follow the same format as COCO dataset. Here are an example of COCO-style annotation:
 
-Here are an example:
+    {
+        'info': {
+            'year': 2021, 
+            'version': 'v1.0', 
+            'description': 'SUN Colonoscopy Video Database. Hayato et al, 2020.', 
+            'contributor': '', 
+            'url': '', 
+            'date_created': ''}, 
+        'images': [{
+            'id': 'case1_1-a2-image0001', 
+            'width': 1158, 
+            'height': 1008,
+            'case_name': 'case1_1'  # case_name means the name of case in the folder.
+            'file_name': 'case_M_20181001100941_0U62372100109341_1_005_001-1_a2_ayy_image0001'}, # file_name is corresponding to the image name in the folder. 
+            ...], 
+        'annotation': [{
+            'id': 'case1_1-a2-image0001', 
+            'bbox': [262, 72, 68, 81]},  # Each element represnets the [min_x, min_y, max_x, max_y].
+            ...]
+    }
 
-```
-{
-    'info': {
-        'year': 2021, 
-        'version': 'v1.0', 
-        'description': 'SUN Colonoscopy Video Database. Hayato et al, 2020.', 
-        'contributor': '', 
-        'url': '', 
-        'date_created': ''}, 
-    'images': [{
-        'id': 'case1_1-a2-image0001', 
-        'width': 1158, 
-        'height': 1008,
-        'case_name': 'case1_1'  # case_name means the name of case in the folder.
-        'file_name': 'case_M_20181001100941_0U62372100109341_1_005_001-1_a2_ayy_image0001'}, # file_name is corresponding to the image name in the folder. 
-        ...], 
-    'annotation': [{
-        'id': 'case1_1-a2-image0001', 
-        'bbox': [262, 72, 68, 81]},  # Each element represnets the [min_x, min_y, max_x, max_y].
-        ...]
-}
+## Label-IV: Boundary
 
-```
-
-### Label-IV: Weak-labels with Edge/Polygon/Scribble
+The annotations are stored in `./data/DATASET/Edge/`. Each image's name has direct correspondance with the annotation file name. 
 
 <p align="center">
-    <img src="../assets/weak-min.gif"/> <br />
+    <img src="../assets/weak1-min.gif"/> <br />
 </p>
 
-We present the scribble/polygon label for each polyp-existing frame.
+## Label-V: Two Weak Labels (Scribble & Polygon)
 
-The annotation is in `./data/DATASET/Edge/`, `./data/DATASET/Scribble/`, and `./data/DATASET/Polygon/`, respectively. Each image's name has direct correspondance with the annotation file name. 
-For example, the label for `image_dir_00001.jpg` is `image_dir_00001.png`.
+The annotations are in `./data/DATASET/Scribble/`, and `./data/DATASET/Polygon/`, respectively. Each image's name has direct correspondance with the annotation file name. 
 
-For each test image, predict the object mask or bounding boxes.
-The evaluation is conducted with the segmentation mask in `./GT/` or the bounding boxes in `./bbox_annotation.json` respectively.
+<p align="center">
+    <img src="../assets/weak2-min.gif"/> <br />
+</p>
 
 ## Attributes Description
 
@@ -180,6 +181,10 @@ Next, we provide the complete attributes for our SUN-SEG dataset.
 - **Shape**
 
 > We follow the Narrow Band Imaging International Colorectal Endoscopic (NICE) classification criteria. It uses staining, vascular patterns, and surface patterns to distinguish between hyperplastic and adenomatous colon polyps. More details refer to [link-1](https://www.endoscopy-campus.com/en/classifications/polyp-classification-nice/) and [link-2](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5369434/)
+
+<p align="center">
+    <img src="../assets/Shape.png"/> <br />
+</p>
 
 | ID   | Name                         | Description                                                                                                                                                                                   |
 | ---- | ---------------------------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -217,8 +222,5 @@ Next, we provide the complete attributes for our SUN-SEG dataset.
 
 ## Reference
 
-- Video Shallow Detection: 
-    - https://github.com/eraserNut/ViSha
-    - https://erasernut.github.io/ViSha.html
-- COCO dataset: https://cocodataset.org/#people
-- KITTI dataset: http://www.cvlibs.net/datasets/kitti/index.php
+- SUN dataset: http://sundatabase.org
+- COCO dataset: https://cocodataset.org
