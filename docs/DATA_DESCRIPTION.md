@@ -151,7 +151,7 @@ We present the bounding box annotation for each polyp-existing frame. In `./data
 The annotations are stored in `./data/DATASET/Edge/`. Each image's name has direct correspondance with the annotation file name. 
 
 <p align="center">
-    <img src="../assets/weak-min.gif"/> <br />
+    <img src="../assets/weak1-min.gif"/> <br />
 </p>
 
 ## Label-V: Two Weak Labels (Scribble & Polygon)
@@ -159,7 +159,7 @@ The annotations are stored in `./data/DATASET/Edge/`. Each image's name has dire
 The annotations are in `./data/DATASET/Scribble/`, and `./data/DATASET/Polygon/`, respectively. Each image's name has direct correspondance with the annotation file name. 
 
 <p align="center">
-    <img src="../assets/weak-min.gif"/> <br />
+    <img src="../assets/weak2-min.gif"/> <br />
 </p>
 
 ## Attributes Description

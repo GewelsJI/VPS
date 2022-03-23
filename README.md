@@ -129,7 +129,12 @@ Here, we present various quantitative and qualitative results of VPS benchamrk:
 
 - Visualization results:
 
-[@Yucheng put YouTube Link here]
+<p align="center">
+    <img src="./assets/Qual-min.gif"/> <br />
+    <em> 
+    Figure 3: Quantitative comparison on two testing sub-datasets, i.e., SUN-SEG-Easy and SUN-SEG-Hard. `R/T' represents we re-train the non-public model, whose code is provided by the original authors. The best scores are highlighted in bold.
+    </em>
+</p>
 
 
 
