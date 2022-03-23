@@ -132,7 +132,7 @@ Here, we present various quantitative and qualitative results of VPS benchamrk:
 <p align="center">
     <img src="./assets/Qual-min.gif"/> <br />
     <em> 
-    Figure 3: Quantitative comparison on two testing sub-datasets, i.e., SUN-SEG-Easy and SUN-SEG-Hard. `R/T' represents we re-train the non-public model, whose code is provided by the original authors. The best scores are highlighted in bold.
+    Figure 5: Qualitative comparison of three video-based models (PNS+, PNSNet, and 2/3D) and two image-based models (ACSNet, and PraNet).  
     </em>
 </p>
 
