@@ -62,8 +62,22 @@ The `Frame` folder contains the frames and the rest folders contain the correspo
 
 # Dataset Statistics
 
+Figure 1 (left) shows the statistic distributions for pathological patterns excluding non-polyp (NP). We find that well-differentiated or low-grade adenoma are dominated but are difficult to locate due to low-intensity contrast between the lesion and mucosal surface. Figure 1 (right) shows the multi-dependencies among pathological pattern, shape, and location of colon polyp.
+    
+
+<p align="center">
+    <img src="../assets/DataStatistic.png"/> <br />
+    <em> 
+    Figure 1: (Left) Distribution over pathological patterns. (Right) Multi-dependencies among pathological pattern, shape, and location.
+    </em>
+</p>
+
+
 <p align="center">
     <img src="../assets/statistic-min.png"/> <br />
+    <em> 
+    Figure 2:
+    </em>
 </p>
 
 ## Positive Part
