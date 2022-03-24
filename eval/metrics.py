@@ -57,6 +57,7 @@ class Fmeasure(object):
         else:
             pre = area_intersection / np.count_nonzero(binary_predcition)
             rec = area_intersection / np.count_nonzero(gt)
+            # F_beta measure
             adaptive_fm = (1 + self.beta) * pre * rec / (self.beta * pre + rec)
         return adaptive_fm
 
