@@ -127,7 +127,7 @@ Here, we present various quantitative and qualitative results of VPS benchamrk:
     </em>
 </p>
 
-- Visualization results:
+- Visual prediction of top-performance competitors:
 
 <p align="center">
     <img src="./assets/Qual-min.gif"/> <br />
