@@ -152,7 +152,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument(
         '--gt_root', type=str, help='custom your ground-truth root',
-        default='../data/SUN-SEG/GT/')
+        default='../data/SUN-SEG-Annotation/')
     parser.add_argument(
         '--pred_root', type=str, help='custom your prediction root',
         default='../data/Pred/')
@@ -169,9 +169,8 @@ if __name__ == '__main__':
         '--model_lst', type=str, help='candidate competitors',
         nargs='+', action='append',
         choices=['2015-MICCAI-UNet', '2018-TMI-UNet++', '2020-MICCAI-ACSNet', '2020-MICCAI-PraNet',
-                 '2020-MICCAI-PraNet', '2021-MICCAI-SANet', '2021-TPAMI-SINetV2',
-                 '2019-TPAMI-COSNet', '2020-AAAI-PCSA', '2020-MICCAI-23DCNN', '2020-TIP-MATNet',
-                 '2021-ICCV-DCFNet', '2021-ICCV-FSNet', '2021-MICCAI-PNSNet', '2021-NIPS-AMD', 'Model'])
+                 '2021-MICCAI-SANet', '2019-TPAMI-COSNet', '2020-AAAI-PCSA', '2020-MICCAI-23DCNN', '2020-TIP-MATNet',
+                 '2021-ICCV-DCFNet', '2021-ICCV-FSNet', '2021-MICCAI-PNSNet', '2021-NIPS-AMD', '2022-TMI-PNSPlus'])
     parser.add_argument(
         '--txt_name', type=str, help='logging root',
         default='Benchmark')

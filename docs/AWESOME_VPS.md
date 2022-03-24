@@ -44,6 +44,7 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
+2022 | **IEEE JBHI** | Artificial Intelligence for Colonoscopy: Past, Present, and Future | [Paper](https://ieeexplore.ieee.org/document/9739863)/Code
 2021 | **ICONIP** | Multi-scale Fusion Attention Network for Polyp Segmentation | [Paper](https://link.springer.com/chapter/10.1007/978-3-030-92310-5_19)/Code
 2021 | **AAAI** | Precise yet Efficient Semantic Calibration and Refinement in ConvNets for Real-time Polyp Segmentation from Colonoscopy Videos | [Paper](https://www.aaai.org/AAAI21Papers/AAAI-5002.WuHS.pdf)/Code  
 2021 | **ICCV** | Collaborative and Adversarial Learning of Focused and Dispersive Representations for Semi-supervised Polyp Segmentation | [Paper](https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_Collaborative_and_Adversarial_Learning_of_Focused_and_Dispersive_Representations_for_ICCV_2021_paper.pdf)/Code

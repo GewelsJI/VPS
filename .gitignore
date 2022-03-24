@@ -11,3 +11,5 @@ crash.log
 
 data/
 res/
+eval/loggings/
+eval/__pycache__/

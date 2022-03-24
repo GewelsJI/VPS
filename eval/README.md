@@ -2,6 +2,8 @@
 
 # Usage
 
+`python -m pip install opencv-python tdqm prettytable scikit-learn`
+
 # Citation
 
 If you have found our work useful, please use the following reference to cite this project:
