@@ -164,7 +164,7 @@ if __name__ == '__main__':
     parser.add_argument(
         '--data_lst', type=str, help='set the dataset what you wanna to test',
         nargs='+', action='append',
-        choices=['CVC-ColonDB-300', 'CVC-ClinicDB-612', 'TestEasyDataset', 'TestHardDataset', 'TestEasy'])
+        choices=['TestEasyDataset', 'TestHardDataset'])
     parser.add_argument(
         '--model_lst', type=str, help='candidate competitors',
         nargs='+', action='append',

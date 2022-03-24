@@ -2,7 +2,20 @@
 
 # Usage
 
-`python -m pip install opencv-python tdqm prettytable scikit-learn`
+- Prerequisites of environment:
+
+    ```bash
+     python -m pip install opencv-python tdqm prettytable scikit-learn
+  ```
+
+- Running the evaluation:
+
+    ```bash
+    sh ./eval.sh
+  ```
+    By running the script, results of all models on SUN-SEG dataset will be evaluated simultaneously. If you want to evaluate the specific models, please modify the `$MODEL_NAMES`variable in `eval.sh` which is corresponding to the argument `--model_lst`. Note that the modified model name should be the same to the folder name under `./data/Pred/`.
+    In `vps_evaluator.py`, you can specify `--metric_list` to decide the applying metrics. `--txt_name` denotes the folder name of evaluation result. `--data_lst` and `--check_integrity` represent the used dataset and the integrity examination of result maps and ground truth. 
+    
 
 # Citation
 
