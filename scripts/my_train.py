@@ -63,7 +63,6 @@ def train(train_loader, model, optimizer, epoch, save_path):
         loss_all /= epoch_step
         logging.info('[Train Info]: Epoch [{:03d}/{:03d}], Loss_AVG: {:.4f}'.format(epoch, config.epoches, loss_all))
 
-
     except KeyboardInterrupt:
         print('Keyboard Interrupt: save model and exit.')
         if not os.path.exists(save_path):

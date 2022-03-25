@@ -38,7 +38,7 @@ def evaluator(gt_pth_lst, pred_pth_lst, metrics):
     for idx in tqdm(range(len(gt_pth_lst))):
         gt_pth = gt_pth_lst[idx]
         pred_pth = pred_pth_lst[idx]
-
+        print(gt_pth, pred_pth)
         assert os.path.isfile(gt_pth) and os.path.isfile(pred_pth)
 
         pred_ary = cv2.imread(pred_pth, cv2.IMREAD_GRAYSCALE)
@@ -157,8 +157,8 @@ if __name__ == '__main__':
         '--pred_root', type=str, help='custom your prediction root',
         default='../data/Pred/')
     parser.add_argument(
-        '--metric_list', type=list, help='set the evaluating metrics',
-        default=['Smeasure', 'maxEm', 'wFmeasure', 'maxFm', 'maxDice', 'maxIoU'],
+        '--metric_list', type=list, help='set the evaluation metrics',
+        default=['Smeasure', 'maxEm', 'wFmeasure', 'maxDice', 'maxIoU'],
         choices=["Smeasure", "wFmeasure", "MAE", "adpEm", "meanEm", "maxEm", "adpFm", "meanFm", "maxFm",
                  "meanSen", "maxSen", "meanSpe", "maxSpe", "meanDice", "maxDice", "meanIoU", "maxIoU"])
     parser.add_argument(

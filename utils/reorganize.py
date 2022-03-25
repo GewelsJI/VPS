@@ -11,8 +11,11 @@ image_list = []
 SUN_list = glob.glob(SUN_root+'*/*.jpg')
 SUNSEG_list = glob.glob(SUNSEG_root+'*/GT/*/*.png')
 
-# Get SUN and SUN-SEG case-to-image structure in a dictionary
+
 for SUN_path, SUNSEG_path in zip(SUN_list, SUNSEG_list):
+    """
+        @func: Get SUN and SUN-SEG case-to-image structure in a dictionary
+    """
 
     SUN_case_name, SUN_image_name = SUN_path.split('/')[-2], SUN_path.split('/')[-1].rstrip('.jpg')
     SUNSEG_dataset_name, SUNSEG_case_name, SUNSEG_image_name = SUNSEG_path.split('/')[-4], SUNSEG_path.split('/')[-2], SUNSEG_path.split('/')[-1].rstrip('.png')
@@ -23,8 +26,11 @@ for SUN_path, SUNSEG_path in zip(SUN_list, SUNSEG_list):
 
     image_list.append(SUN_image_name)
 
-# Change original SUN's structure
+
 for image in image_list:
+    """
+        @func: Change original SUN's structure
+    """
     SUN_case = SUN_split_dict[image]
     SUNSEG_case = SUNSEG_split_dict[image]
     dataset_split = SUNSEG_dataset_dict[image]

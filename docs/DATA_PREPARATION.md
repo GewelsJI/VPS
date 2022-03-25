@@ -38,7 +38,6 @@ As for the annotations from our SUN-SGE, you are happy to execute:
 - Unzip it via `unzip SUN-SEG-Annotation.zip`
 - Put it at path `./data/SUN-SEG-Annotation/` 
 
-
 After prepare all the files, your file structure will be the same as below:
 
 ```
