@@ -90,13 +90,6 @@ Figure 1 (left) shows the statistic distributions for pathological patterns excl
 </p>
 
 
-<p align="center">
-    <img src="../assets/statistic-min.png"/> <br />
-    <em> 
-    Figure 2:
-    </em>
-</p>
-
 ##  1. <a name='PositivePart'></a>Positive Part
 
 - The positive part of SUN-SEG has 285 video clips (30 fps), which has 49,136 frames totally.
