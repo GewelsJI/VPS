@@ -1,5 +1,4 @@
-# <p align=center>`Video Polyp Segmentation: A Deep Learning
-Perspective`</p><!-- omit in toc -->
+# <p align=center>`Video Polyp Segmentation: A Deep Learning Perspective`</p><!-- omit in toc -->
 
 <p align="center">
     <img src="./assets/background-min.gif"/> <br />
