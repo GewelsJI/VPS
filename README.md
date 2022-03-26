@@ -4,9 +4,9 @@
     <img src="./assets/background-min.gif"/> <br />
 </p>
 
-- **Title:** Deep Learning for Video Polyp Segmentation ([arXiv]())
+- **Title:** Video Polyp Segmentation: A Deep Learning Perspective ([arXiv]())
 - **Authors:** [Ge-Peng Ji](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=oaxKYKUAAAAJ)^, Guobao Xiao^, [Yu-Cheng Chou](https://scholar.google.com/citations?user=YVNRBTcAAAAJ&hl=en)^, [Deng-Ping Fan](https://dengpingfan.github.io/)*, [Kai Zhao](https://kaizhao.net/), [Geng Chen](https://scholar.google.com/citations?user=sJGCnjsAAAAJ&hl=en), [Huazhu Fu](https://hzfu.github.io/), and [Luc Van Gool](https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en).
-- **Contact:** Our ability is limited, so we are welcome to receive your constructive suggestions and contributions to our project. Or if you have any questions about our project, please feel free to drop us an e-mail (gepengai.ji@gmail.com, johnson111788@gmail.com, dengpfan@gmail.com) or directly report it in the issue or push a PR. Your star is our motivation, let's enjoy it!
+- **Contact:** Our ability is limited, so we are welcome to receive your constructive suggestions and contributions to our project. Or if you have any questions, please feel free to drop us an e-mail (gepengai.ji@gmail.com, johnson111788@gmail.com, dengpfan@gmail.com) or directly report it in the issue or push a PR. Your star is our motivation, let's enjoy it!
 
 # Contents<!-- omit in toc -->
 - [1. Features](#1-features)
@@ -22,17 +22,17 @@
 
 # 1. Features
 
-In the deep learning era, we present the first comprehensive video polyp segmentation (VPS) study. Over the years, developments on VPS are not moving forward with ease since large-scale fine-grain segmentation masks are still not made publicly available. To tackle
-this issue, we first introduce a high-quality per-frame annotated VPS dataset. There are four features of our work:
+In the deep learning era, we present the first comprehensive video polyp segmentation (VPS) study. Over the years, developments on VPS are not moving forward with ease since large-scale fine-grained segmentation masks are still not made publicly available. To tackle this issue, we first introduce a high-quality per-frame annotated VPS dataset. There are four features of our work:
 
 - **VPS Dataset:** We recognize the importance of annotated medical data for substantial progress in research on medical AI systems’ development. And thus, our SUN-SEG dataset is open access, a non-profit database of the high-quality, large-scale, densely-annotated dataset for facilitating the colonoscopy diagnosis, localization, and derivative tasks. Our vision aims to provide data and knowledge to aid and educate clinicians, and also for the development of automated medical decision support systems.
-- **VPS Baseline:** We propose a simple but strong baseline, which outperforms the cutting-edge polyp segmentation approaches and run in super real-time (170fps). We hope such a baseline could attract more researchers to join our community and inspire them to develop more interesting solutions.
-- **VPS Benchmark:** For a fair comparison, we build an online leaderboard to keep up with the new progress of other competitors. Besides, we provide an out-of-the-box evaluation toolbox for the VPS task.
+- **VPS Baseline:** We propose a simple but efficient baseline, which outperforms the 13 cutting-edge polyp segmentation approaches and run in super real-time (170fps). We hope such a baseline could attract more researchers to join our community and inspire them to develop more interesting solutions.
+- **VPS Benchmark:** For a fair comparison, we build an online leaderboard to keep up with the new progress of VPS community. Besides, we provide an out-of-the-box evaluation toolbox for the VPS task.
 - **Tracking Trends:** We elaborately collect a paper reading list to continuously track the latest updates in this rapidly advancing field.
 
 
 # 2. News
 
+- *[March/27/2022]* Release pretrained checkpoints and whole benchamrks results
 - *[March/18/2022]* Upload the whole training/testing code for our enhanced model PNS+.
 - *[March/15/2022]* Release the evaluation toolbox for the VPS task. Add a [Awesome_Video_Polyp_Segmentation.md](https://github.com/GewelsJI/VPS/blob/main/docs/AWESOME_VPS.md) for tracking latest trends of this community.
 - *[March/14/2022]* Create the project page.
