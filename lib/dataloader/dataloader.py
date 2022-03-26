@@ -51,7 +51,6 @@ class VideoDataset(Dataset):
 
     def __getitem__(self, idx):
         img_label_li = self.video_train_list[idx]
-        FIRST = None
         IMG = None
         LABEL = None
         img_li = []
@@ -64,9 +63,6 @@ class VideoDataset(Dataset):
         img_li, label_li = self.img_label_transform(img_li, label_li)
         for idx, (img, label) in enumerate(zip(img_li, label_li)):
             if idx == 0:
-                # FIRST = torch.zeros(1, *(img.shape))
-                # FIRST[idx, :, :, :] = img
-
                 IMG = torch.zeros(len(img_li), *(img.shape))
                 LABEL = torch.zeros(len(img_li) - 1, *(label.shape))
 
@@ -75,7 +71,6 @@ class VideoDataset(Dataset):
                 IMG[idx, :, :, :] = img
                 LABEL[idx - 1, :, :, :] = label
 
-        # return FIRST, IMG, LABEL
         return IMG, LABEL
 
     def __len__(self):

@@ -43,16 +43,11 @@ class Test_Dataset(Dataset):
             cls_path = os.path.join(video_root, cls)
             tmp_list = os.listdir(cls_path)
 
-            try:
-                tmp_list.sort(
-                    key=lambda name: int(name.rstrip('.jpg'))
-                )
-            except:
-                tmp_list.sort(key=lambda name: (
+            tmp_list.sort(key=lambda name: (
 
-                    int(name.split('_a')[1].split('_')[0]),
-                    int(name.split('_image')[1].split('.jpg')[
-                            0])))
+                int(name.split('_a')[1].split('_')[0]),
+                int(name.split('_image')[1].split('.jpg')[
+                        0])))
 
             for filename in tmp_list:
                 self.video_filelist[cls].append(os.path.join(cls_path, filename))
@@ -60,7 +55,7 @@ class Test_Dataset(Dataset):
         # ensemble
         for cls in cls_list:
             li = self.video_filelist[cls]
-            begin = 0  # change for inference from frist frame
+            begin = 0  # change for inference from first frame
             while begin < len(li):
                 if len(li) - begin - 1 < self.time_clips:
                     begin = len(li) - self.time_clips
@@ -130,7 +125,7 @@ class AutoTest:
 
 if __name__ == "__main__":
 
-    at = AutoTest(["CVC-ColonDB-300", "CVC-ClinicDB-612", "TestHardDataset", "TestEasyDataset"],
+    at = AutoTest(["TestHardDataset", "TestEasyDataset"],
                   config.video_testset_root,
                   "snapshot/PNSPlus/epoch_15/PNSPlus.pth")
     at.test()

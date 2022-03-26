@@ -62,21 +62,8 @@ class PNSNet(nn.Module):
         self.squeeze = nn.Sequential(nn.Conv2d(1024, 32, 1), nn.BatchNorm2d(32), nn.ReLU(inplace=True))
         self.decoder = conbine_feature()
         self.SegNIN = nn.Sequential(nn.Dropout2d(0.1), nn.Conv2d(16, 1, kernel_size=1, bias=False))
-        self.NSB_local = NS_Block(32, radius=[3, 3, 3, 3], dilation=[1, 2, 1, 2])
         self.NSB_global = NS_Block(32, radius=[3, 3, 3, 3], dilation=[3, 4, 3, 4])
-
-    def load_backbone(self, pretrained_dict, logger):
-        model_dict = self.state_dict()
-        logger.info("load_state_dict!!!")
-        for k, v in pretrained_dict.items():
-            if (k in model_dict):
-                logger.info("load:%s" % k)
-            else:
-                logger.info("jump over:%s" % k)
-
-        pretrained_dict = {k: v for k, v in pretrained_dict.items() if (k in model_dict)}
-        model_dict.update(pretrained_dict)
-        self.load_state_dict(model_dict)
+        self.NSB_local = NS_Block(32, radius=[3, 3, 3, 3], dilation=[1, 2, 1, 2])
 
     def forward(self, x):
 
@@ -87,36 +74,47 @@ class PNSNet(nn.Module):
         x = self.feature_extractor.relu(x)
         x = self.feature_extractor.maxpool(x)
         x1 = self.feature_extractor.layer1(x)
+
+        # Extract anchor, low-level, and high-level features.
         low_feature = self.feature_extractor.layer2(x1)
         high_feature = self.feature_extractor.layer3(low_feature)
 
+        # Reduce the channel dimension.
         high_feature = self.High_RFB(high_feature)
         low_feature = self.Low_RFB(low_feature)
 
+        # Reshape into temporal formation.
         high_feature = high_feature.view(*origin_shape[:2], *high_feature.shape[1:])
         low_feature = low_feature.view(*origin_shape[:2], *low_feature.shape[1:])
 
+        # Feature Separation.
         high_feature_global = high_feature[:, 0, ...].unsqueeze(dim=1).repeat(1, 5, 1, 1, 1)
         high_feature_local = high_feature[:, 1:6, ...]
+        low_feature = low_feature[:, 1:6, ...]
 
+        # First NS Block.
         high_feature_1 = self.NSB_global(high_feature_global, high_feature_local) + high_feature_local
+        # Second NS Block.
         high_feature_2 = self.NSB_local(high_feature_1, high_feature_1) + high_feature_1
 
+        # Residual Connection.
         high_feature = high_feature_2 + high_feature_local
 
-        low_feature = low_feature[:, 1:6, ...]
+        # Reshape back into spatial formation.
         high_feature = high_feature.contiguous().view(-1, *high_feature.shape[2:])
         low_feature = low_feature.contiguous().view(-1, *low_feature.shape[2:])
 
+        # Resize high-level feature to the same as low-level feature.
         high_feature = F.interpolate(high_feature, size=(low_feature.shape[-2], low_feature.shape[-1]),
                                      mode="bilinear",
                                      align_corners=False)
 
+        # UNet-like decoder.
         out = self.decoder(low_feature.clone(), high_feature.clone())
-
         out = torch.sigmoid(
             F.interpolate(self.SegNIN(out), size=(origin_shape[-2], origin_shape[-1]), mode="bilinear",
                           align_corners=False))
+
         return out
 
 

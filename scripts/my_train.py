@@ -24,7 +24,7 @@ class CrossEntropyLoss(nn.Module):
         return total_loss
 
 
-def train(train_loader, model, optimizer, epoch, save_path):
+def train(train_loader, model, optimizer, epoch, save_path, loss_func):
     global step
     model.cuda().train()
     loss_all = 0
@@ -39,7 +39,7 @@ def train(train_loader, model, optimizer, epoch, save_path):
             
             preds = model(images)
             
-            loss = CrossEntropyLoss().cuda()(preds.squeeze().contiguous(), gts.contiguous().view(-1, *(gts.shape[2:])))
+            loss = loss_func(preds.squeeze().contiguous(), gts.contiguous().view(-1, *(gts.shape[2:])))
             loss.backward()
 
             clip_gradient(optimizer, config.clip)
@@ -56,9 +56,9 @@ def train(train_loader, model, optimizer, epoch, save_path):
                     '[Train Info]:Epoch [{:03d}/{:03d}], Step [{:04d}/{:04d}], Total_loss: {:.4f}'.
                     format(epoch, config.epoches, i, total_step, loss.data))
 
-                os.makedirs(os.path.join(save_path, "epoch_%d" % (epoch + 1)), exist_ok=True)
-                save_root = os.path.join(save_path, "epoch_%d" % (epoch + 1))
-                torch.save(model.state_dict(), os.path.join(save_root, "PNSPlus.pth"))
+        os.makedirs(os.path.join(save_path, "epoch_%d" % (epoch + 1)), exist_ok=True)
+        save_root = os.path.join(save_path, "epoch_%d" % (epoch + 1))
+        torch.save(model.state_dict(), os.path.join(save_root, "PNSPlus.pth"))
 
         loss_all /= epoch_step
         logging.info('[Train Info]: Epoch [{:03d}/{:03d}], Loss_AVG: {:.4f}'.format(epoch, config.epoches, loss_all))
@@ -75,10 +75,6 @@ def train(train_loader, model, optimizer, epoch, save_path):
 if __name__ == '__main__':
 
     model = Network().cuda()
-
-    if config.pretrain_state_dict is not None:
-        model.load_backbone(torch.load(config.pretrain_state_dict, map_location=torch.device('cpu')), logging)
-        print('load model from ', config.pretrain_state_dict)
 
     if config.gpu_id == '0':
         os.environ["CUDA_VISIBLE_DEVICES"] = "0"
@@ -108,6 +104,8 @@ if __name__ == '__main__':
     save_path = config.save_path
     if not os.path.exists(save_path):
         os.makedirs(save_path)
+
+    loss_func = CrossEntropyLoss()
 
     # load data
     print('load data...')
@@ -139,4 +137,4 @@ if __name__ == '__main__':
     print("Start train...")
     for epoch in range(config.epoches):
         cur_lr = adjust_lr(optimizer, config.base_lr, epoch, config.decay_rate, config.decay_epoch)
-        train(train_loader, model, optimizer, epoch, save_path)
+        train(train_loader, model, optimizer, epoch, save_path, loss_func)
