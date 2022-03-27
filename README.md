@@ -91,7 +91,9 @@ There are three simple-to-use steps to access our project code (PNS+):
     ```
 
 - Testing:
-
+    
+    Downloading pre-trained weights and move it into `snapshot/PNSPlus/epoch_15/PNSPlus.pth`, 
+    which can be found in this download link ([Google Drive](https://drive.google.com/drive/folders/1NboArbmI4qg9AMQA0VoJmg4g1FaMUh4Q?usp=sharing) / [Baidu Drive](https://pan.baidu.com/s/1mnd9GD2BiWFzsibv7WiwAA) (Password: g7sa), 108MB).
     ```bash
     python ./scripts/my_test.py
     ```
@@ -99,7 +101,7 @@ There are three simple-to-use steps to access our project code (PNS+):
 
 # 5. VPS Benchmark
 
-We provide an out-of-the-box evaluation toolbox for the VPS task, which is written in Python style. You can just run it to generate the evaluation results on your custom approach. Or you can directly download the complete VPS benchmark toolbox (including ground-truth, prediction map of each competitor, and evaluation toolbox code) at [`DownloadLink`]().
+We provide an out-of-the-box evaluation toolbox for the VPS task, which is written in Python style. You can just run it to generate the evaluation results on your custom approach. Or you can directly download the complete VPS benchmark including prediction map of each competitor at download link ([Google Drive](https://drive.google.com/drive/folders/15xBWCFuWWg9YL5p4qdcfz8-yEeJlNFxg?usp=sharing) / [Baidu Drive](https://pan.baidu.com/s/1plDtddL9L_f0dqrREVkIPg) (Password: 9c4p), 7.28G).
 
 - More instructions about **Evaluation Toolbox** refer to [`PageLink`](https://github.com/GewelsJI/VPS/tree/main/eval).
 

@@ -18,7 +18,7 @@ So first, you guys need to request the origin colonoscopy video frame from them.
 
 And then, you can feel free to download the complete annotation provided by our SUN-SEG.
 
-- **Request for annotations from SUN-SEG:** Our re-organized annotations could be downloaded at [google drive]().
+- **Request for annotations from SUN-SEG:** Our re-organized annotations could be downloaded at download link ([Google Drive](https://drive.google.com/drive/folders/1MnBHu9IcDduqq3379mCD18wNTLF41gCR?usp=sharing) / [Baidu Drive](https://pan.baidu.com/s/1HMmDdnXb39eg57ALlasmsg) (Password: 0525), 1.14GB).
 
 # Step-2: Unzip SUN dataset
 
@@ -35,7 +35,7 @@ As for video frames in SUN dataset, these are two groups of samples, which are d
 
 As for the annotations from our SUN-SGE, you are happy to execute:
 
-- Unzip it via `unzip SUN-SEG-Annotation.zip`
+- Unwarp it via `tar -xvf SUN-SEG-Annotation.tar`
 - Put it at path `./data/SUN-SEG-Annotation/` 
 
 After prepare all the files, your file structure will be the same as below:
