@@ -38,7 +38,7 @@ def evaluator(gt_pth_lst, pred_pth_lst, metrics):
     for idx in tqdm(range(len(gt_pth_lst))):
         gt_pth = gt_pth_lst[idx]
         pred_pth = pred_pth_lst[idx]
-        print(gt_pth, pred_pth)
+        # print(gt_pth, pred_pth)
         assert os.path.isfile(gt_pth) and os.path.isfile(pred_pth)
 
         pred_ary = cv2.imread(pred_pth, cv2.IMREAD_GRAYSCALE)

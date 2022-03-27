@@ -93,7 +93,7 @@ There are three simple-to-use steps to access our project code (PNS+):
 - Testing:
     
     Downloading pre-trained weights and move it into `snapshot/PNSPlus/epoch_15/PNSPlus.pth`, 
-    which can be found in this download link ([Google Drive](https://drive.google.com/drive/folders/1NboArbmI4qg9AMQA0VoJmg4g1FaMUh4Q?usp=sharing) / [Baidu Drive](https://pan.baidu.com/s/1mnd9GD2BiWFzsibv7WiwAA) (Password: g7sa), 108MB).
+    which can be found in this download link: [Google Drive](https://drive.google.com/drive/folders/1NboArbmI4qg9AMQA0VoJmg4g1FaMUh4Q?usp=sharing) / [Baidu Drive](https://pan.baidu.com/s/1mnd9GD2BiWFzsibv7WiwAA) (Password: g7sa, Size: 108MB).
     ```bash
     python ./scripts/my_test.py
     ```
@@ -101,22 +101,32 @@ There are three simple-to-use steps to access our project code (PNS+):
 
 # 5. VPS Benchmark
 
-We provide an out-of-the-box evaluation toolbox for the VPS task, which is written in Python style. You can just run it to generate the evaluation results on your custom approach. Or you can directly download the complete VPS benchmark including prediction map of each competitor at download link ([Google Drive](https://drive.google.com/drive/folders/15xBWCFuWWg9YL5p4qdcfz8-yEeJlNFxg?usp=sharing) / [Baidu Drive](https://pan.baidu.com/s/1plDtddL9L_f0dqrREVkIPg) (Password: 9c4p), 7.28G).
+We provide an out-of-the-box evaluation toolbox for the VPS task, which is written in Python style. You can just run it to generate the evaluation results on your custom approach. Or you can directly download the complete VPS benchmark including prediction map of each competitor at download link: [Google Drive](https://drive.google.com/drive/folders/15xBWCFuWWg9YL5p4qdcfz8-yEeJlNFxg?usp=sharing) / [Baidu Drive](https://pan.baidu.com/s/1plDtddL9L_f0dqrREVkIPg) (Password: 9c4p, Size: 7.28G).
 
 - More instructions about **Evaluation Toolbox** refer to [`PageLink`](https://github.com/GewelsJI/VPS/tree/main/eval).
 
 We also build an online leaderboard to keep up with the new progress of other competitors. We believe this is a fun way to learn about new research directions and stay in tune with our VPS community.
 
-- Online leaderboard is publicly avaliable at [`PaperWithCode`](). 
+- Online leaderboard is publicly avaliable at [`PaperWithCode`](). (Under Construction)
 
-Here, we present various quantitative and qualitative results of VPS benchamrk:
+Here, we present a variety of qualitative and quantitative results of VPS benchamrk:
+
+
+- Visual prediction of top-performance competitors:
+
+<p align="center">
+    <img src="./assets/Qual-min.gif"/> <br />
+    <em> 
+    Figure 3: Qualitative comparison of three video-based models (PNS+, PNSNet, and 2/3D) and two image-based models (ACSNet, and PraNet).  
+    </em>
+</p>
 
 - Model-based performance:
 
 <p align="center">
     <img src="./assets/ModelPerformance.png"/> <br />
     <em> 
-    Figure 3: Quantitative comparison on two testing sub-datasets, i.e., SUN-SEG-Easy and SUN-SEG-Hard. `R/T' represents we re-train the non-public model, whose code is provided by the original authors. The best scores are highlighted in bold.
+    Figure 4: Quantitative comparison on two testing sub-datasets, i.e., SUN-SEG-Easy and SUN-SEG-Hard. `R/T' represents we re-train the non-public model, whose code is provided by the original authors. The best scores are highlighted in bold.
     </em>
 </p>
 
@@ -125,28 +135,18 @@ Here, we present various quantitative and qualitative results of VPS benchamrk:
 <p align="center">
     <img src="./assets/AttributePerformance.png"/> <br />
     <em> 
-    Figure 4: Visual attributes-based performance on our SUN-SEG-Easy and SUN-SEG-Hard in terms of structure measure.
+    Figure 5: Visual attributes-based performance on our SUN-SEG-Easy and SUN-SEG-Hard in terms of structure measure.
     </em>
 </p>
-
-- Visual prediction of top-performance competitors:
-
-<p align="center">
-    <img src="./assets/Qual-min.gif"/> <br />
-    <em> 
-    Figure 5: Qualitative comparison of three video-based models (PNS+, PNSNet, and 2/3D) and two image-based models (ACSNet, and PraNet).  
-    </em>
-</p>
-
 
 
 # 6. Tracking Trends
 
-To better understand the development of this field and to quickly push researchers in their research process, we elaborately build a **Paper Reading List**. It includes **119** colonoscopy imaging-based AI scientific research in recent 12 years. It includes several fields, such as image polyp segmentation, video polyp segmentation, image polyp detection, video polyp detection, and image polyp classification. Besides, we will provide some interesting resources about human colonoscopy. 
-
 <p align="center">
     <img src="./assets/the-reading-list.png"/> <br />
 </p>
+
+To better understand the development of this field and to quickly push researchers in their research process, we elaborately build a **Paper Reading List**. It includes **119** colonoscopy imaging-based AI scientific research in recent 12 years. It includes several fields, such as image polyp segmentation, video polyp segmentation, image polyp detection, video polyp detection, and image polyp classification. Besides, we will provide some interesting resources about human colonoscopy. 
 
 > **Note:** If we miss some treasure works, please let me know via e-mail or directly push a PR. We will work on it as soon as possible. Many thanks for your active feedbacks.
 
