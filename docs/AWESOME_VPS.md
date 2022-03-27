@@ -6,11 +6,11 @@ Contributed by *Yu-Cheng Chou*, *Ge-Peng Ji*, and [*Deng-Ping Fan*](https://dpfa
 
 ## <span id="1._Preview"> 1. Preview</span>
 
-This is a paper collection of **119** colonoscopy imaging-based AI scientific researchs in recent **12** years.
+This is a paper collection of **127** colonoscopy imaging-based AI scientific researchs in recent **12** years.
 
-In order to better understand the development of this field and to help researchers in their research process, we have divided the works into five tasks, including **98** papers on [image polyp segmentation](#2.1_Image_Polyp_Segmentation), **2** papers on [video polyp segmentation](#2.2_Video_Polyp_Segmentation), **6** papers on [image polyp detection](#2.3_Image_Polyp_Detection),  **9** papers on [video polyp detection](#2.4_Video_Polyp_Detection), **4** paper on [image polyp classification](#2.5_Image_Polyp_Classification), and **1** paper on [video polyp classification](#2.6_Video_Polyp_Classification).
+In order to better understand the development of this field and to help researchers in their research process, we have divided the works into five tasks, including **92** papers on [image polyp segmentation](#2.1_Image_Polyp_Segmentation), **2** papers on [video polyp segmentation](#2.2_Video_Polyp_Segmentation), **7** papers on [image polyp detection](#2.3_Image_Polyp_Detection),  **9** papers on [video polyp detection](#2.4_Video_Polyp_Detection), **4** paper on [image polyp classification](#2.5_Image_Polyp_Classification), and **1** paper on [video polyp classification](#2.6_Video_Polyp_Classification).
 
-Besides, we present the collection of **12** polyp related datasets, including **1** [Image Segmentation Datasets](#2.7_Image_Segmentation_Datasets), **7** [Video Segmentation Datasets](#2.8_Video_Segmentation_Datasets), **1** [Video Detection Datasets](#2.9_Video_Detection_Datasets), and **3** [Video Classification Datasets](#2.10_Video_Classification_Datasets).
+Besides, we present the collection of **13** polyp related datasets, including **7** [Image Segmentation Datasets](#2.7_Image_Segmentation_Datasets), **2** [Video Segmentation Datasets](#2.8_Video_Segmentation_Datasets), **1** [Video Detection Datasets](#2.9_Video_Detection_Datasets), and **3** [Video Classification Datasets](#2.10_Video_Classification_Datasets).
 
 In addition, we provide links to each paper and its repository whenever possible. * denotes the corresponding paper cannot be downloaded or the link is connect to the journal.
 
@@ -46,7 +46,6 @@ In addition, we provide links to each paper and its repository whenever possible
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
 2022 | **arXiv** | BlazeNeo: Blazing fast polyp segmentation and neoplasm detection | [Paper](https://arxiv.org/pdf/2203.00129.pdf)/Code
-2022 | **arXiv** | Synthetic data for unsupervised polyp segmentation | [Paper](https://arxiv.org/pdf/2202.08680.pdf)/[Code](https://github.com/enric1994/synth-colon)/[Project](https://enric1994.github.io/synth-colon)
 2022 | **arXiv** | BDG-Net: Boundary Distribution Guided Network for Accurate Polyp Segmentation | [Paper](https://arxiv.org/pdf/2201.00767.pdf)/Code
 2022 | **arXiv** | Cross-level Contrastive Learning and Consistency Constraint for Semi-supervised Medical Image Segmentation | [Paper](https://arxiv.org/pdf/2202.04074.pdf)/Code
 2022 | **IEEE JBHI** | Artificial Intelligence for Colonoscopy: Past, Present, and Future | [Paper](https://ieeexplore.ieee.org/document/9739863)/Code
@@ -191,6 +190,7 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
+2022 | **arXiv** | Synthetic data for unsupervised polyp segmentation | [Paper](https://arxiv.org/pdf/2202.08680.pdf)/[Code](https://github.com/enric1994/synth-colon)/[Project](https://enric1994.github.io/synth-colon)
 2020 | **ICMM** | **Kvasir-SEG** - Kvasir-seg: A segmented polyp dataset | [Paper](https://arxiv.org/pdf/1911.07069.pdf)/[Code](https://datasets.simula.no/kvasir-seg/)
 2017 | **JHE** | **CVC-EndoSceneStill** - A Benchmark for Endoluminal Scene Segmentation of Colonoscopy Images | [Paper](https://downloads.hindawi.com/journals/jhe/2017/4037190.pdf)/[Project](http://www.cvc.uab.es/CVC-Colon/index.php/databases/cvc-endoscenestill/)
 2015 | **CMIG** | **CVC-ClinicDB/CVC-612** - WM-DOVA Maps for Accurate Polyp Highlighting in Colonoscopy: Validation vs. Saliency Maps from Physicians | [Paper](http://158.109.8.37/files/BSF2015.pdf)/[Project](https://polyp.grand-challenge.org/CVCClinicDB/)
