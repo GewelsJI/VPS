@@ -8,9 +8,9 @@ Contributed by *Yu-Cheng Chou*, *Ge-Peng Ji*, and [*Deng-Ping Fan*](https://dpfa
 
 This is a paper collection of **119** colonoscopy imaging-based AI scientific researchs in recent **12** years.
 
-In order to better understand the development of this field and to help researchers in their research process, we have divided the works into five tasks, including **98** papers on [image polyp segmentation](#2.1_Image_Polyp_Segmentation), **2** papers on [video polyp segmentation](#2.2_Video_Polyp_Segmentation), **6** papers on [image polyp detection](#2.3_Image_Polyp_Detection),  **9** papers on [video polyp detection](#2.4_Video_Polyp_Detection) and **4** paper on [image polyp classification](#2.5_Image_Polyp_Classification).
+In order to better understand the development of this field and to help researchers in their research process, we have divided the works into five tasks, including **98** papers on [image polyp segmentation](#2.1_Image_Polyp_Segmentation), **2** papers on [video polyp segmentation](#2.2_Video_Polyp_Segmentation), **6** papers on [image polyp detection](#2.3_Image_Polyp_Detection),  **9** papers on [video polyp detection](#2.4_Video_Polyp_Detection), **4** paper on [image polyp classification](#2.5_Image_Polyp_Classification), and **1** paper on [video polyp classification](#2.6_Video_Polyp_Classification).
 
-Besides, we present the collection of **12** polyp related datasets, including **1** [Image Segmentation Datasets](#2.6_Image_Segmentation_Datasets), **7** [Video Segmentation Datasets](#2.7_Video_Segmentation_Datasets), **1** [Video Detection Datasets](#2.8_Video_Detection_Datasets), and **3** [Video Classification Datasets](#2.9_Video_Classification_Datasets).
+Besides, we present the collection of **12** polyp related datasets, including **1** [Image Segmentation Datasets](#2.7_Image_Segmentation_Datasets), **7** [Video Segmentation Datasets](#2.8_Video_Segmentation_Datasets), **1** [Video Detection Datasets](#2.9_Video_Detection_Datasets), and **3** [Video Classification Datasets](#2.10_Video_Classification_Datasets).
 
 In addition, we provide links to each paper and its repository whenever possible. * denotes the corresponding paper cannot be downloaded or the link is connect to the journal.
 
@@ -30,10 +30,11 @@ In addition, we provide links to each paper and its repository whenever possible
     - [<span id="2.3_Image_Polyp_Detection">2.3 Image Polyp Detection</span>](#23-image-polyp-detection)
     - [<span id="2.4_Video_Polyp_Detection">2.4 Video Polyp Detection</span>](#24-video-polyp-detection)
     - [<span id="2.5_Image_Polyp_Classification">2.5 Image Polyp Classification</span>](#25-image-polyp-classification)
-    - [<span id="2.6_Image_Segmentation_Datasets">2.6 Image Segmentation Datasets</span>](#26-image-segmentation-datasets)
-    - [<span id="2.7_Video_Segmentation_Datasets">2.7 Video Segmentation Datasets</span>](#27-video-segmentation-datasets)
-    - [<span id="2.8_Video_Detection_Datasets">2.8 Video Detection Datasets</span>](#28-video-detection-datasets)
-    - [<span id="2.9_Video_Classification_Datasets">2.9 Video Classification Datasets</span>](#29-video-classification-datasets)
+    - [<span id="2.6_Video_Polyp_Classification">2.6 Video Polyp Classification</span>](#26-video-polyp-classification)
+    - [<span id="2.7_Image_Segmentation_Datasets">2.7 Image Segmentation Datasets</span>](#27-image-segmentation-datasets)
+    - [<span id="2.8_Video_Segmentation_Datasets">2.8 Video Segmentation Datasets</span>](#28-video-segmentation-datasets)
+    - [<span id="2.9_Video_Detection_Datasets">2.9 Video Detection Datasets</span>](#29-video-detection-datasets)
+    - [<span id="2.10_Video_Classification_Datasets">2.10 Video Classification Datasets</span>](#210-video-classification-datasets)
 - [<span id="3._AI_Conference_Deadlines"> 3. AI Conference Deadlines </span>](#-3-ai-conference-deadlines-)
     
   
@@ -44,6 +45,10 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
+2022 | **arXiv** | BlazeNeo: Blazing fast polyp segmentation and neoplasm detection | [Paper](https://arxiv.org/pdf/2203.00129.pdf)/Code
+2022 | **arXiv** | Synthetic data for unsupervised polyp segmentation | [Paper](https://arxiv.org/pdf/2202.08680.pdf)/[Code](https://github.com/enric1994/synth-colon)/[Project](https://enric1994.github.io/synth-colon)
+2022 | **arXiv** | BDG-Net: Boundary Distribution Guided Network for Accurate Polyp Segmentation | [Paper](https://arxiv.org/pdf/2201.00767.pdf)/Code
+2022 | **arXiv** | Cross-level Contrastive Learning and Consistency Constraint for Semi-supervised Medical Image Segmentation | [Paper](https://arxiv.org/pdf/2202.04074.pdf)/Code
 2022 | **IEEE JBHI** | Artificial Intelligence for Colonoscopy: Past, Present, and Future | [Paper](https://ieeexplore.ieee.org/document/9739863)/Code
 2021 | **ICONIP** | Multi-scale Fusion Attention Network for Polyp Segmentation | [Paper](https://link.springer.com/chapter/10.1007/978-3-030-92310-5_19)/Code
 2021 | **AAAI** | Precise yet Efficient Semantic Calibration and Refinement in ConvNets for Real-time Polyp Segmentation from Colonoscopy Videos | [Paper](https://www.aaai.org/AAAI21Papers/AAAI-5002.WuHS.pdf)/Code  
@@ -82,7 +87,6 @@ In addition, we provide links to each paper and its repository whenever possible
 2021 | **CBMS** | Nanonet: Real-time polyp segmentation in video capsule endoscopy and colonoscopy | [Paper](https://arxiv.org/pdf/2104.11138.pdf)/[Code](https://github.com/DebeshJha/NanoNet) 
 2021 | **CRV** | Enhanced u-net: A feature enhancement network for polyp segmentation | [Paper](https://arxiv.org/pdf/2105.00999.pdf)/[Code](https://github.com/rucv/Enhanced-U-Net) 
 2021 | **IEEE DDCLS** | MSB-Net: Multi-Scale Boundary Net for Polyp Segmentation | [Paper*](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9455514)/Code
-2021 | **arXiv** | BDG-Net: Boundary Distribution Guided Network for Accurate Polyp Segmentation | [Paper](https://arxiv.org/pdf/2201.00767.pdf)/[Code]
 2021 | **arXiv** | BI-GCN: Boundary-Aware Input-Dependent Graph Convolution Network for Biomedical Image Segmentation | [Paper](https://arxiv.org/pdf/2110.14775.pdf)/Code
 2021 | **arXiv** | CaraNet: Context Axial Reverse Attention Network for Segmentation of Small Medical Objects | [Paper](https://arxiv.org/pdf/2108.07368.pdf)/Code
 2021 | **arXiv** | DS-TransUNet: Dual Swin Transformer U-Net for Medical Image Segmentation | [Paper](https://arxiv.org/pdf/2106.06716.pdf)/Code
@@ -146,6 +150,7 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
+2022 | **arXiv** | Colonoscopy polyp detection with massive endoscopic images | [Paper](https://arxiv.org/pdf/2202.08730.pdf)/Code
 2021 | **arXiv** | Detecting, Localising and Classifying Polyps from Colonoscopy Videos using Deep Learning | [Paper](https://arxiv.org/pdf/2101.03285.pdf)/Code 
 2020 | **IEEE ISBI** | Reduce false-positive rate by active learning for automatic polyp detection in colonoscopy videos | [Paper](https://www.researchgate.net/profile/Zhe-Guo-12/publication/322563091_Automatic_polyp_recognition_from_colonoscopy_images_based_on_bag_of_visual_words/links/5f9b60a7299bf1b53e512f47/Automatic-polyp-recognition-from-colonoscopy-images-based-on-bag-of-visual-words.pdf)/Code 
 2020 | **TransAI** | Artifact Detection in Endoscopic Video with Deep Convolutional Neural Networks | [Paper*](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9253131)/Code
@@ -176,7 +181,13 @@ In addition, we provide links to each paper and its repository whenever possible
 2020 | **MICCAI** | Two-Stream Deep Feature Modelling for Automated Video Endoscopy Data Analysis | [Paper](https://arxiv.org/pdf/2007.05914.pdf)/Code 
 2014 | **JICARS** | Towards embedded detection of polyps in WCE images for early diagnosis of colorectal cancer | [Paper](https://hal.archives-ouvertes.fr/hal-00843459/document)/[Code](https://polyp.grand-challenge.org/EtisLarib/)
 
-### <span id="2.6_Image_Segmentation_Datasets">2.6 Image Segmentation Datasets</span>
+### <span id="2.6_Video_Polyp_Classification">2.6 Video Polyp Classification</span>
+
+**Yr.** | **Pub.** | **Title** | **Links** 
+:-: | :-: | :-  | :-:
+2022 | **arXiv** | Contrastive Transformer-based Multiple Instance Learning for Weakly Supervised Polyp Frame Detection | [Paper](https://arxiv.org/pdf/2203.12121.pdf)/Code
+
+### <span id="2.7_Image_Segmentation_Datasets">2.7 Image Segmentation Datasets</span>
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
@@ -187,7 +198,7 @@ In addition, we provide links to each paper and its repository whenever possible
 2012 | **PR** | **CVC-ColonDB/CVC-300** - Towards Automatic Polyp Detection with a Polyp Appearance Model | [Paper](http://refbase.cvc.uab.es/files/BSV2012a.pdf)/[Project](http://mv.cvc.uab.es/projects/colon-qa/cvccolondb)
 _ | _ | **PICCOLO** - PICCOLO RGB/NBI (WIDEFIELD) IMAGE COLLECTION | [Project](https://www.biobancovasco.org/en/Sample-and-data-catalog/Databases/PD178-PICCOLO-EN.html)
 
-### <span id="2.7_Video_Segmentation_Datasets">2.7 Video Segmentation Datasets</span>
+### <span id="2.8_Video_Segmentation_Datasets">2.8 Video Segmentation Datasets</span>
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
@@ -195,13 +206,13 @@ _ | _ | **PICCOLO** - PICCOLO RGB/NBI (WIDEFIELD) IMAGE COLLECTION | [Project](h
 2015 | **IEEE TMI** | **ASU-Mayo** - Automated Polyp Detection in Colonoscopy Videos Using Shape and Context Information | [Paper](https://sci-hub.se/10.1109/tmi.2015.2487997)/[Project](https://polyp.grand-challenge.org/AsuMayo/) 
 
 
-### <span id="2.8_Video_Detection_Datasets">2.8 Video Detection Datasets</span>
+### <span id="2.9_Video_Detection_Datasets">2.9 Video Detection Datasets</span>
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
 2021 | **GE** | **SUN Dataset** - Development of a computer-aided detection system for colonoscopy and a publicly accessible large colonoscopy video database (with video) | [Paper](https://pdf.sciencedirectassets.com/273305/1-s2.0-S0016510721X0003X/1-s2.0-S0016510720346551/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQCoLFri%2FY2qg1dLegjpE85SraDAQgXni4AstwVHir31FQIgSZt7d3LRM%2FDWZnrG2ob5NXTOCC6qrgtukFoyETMmG60qgwQIg%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAEGgwwNTkwMDM1NDY4NjUiDB6thtIGUd1PJRcyGSrXA7YEHw4pAwRRjdUrDIBxA5b6lw7vwYqXu%2FkyL8wa5THz4ls%2BQ79EWG1w9zl7j9F6A9bkKlVvKCAb0oi3e03KthHn%2B8g0l4OC0qix4pb0UUwreyZgOjArd70QgeuNuGUMxagQQ0SWaQUG%2FO%2B24Zr7sqoJjCFuNyulHGwblX4JXXI9rhGeb2yWr%2FKRTmbwiCKzuerSPMtbyJGK72cZ5qWuriDfQfUoNqKp49hRkitn7ZzSrz0wayxDzK6PKgPXLzx60HsPBgz%2BcPDKsLlEKdrtnOHcpTzINtfACgeTkvm8QP5WQq9SQO4PNfOgWKMEBxkkXqNaXRlWCriDE8ikkIxTS1wg1bBzX6bbq2VXPQ1HWzoCozUUBpla1%2FNddRj3cOdWNPV1CMDZKivYiFQGuB5ARoL7ijrhNH0igSNRe2WKoerxDKdKfOVmaRm9TYwuqVN6jS%2B1nS%2Bd2yY090PHBWsBHK0ZC2ACs2gHTJdafVkDObbFKhyzU3%2B6Q3rVKCjC6Rw4sJnNz0xsDPfGKVZ%2Ffhh4QAzGdJi18NBSmADUbEEXgV8gYg6HgQvblxNqFcwrZqmCab0QYWvg6q0%2FqyJhEYcmVWEdQJr9wVCWHGNSe2%2BPFfKR51sURtmWBTCX17WNBjqlAXvCE4xPsYowWXOcK%2BWOREDfMffE6zUdWetTgKWtCjFFzqvbe%2BaeKWuwEHXQl9BuG1rERZT9fY9aEEEVE2q6W0cDvbkVuFnmXxmhpxYw6qlJisddMBTNDWrLB8llUO0sASdIj0uz5uKqE1zqL%2FLVS1CRv1fbYzdXwEyRqrHux3g%2BArKgJ5uq92X9jznB8E0mLTrlwVI7OYjZfLdkwIXvry008gFE9g%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20211206T024723Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYQITTHIVX%2F20211206%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=9dff7d4ff54b70360044a95447978a4d661455c0e978adb1d72f44a240f04b2c&hash=96a9a5b1c7f87db2e806041f936f9262c2f0f8a853107bf2f6ef69c9e1d1db35&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0016510720346551&tid=spdf-21d9a413-2601-4aaf-8815-4d4142eeaf04&sid=ec558a9b400130484b2a9f1-fbc4af95d4adgxrqa&type=client)/[Project](http://amed8k.sundatabase.org)
 
-### <span id="2.9_Video_Classification_Datasets">2.9 Video Classification Datasets</span>
+### <span id="2.10_Video_Classification_Datasets">2.10 Video Classification Datasets</span>
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
