@@ -93,7 +93,7 @@ There are three simple-to-use steps to access our project code (PNS+):
 - Testing:
     
     Downloading pre-trained weights and move it into `snapshot/PNSPlus/epoch_15/PNSPlus.pth`, 
-    which can be found in this download link ([Google Drive](https://drive.google.com/drive/folders/1NboArbmI4qg9AMQA0VoJmg4g1FaMUh4Q?usp=sharing) / [Baidu Drive](https://pan.baidu.com/s/1mnd9GD2BiWFzsibv7WiwAA) (Password: g7sa), 108MB).
+    which can be found in this download link: [Google Drive](https://drive.google.com/drive/folders/1NboArbmI4qg9AMQA0VoJmg4g1FaMUh4Q?usp=sharing) / [Baidu Drive](https://pan.baidu.com/s/1mnd9GD2BiWFzsibv7WiwAA) (Password: g7sa, Size: 108MB).
     ```bash
     python ./scripts/my_test.py
     ```
@@ -117,7 +117,7 @@ Here, we present a variety of qualitative and quantitative results of VPS bencha
 <p align="center">
     <img src="./assets/Qual-min.gif"/> <br />
     <em> 
-    Figure 5: Qualitative comparison of three video-based models (PNS+, PNSNet, and 2/3D) and two image-based models (ACSNet, and PraNet).  
+    Figure 3: Qualitative comparison of three video-based models (PNS+, PNSNet, and 2/3D) and two image-based models (ACSNet, and PraNet).  
     </em>
 </p>
 
@@ -126,7 +126,7 @@ Here, we present a variety of qualitative and quantitative results of VPS bencha
 <p align="center">
     <img src="./assets/ModelPerformance.png"/> <br />
     <em> 
-    Figure 3: Quantitative comparison on two testing sub-datasets, i.e., SUN-SEG-Easy and SUN-SEG-Hard. `R/T' represents we re-train the non-public model, whose code is provided by the original authors. The best scores are highlighted in bold.
+    Figure 4: Quantitative comparison on two testing sub-datasets, i.e., SUN-SEG-Easy and SUN-SEG-Hard. `R/T' represents we re-train the non-public model, whose code is provided by the original authors. The best scores are highlighted in bold.
     </em>
 </p>
 
@@ -135,7 +135,7 @@ Here, we present a variety of qualitative and quantitative results of VPS bencha
 <p align="center">
     <img src="./assets/AttributePerformance.png"/> <br />
     <em> 
-    Figure 4: Visual attributes-based performance on our SUN-SEG-Easy and SUN-SEG-Hard in terms of structure measure.
+    Figure 5: Visual attributes-based performance on our SUN-SEG-Easy and SUN-SEG-Hard in terms of structure measure.
     </em>
 </p>
 
