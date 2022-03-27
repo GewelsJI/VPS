@@ -4,7 +4,7 @@ We introduce a high-quality per-frame annotated VPS dataset, named SUN-SEG, whic
 
 # Contents
 - [Step-1: Request and Download](#step-1--request-and-download)
-- [Step-2: Unzip SUN dataset](#step-2--unzip-sun-dataset)
+- [Step-2: Unwrap SUN dataset](#step-2--unzip-sun-dataset)
 - [Step-3: Re-organize the file structure](#step-3--re-organize-the-file-structure)
 
 
