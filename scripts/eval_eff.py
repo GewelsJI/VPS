@@ -1,8 +1,11 @@
 import os
 import time
-import torch
 import numpy as np
 from ptflops import get_model_complexity_info
+
+import torch
+
+from lib.module.PNSPlusNetwork import PNSNet as Network
 
 
 def computeTime(model, inputs, device='cuda'):
@@ -31,8 +34,6 @@ if __name__=="__main__":
     os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
     torch.backends.cudnn.benchmark = True
-
-    from lib.module.PNSPlusNetwork import PNSNet as Network
 
     model = Network().cuda()
     

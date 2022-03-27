@@ -5,11 +5,8 @@
 # @FileName : metrics.py
 # @Reference: https://github.com/mczhuge/SOCToolbox
 
-import torch
+
 import numpy as np
-import torch.nn as nn
-from sklearn import metrics
-from torch.autograd import Function
 from scipy.ndimage import convolve, distance_transform_edt as bwdist
 
 

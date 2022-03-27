@@ -1,11 +1,8 @@
 import os
-import glob
 
 import torch
 from torch.utils.data import Dataset
-from torchvision import transforms
 
-from PIL import Image
 from scripts.config import config
 from lib.dataloader.preprocess import *
 

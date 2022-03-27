@@ -1,11 +1,13 @@
-import torch
-import self_cuda_backend as _ext
-import torch.nn as nn
-from math import sqrt
-import torch.autograd as autograd
-import torch.nn.functional as F
-from torch.autograd.function import once_differentiable
 import numpy as np
+from math import sqrt
+
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import torch.autograd as autograd
+from torch.autograd.function import once_differentiable
+
+import self_cuda_backend as _ext
 
 
 def _check_contiguous(*args):
@@ -78,7 +80,7 @@ class NS_Block(nn.Module):
         self.key_conv = nn.Conv3d(channels_in, n_head * d_k, 1, bias=False)
         self.value_conv = nn.Conv3d(channels_in, n_head * d_v, 1, bias=False)
         self.output_Linear = nn.Conv3d(n_head * d_v, channels_in, 1, bias=False)
-        # Optimization
+        # Optimization: self-adapting layer normalization
         self.bn = nn.LayerNorm([int(self.channels_in/self.n_head), 16, 28])
 
     def forward(self, first, x):
@@ -99,7 +101,7 @@ class NS_Block(nn.Module):
             query_i = self.bn(query_i)
             key_i = key_chunk[i].contiguous()
             value_i = value_chunk[i].contiguous()
-            # Optimization
+            # Optimization: self-adapting scaling factor
             M_A_i = relevance_measuring(query_i, key_i, radius[i], dilation[i]) / sqrt(self.channels_in/self.n_head)
             M_A.append(F.softmax(M_A_i, dim=2))
             M_T.append(spatial_temporal_aggregation(M_A_i, value_i, radius[i], dilation[i]))
