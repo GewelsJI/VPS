@@ -103,6 +103,7 @@ There are three simple-to-use steps to access our project code (PNS+):
 
 We provide an out-of-the-box evaluation toolbox for the VPS task, which is written in Python style. You can just run it to generate the evaluation results on your custom approach. Or you can directly download the complete VPS benchmark including prediction map of each competitor at download link: [Google Drive](https://drive.google.com/drive/folders/15xBWCFuWWg9YL5p4qdcfz8-yEeJlNFxg?usp=sharing) / [Baidu Drive](https://pan.baidu.com/s/1plDtddL9L_f0dqrREVkIPg) (Password: 9c4p, Size: 7.28G).
 
+- The evaluation results with `*.txt` format are stored in `./eval/eval-result/`.
 - More instructions about **Evaluation Toolbox** refer to [`PageLink`](https://github.com/GewelsJI/VPS/tree/main/eval).
 
 We also build an online leaderboard to keep up with the new progress of other competitors. We believe this is a fun way to learn about new research directions and stay in tune with our VPS community.

@@ -10,22 +10,20 @@ Notably, the origin SUN dataset has 113 colonoscopy videos, including 100 positi
 
 As such, it yeilds the final version of our SUN-SEG dataset, which includes 49,136 polyp frames (i.e., postive part) and 109,554 non-polyp frames (i.e., negative part) taken from  different 285 and 728 colonoscopy videos clips, as well as the corresponding annotations. The following sections will provide details about our SUN-SEG point-by-point.
 
-<!-- vscode-markdown-toc -->
-1. [Positive Part](#PositivePart)
-2. [Negative Part](#NegativePart)
-3. [Label-I: Category Classification Annotation](#Label-I:CategoryClassificationAnnotation)
-4. [Label-II: Object Mask](#Label-II:ObjectMask)
-5. [Label-III: Bounding Box](#Label-III:BoundingBox)
-6. [Label-IV: Boundary](#Label-IV:Boundary)
-7. [Label-V: Two Weak Labels (Scribble & Polygon)](#Label-V:TwoWeakLabelsScribblePolygon)
-8. [Label-VI: Attributes Description](#Label-VI:AttributesDescription)
-9. [Reference](#Reference)
+- [The Descriptions of SUN-SEG Dataset](#the-descriptions-of-sun-seg-dataset)
+- [File Tree Organization](#file-tree-organization)
+- [Dataset Statistics](#dataset-statistics)
+  * [Positive Part](#positive-part)
+  * [Negative Part](#negative-part)
+- [Label Description](#label-description)
+  * [Label-I: Category Classification Annotation](#label-i--category-classification-annotation)
+  * [Label-II: Object Mask](#label-ii--object-mask)
+  * [Label-III: Bounding Box](#label-iii--bounding-box)
+  * [Label-IV: Boundary](#label-iv--boundary)
+  * [Label-V: Two Weak Labels (Scribble & Polygon)](#label-v--two-weak-labels--scribble---polygon-)
+  * [Label-VI: Attributes Description](#label-vi--attributes-description)
+  * [Reference](#reference)
 
-<!-- vscode-markdown-toc-config
-	numbering=true
-	autoSave=true
-	/vscode-markdown-toc-config -->
-<!-- /vscode-markdown-toc -->
 
 # File Tree Organization
 
@@ -76,7 +74,6 @@ The `Frame` folder contains the frames and the rest folders contain the correspo
 ```
 
 
-
 # Dataset Statistics
 
 Figure 1 (left) shows the statistic distributions for pathological patterns excluding non-polyp (NP). We find that well-differentiated or low-grade adenoma are dominated but are difficult to locate due to low-intensity contrast between the lesion and mucosal surface. Figure 1 (right) shows the multi-dependencies among pathological pattern, shape, and location of colon polyp.
@@ -90,13 +87,13 @@ Figure 1 (left) shows the statistic distributions for pathological patterns excl
 </p>
 
 
-##  1. <a name='PositivePart'></a>Positive Part
+## Positive Part
 
 - The positive part of SUN-SEG has 285 video clips (30 fps), which has 49,136 frames totally.
 
 - More details of each polyp video clips refer to [`INFO_POSITIVE_CASES.md`](https://github.com/GewelsJI/VPS/blob/main/docs/INFO_POSITIVE_CASES.md).
 
-##  2. <a name='NegativePart'></a>Negative Part
+## Negative Part
 
 - The negative part of SUN-SEG has 728 video clips (30 fps), which has 109,554 frames totally.
 
@@ -105,7 +102,7 @@ Figure 1 (left) shows the statistic distributions for pathological patterns excl
 
 # Label Description
 
-##  3. <a name='Label-I:CategoryClassificationAnnotation'></a>Label-I: Category Classification Annotation
+## Label-I: Category Classification Annotation
 
 <p align="center">
     <img src="../assets/classification-min.png"/> <br />
@@ -130,7 +127,7 @@ Here are an example:
     image_dir_00003.jpg	sessile_serrated_lesion
     ...
 
-##  4. <a name='Label-II:ObjectMask'></a>Label-II: Object Mask
+## Label-II: Object Mask
 
 <p align="center">
     <img src="../assets/video_v2-min.gif"/> <br />
@@ -141,7 +138,7 @@ In polyp-existing frames, each polyp is annotated with a segmentation mask as sh
 The annotation is in `./data/DATASET/GT/`. Each image's name has direct correspondance with the annotation file name. 
 For example, the segmentation mask for `image_dir_00001.jpg` is `image_dir_00001.png`.
 
-##  5. <a name='Label-III:BoundingBox'></a>Label-III: Bounding Box
+## Label-III: Bounding Box
 
 <p align="center">
     <img src="../assets/bbox-min.gif"/> <br />
@@ -170,7 +167,7 @@ We present the bounding box annotation for each polyp-existing frame. In `./data
             ...]
     }
 
-##  6. <a name='Label-IV:Boundary'></a>Label-IV: Boundary
+## Label-IV: Boundary
 
 The annotations are stored in `./data/DATASET/Edge/`. Each image's name has direct correspondance with the annotation file name. 
 
@@ -178,7 +175,7 @@ The annotations are stored in `./data/DATASET/Edge/`. Each image's name has dire
     <img src="../assets/weak1-min.gif"/> <br />
 </p>
 
-##  7. <a name='Label-V:TwoWeakLabelsScribblePolygon'></a>Label-V: Two Weak Labels (Scribble & Polygon)
+## Label-V: Two Weak Labels (Scribble & Polygon)
 
 The annotations are in `./data/DATASET/Scribble/`, and `./data/DATASET/Polygon/`, respectively. Each image's name has direct correspondance with the annotation file name. 
 
@@ -186,7 +183,7 @@ The annotations are in `./data/DATASET/Scribble/`, and `./data/DATASET/Polygon/`
     <img src="../assets/weak2-min.gif"/> <br />
 </p>
 
-##  8. <a name='Label-VI:AttributesDescription'></a>Label-VI: Attributes Description
+## Label-VI: Attributes Description
 
 Next, we provide the complete attributes for our SUN-SEG dataset.
 
@@ -242,7 +239,7 @@ Next, we provide the complete attributes for our SUN-SEG dataset.
 | OV   | Out-of-view                  | Object is partially clipped by the image boundaries.                                                                                             |
 | SV   | Scale-Variation              | The average area ratio among any pair of bounding boxes enclosing the target object is smaller than $0.5$.                                       |
 
-##  9. <a name='Reference'></a>Reference
+## Reference
 
 - SUN dataset: http://sundatabase.org
 - COCO dataset: https://cocodataset.org
