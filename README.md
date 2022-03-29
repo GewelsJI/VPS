@@ -4,7 +4,7 @@
     <img src="./assets/background-min.gif"/> <br />
 </p>
 
-- **Title:** Video Polyp Segmentation: A Deep Learning Perspective ([arXiv](https://arxiv.org/abs/2203.14291))
+- **Title:** Video Polyp Segmentation: A Deep Learning Perspective ( [arXiv](https://arxiv.org/abs/2203.14291) )
 - **Authors:** [Ge-Peng Ji](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=oaxKYKUAAAAJ)^, Guobao Xiao^, [Yu-Cheng Chou](https://scholar.google.com/citations?user=YVNRBTcAAAAJ&hl=en)^, [Deng-Ping Fan](https://dengpingfan.github.io/)*, [Kai Zhao](https://kaizhao.net/), [Geng Chen](https://scholar.google.com/citations?user=sJGCnjsAAAAJ&hl=en), [Huazhu Fu](https://hzfu.github.io/), and [Luc Van Gool](https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en).
 - **Contact:** Our ability is limited, so we are welcome to receive your constructive suggestions and contributions to our project. Or if you have any questions, please feel free to drop us an e-mail (gepengai.ji@gmail.com, johnson111788@gmail.com, dengpfan@gmail.com) or directly report it in the issue or push a PR. Your star is our motivation, let's enjoy it!
 
@@ -66,7 +66,6 @@ Notably, based on some necessary privacy-preserving considerations from the SUN 
 </p>
 
 
-
 There are three simple-to-use steps to access our project code (PNS+):
 
 - Prerequisites of environment: 
@@ -108,7 +107,7 @@ We provide an out-of-the-box evaluation toolbox for the VPS task, which is writt
 
 We also build an online leaderboard to keep up with the new progress of other competitors. We believe this is a fun way to learn about new research directions and stay in tune with our VPS community.
 
-- Online leaderboard is publicly avaliable at [`PaperWithCode`](). (Under Construction)
+- Online leaderboard is publicly avaliable at [`PaperWithCode`](). (Under Construction ...)
 
 Here, we present a variety of qualitative and quantitative results of VPS benchamrk:
 
