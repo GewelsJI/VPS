@@ -14,7 +14,7 @@ We introduce a high-quality per-frame annotated VPS dataset, named SUN-SEG, whic
 
 So first, you guys need to request the origin colonoscopy video frame from them. In this step, you should download the polyp samples of 100 cases and non-polyp samples of 13 cases from the links provided by the SUN dataset. 
 
-- **Request for video frames from SUN:** Please follow the instruction on [SUN dataset](http://amed8k.sundatabase.org) to request SUN-dataset and download the dataset by yourself. Thank you for your understanding!
+- **Request for video frames from SUN:** Please follow the instruction on [SUN dataset](http://amed8k.sundatabase.org) to request SUN-dataset and download the dataset by yourself. **Please use your educational email to apply for it and claim it without any commericial purpose.** Thank you for your understanding!
 
 And then, you can feel free to download the complete annotation provided by our SUN-SEG.
 

@@ -2,8 +2,6 @@
 
 ![](../assets/the-reading-list.png)
 
-Contributed by *Yu-Cheng Chou*, *Ge-Peng Ji*, and [*Deng-Ping Fan*](https://dpfan.net/).
-
 ## <span id="1._Preview"> 1. Preview</span>
 
 This is a paper collection of **127** colonoscopy imaging-based AI scientific researchs in recent **12** years.
