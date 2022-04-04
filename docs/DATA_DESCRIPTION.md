@@ -4,11 +4,11 @@
     <img src="../assets/video_v2-min.gif"/> <br />
 </p>
 
-We first introduce a high-quality per-frame annotated VPS dataset, named SUN-SEG, which includes 158,690 frames from the famous SUN dataset. We extend the labels with diverse types, i.e., object mask, boundary, scribble, polygon, and visual attribute. We also introduce the pathological informations from the original [SUN dataset](http://sundatabase.org/), including pathological classification labels, location information, and shape information. 
+We first introduce a high-quality per-frame annotated VPS dataset, named SUN-SEG, which includes 158,690 frames from the famous SUN dataset. We extend the labels with diverse types, i.e., object mask, boundary, scribble, polygon, and visual attribute. We also introduce the pathological information from the original [SUN dataset](http://sundatabase.org/), including pathological classification labels, location information, and shape information. 
 
 Notably, the origin SUN dataset has 113 colonoscopy videos, including 100 positive cases with 49, 136 polyp frames and 13 negative cases with 109, 554 non-polyp frames. We manually trim them into 378 positive and 728 negative short clips, meanwhile maintaining their intrinsic consecutive relationship. Such data pre-processing ensures each clip has around 3~11s duration at a real-time frame rate (i.e., 30 fps), which promotes the fault-tolerant margin for various algorithms and devices. To this end, the re-organized SUN-SEG contains 1, 106 short video clips with 158, 690 video frames totally, offering a solid foundation to build a representative benchmark.
 
-As such, it yeilds the final version of our SUN-SEG dataset, which includes 49,136 polyp frames (i.e., postive part) and 109,554 non-polyp frames (i.e., negative part) taken from  different 285 and 728 colonoscopy videos clips, as well as the corresponding annotations. The following sections will provide details about our SUN-SEG point-by-point.
+As such, it yields the final version of our SUN-SEG dataset, which includes 49,136 polyp frames (i.e., positive part) and 109,554 non-polyp frames (i.e., negative part) taken from different 285 and 728 colonoscopy videos clips, as well as the corresponding annotations. The following sections will provide details about our SUN-SEG point-by-point.
 
 - [The Descriptions of SUN-SEG Dataset](#the-descriptions-of-sun-seg-dataset)
 - [File Tree Organization](#file-tree-organization)
@@ -27,13 +27,13 @@ As such, it yeilds the final version of our SUN-SEG dataset, which includes 49,1
 
 # File Tree Organization
 
-The `Frame` folder contains the frames and the rest folders contain the corresponding ground truth. As for the `bbox_annotation.json` and `classfication.txt` text file, we follow the same format as COCO and ImageNet for generality.
+The `Frame` folder contains the frames and the rest folders contain the corresponding ground truth. As for the `bbox_annotation.json` and `classfication.txt` text files, we follow the same format as COCO and ImageNet for generality.
 
 ```
 ├──data
     ├──SUN-SEG
         ├──TrainDataset
-            ├──Frame  # The images from SUN dataset
+            ├──Frame  # The images from the SUN dataset
                 ├──case1_1
                     ├──image_name_00001.jpg
                     |...
@@ -76,7 +76,7 @@ The `Frame` folder contains the frames and the rest folders contain the correspo
 
 # Dataset Statistics
 
-Figure 1 (left) shows the statistic distributions for pathological patterns excluding non-polyp (NP). We find that well-differentiated or low-grade adenoma are dominated but are difficult to locate due to low-intensity contrast between the lesion and mucosal surface. Figure 1 (right) shows the multi-dependencies among pathological pattern, shape, and location of colon polyp.
+Figure 1 (left) shows the statistic distributions for pathological patterns excluding non-polyp (NP). We find that well-differentiated or low-grade adenoma is dominated but is difficult to locate due to the low-intensity contrast between the lesion and mucosal surface. Figure 1 (right) shows the multi-dependencies among pathological patterns, shape, and location of colon polyp.
     
 
 <p align="center">
@@ -89,13 +89,13 @@ Figure 1 (left) shows the statistic distributions for pathological patterns excl
 
 ## Positive Part
 
-- The positive part of SUN-SEG has 285 video clips (30 fps), which has 49,136 frames totally.
+- The positive part of SUN-SEG has 285 video clips (30 fps), which has 49,136 frames.
 
 - More details of each polyp video clips refer to [`INFO_POSITIVE_CASES.md`](https://github.com/GewelsJI/VPS/blob/main/docs/INFO_POSITIVE_CASES.md).
 
 ## Negative Part
 
-- The negative part of SUN-SEG has 728 video clips (30 fps), which has 109,554 frames totally.
+- The negative part of SUN-SEG has 728 video clips (30 fps), which has 109,554 frames.
 
 - More details of each non-polyp video clips refer to [`INFO_NEGATIVE_CASES.md`](https://github.com/GewelsJI/VPS/blob/main/docs/INFO_NEGATIVE_CASES.md)
 
@@ -119,7 +119,7 @@ Here are seven classes of pathological diagnosis:
 - Non-Polyp (728 videos, 109,554 frames)
 
 The annotation is in `./data/DATASET/classification.txt`. 
-In the text file, each row represents a image and its class of pathological diagnosis. 
+In the text file, each row represents an image and its class of pathological diagnosis. 
 Here are an example:
 
     image_dir_00001.jpg	low_grade_adenoma
@@ -135,7 +135,7 @@ Here are an example:
 
 In polyp-existing frames, each polyp is annotated with a segmentation mask as shown above. 
 
-The annotation is in `./data/DATASET/GT/`. Each image's name has direct correspondance with the annotation file name. 
+The annotation is in `./data/DATASET/GT/`. Each image's name has a direct correspondence with the annotation file name. 
 For example, the segmentation mask for `image_dir_00001.jpg` is `image_dir_00001.png`.
 
 ## Label-III: Bounding Box
@@ -144,7 +144,7 @@ For example, the segmentation mask for `image_dir_00001.jpg` is `image_dir_00001
     <img src="../assets/bbox-min.gif"/> <br />
 </p>
 
-We present the bounding box annotation for each polyp-existing frame. In `./data/DATASET/bbox_annotation.json` file, we follow the same format as COCO dataset. Here are an example of COCO-style annotation:
+We present the bounding box annotation for each polyp-existing frame. In `./data/DATASET/bbox_annotation.json` file, we follow the same format as the COCO dataset. Here is an example of COCO-style annotation:
 
     {
         'info': {
@@ -169,7 +169,7 @@ We present the bounding box annotation for each polyp-existing frame. In `./data
 
 ## Label-IV: Boundary
 
-The annotations are stored in `./data/DATASET/Edge/`. Each image's name has direct correspondance with the annotation file name. 
+The annotations are stored in `./data/DATASET/Edge/`. Each image's name has a direct correspondence with the annotation file name. 
 
 <p align="center">
     <img src="../assets/weak1-min.gif"/> <br />
@@ -177,7 +177,7 @@ The annotations are stored in `./data/DATASET/Edge/`. Each image's name has dire
 
 ## Label-V: Two Weak Labels (Scribble & Polygon)
 
-The annotations are in `./data/DATASET/Scribble/`, and `./data/DATASET/Polygon/`, respectively. Each image's name has direct correspondance with the annotation file name. 
+The annotations are in `./data/DATASET/Scribble/`, and `./data/DATASET/Polygon/`, respectively. Each image's name has a direct correspondence with the annotation file name. 
 
 <p align="center">
     <img src="../assets/weak2-min.gif"/> <br />
@@ -191,13 +191,13 @@ Next, we provide the complete attributes for our SUN-SEG dataset.
 
 | ID   | Name                         | Description                                                                                                                                                                                   |
 | ---- | ---------------------------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| LA   | Low-grade adenoma            | The polyp with low-grade dysplasia often show nuclear changes, such as palisading and darkening of the nucleus.                                                                               |
+| LA   | Low-grade adenoma            | The polyp with low-grade dysplasia often shows nuclear changes, such as palisading and darkening of the nucleus.                                                                               |
 | HA   | High-grade adenoma           | The polyp with high-grade dysplasia, which has more severe cellular and nuclear changes.                                                                                                      |
-| HP   | Hyperplastic polyp           | The polyp has small vessels or sparse network, with unrecognizable pattern and is lighter than or similar to the surroundings.                                                                |
+| HP   | Hyperplastic polyp           | The polyp has small vessels or sparse networks, with unrecognizable patterns and is lighter than or similar to the surroundings.                                                                |
 | TSA  | Traditional serrated adenoma | A neoplastic polyp characterised by eosinophilic cells, ectopic crypt formations and slit-like epithelial serrations.                                                                         |
 | SSL  | Sessile serrated lesion      | A neoplastic polyp characterised by serrated architectural features and lack of cytological dysplasia.                                                                                        |
-| IC   | Invasive cancer (T1b)        | Its color is darker than the surroundings, brownish, sometimes with lighter patches. The vessel of areas with interrupted or absent vessels. The surface is amorphous ofr no surface pattern. |
-| SI   | Surgical Instruments         | The endoscopic surgical procedures involving positioning of instruments, such as snares, forceps, knives and electrodes.                                                                      |
+| IC   | Invasive cancer (T1b)        | Its colour is darker than the surroundings, brownish, sometimes with lighter patches. The vessel of areas with interrupted or absent vessels. The surface is amorphous with no surface pattern. |
+| SI   | Surgical Instruments         | The endoscopic surgical procedures involve the positioning of instruments, such as snares, forceps, knives and electrodes.                                                                      |
 
 - **Shape**
 
@@ -209,9 +209,9 @@ Next, we provide the complete attributes for our SUN-SEG dataset.
 
 | ID   | Name                         | Description                                                                                                                                                                                   |
 | ---- | ---------------------------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Ip   | Pedunculated                 | Base is more narrow that top of lesion.                                                                                                                                                       |
+| Ip   | Pedunculated                 | Base is more narrow than the top of the lesion.                                                                                                                                                       |
 | Isp  | Subpedunculated              | Intermediate and broad-based. Same management as (0-Is) sessile polyps.                                                                                                                       |
-| Is   | Sessile                      | Base and top of lesion have same diameter.                                                                                                                                                    |
+| Is   | Sessile                      | Base and top of the lesion have the same diameter.                                                                                                                                                    |
 | IIa  | Slightly elevated            | Lesion is slightly higher than adjacent mucosa.                                                                                                                                               |
 
 - **Location**
@@ -220,21 +220,21 @@ Next, we provide the complete attributes for our SUN-SEG dataset.
 | ---- | ---------------------------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | C    | Cecum                        | Lesion is located in Cecum.                                                                                                                                                                   |
 | A    | Ascending colon              | Lesion is located in Ascending colon.                                                                                                                                                         |
-| T    | Transverse colon             | Lesion is located in Transverse colon.                                                                                                                                                        |
+| T    | Transverse colon             | Lesion is located in the Transverse colon.                                                                                                                                                        |
 | D    | Descending colon             | Lesion is located in Descending colon.                                                                                                                                                        |
-| S    | Sigmoid colon                | Lesion is located in Sigmoid colon.                                                                                                                                                           |
+| S    | Sigmoid colon                | Lesion is located in the Sigmoid colon.                                                                                                                                                           |
 | R    | Rectum                       | Lesion is located in Rectum.                                                                                                                                                                  |
 
 - **Visual Attributes**
 
 | ID   | Name                         | Description                                                                                                                                      |
 | ---- | ---------------------------- |--------------------------------------------------------------------------------------------------------------------------------------------------|
-| IB   | Indefinable Boundaries       | The foreground and background areas around the object have similar color.                                                                        |
-| HO   | Heterogeneous Object         | Object regions have distinct colors.                                                                                                             |
-| GH   | Ghosting                     | Object has anomaly RGB-colored boundary due to fast moving or insufficient refresh rate.                                                         |
+| IB   | Indefinable Boundaries       | The foreground and background areas around the object have a similar colour.                                                                        |
+| HO   | Heterogeneous Object         | Object regions have distinct colours.                                                                                                             |
+| GH   | Ghosting                     | Object has anomaly RGB-colored boundary due to fast-moving or insufficient refresh rate.                                                         |
 | FM   | Fast-Motion                  | The average per-frame object motion, computed as the Euclidean distance of polyp centroids between consecutive frames, is larger than 20 pixels. |
-| SO   | Small Object                 | The average ratio between the object size and the image area is smaller than 0.05.                                                               |
-| LO   | Large Object                 | The average ratio between the object bounding-box area and the image area is larger than tlr = 0.15.                                             |
+| SO   | Small-Object                 | The average ratio between the object size and the image area is smaller than 0.05.                                                               |
+| LO   | Large-Object                 | The average ratio between the object bounding-box area and the image area is larger than $t_{lr}$ = 0.15.                                             |
 | OCC  | Occlusion                    | Object becomes partially or fully occluded.                                                                                                      |
 | OV   | Out-of-view                  | Object is partially clipped by the image boundaries.                                                                                             |
 | SV   | Scale-Variation              | The average area ratio among any pair of bounding boxes enclosing the target object is smaller than $0.5$.                                       |
