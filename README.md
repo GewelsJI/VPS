@@ -39,6 +39,7 @@ In the deep learning era, we present the first comprehensive video polyp segment
 
 # 2. News
 
+- *[March/04/2022]* Create PaperWithCode page: [SUN-SEG-Easy](https://paperswithcode.com/dataset/sun-seg-easy) & [SUN-SEG-Hard](https://paperswithcode.com/dataset/sun-seg-hard).
 - *[March/27/2022]* Release pretrained checkpoints and whole benchamrks results
 - *[March/18/2022]* Upload the whole training/testing code for our enhanced model PNS+.
 - *[March/15/2022]* Release the evaluation toolbox for the VPS task. Add a [Awesome_Video_Polyp_Segmentation.md](https://github.com/GewelsJI/VPS/blob/main/docs/AWESOME_VPS.md) for tracking latest trends of this community.
@@ -114,7 +115,7 @@ We provide an out-of-the-box evaluation toolbox for the VPS task, which is writt
 
 We also build an online leaderboard to keep up with the new progress of other competitors. We believe this is a fun way to learn about new research directions and stay in tune with our VPS community.
 
-- Online leaderboard is publicly avaliable at [`PaperWithCode`](). (Under Construction)
+- Online leaderboard is publicly avaliable at PaperWithCode: [SUN-SEG-Easy](https://paperswithcode.com/dataset/sun-seg-easy) & [SUN-SEG-Hard](https://paperswithcode.com/dataset/sun-seg-hard).
 
 Here, we present a variety of qualitative and quantitative results of VPS benchamrk:
 
