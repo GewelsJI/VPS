@@ -15,7 +15,7 @@ In addition, we provide links to each paper and its repository whenever possible
 > Note that this page is under construction. If you have anything to recommend or any suggestions, please feel free to contact us via e-mail (gepengai.ji@gmail) or directly push a PR. 
 
 
---- *Last updated: 03/27/2022* --- 
+--- *Last updated: 04/12/2022* --- 
 
 ## 1.1. Table of Contents
 
@@ -43,6 +43,7 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
+2022 | **JCDE** | SwinE-Net: hybrid deep learning approach to novel polyp segmentation using convolutional neural network and Swin Transformer | [Paper](https://academic.oup.com/jcde/article/9/2/616/6564811?login=true)/Code
 2022 | **arXiv** | BlazeNeo: Blazing fast polyp segmentation and neoplasm detection | [Paper](https://arxiv.org/pdf/2203.00129.pdf)/Code
 2022 | **arXiv** | BDG-Net: Boundary Distribution Guided Network for Accurate Polyp Segmentation | [Paper](https://arxiv.org/pdf/2201.00767.pdf)/Code
 2022 | **arXiv** | Cross-level Contrastive Learning and Consistency Constraint for Semi-supervised Medical Image Segmentation | [Paper](https://arxiv.org/pdf/2202.04074.pdf)/Code

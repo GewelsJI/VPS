@@ -1,5 +1,7 @@
 # VPS Evaluation Toolbox
 
+This toolbox is used to evaluate the performance of video polyp segmentation task.
+
 # Usage
 
 - Prerequisites of environment:
