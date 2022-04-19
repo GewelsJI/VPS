@@ -43,6 +43,7 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
+2022 | **IEEE TCyber** | PolypSeg+: A Lightweight Context-Aware Network for Real-Time Polyp Segmentation | [Paper](https://ieeexplore.ieee.org/abstract/document/9756512)/Code
 2022 | **JCDE** | SwinE-Net: hybrid deep learning approach to novel polyp segmentation using convolutional neural network and Swin Transformer | [Paper](https://academic.oup.com/jcde/article/9/2/616/6564811?login=true)/Code
 2022 | **arXiv** | BlazeNeo: Blazing fast polyp segmentation and neoplasm detection | [Paper](https://arxiv.org/pdf/2203.00129.pdf)/Code
 2022 | **arXiv** | BDG-Net: Boundary Distribution Guided Network for Accurate Polyp Segmentation | [Paper](https://arxiv.org/pdf/2201.00767.pdf)/Code
