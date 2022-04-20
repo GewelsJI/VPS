@@ -116,8 +116,8 @@ if __name__ == '__main__':
                                    num_workers=4,
                                    pin_memory=False
                                    )
-    logging.info('Train on {}'.format(config.video_dataset))
-    print('Train on {}'.format(config.video_dataset))
+    logging.info('Train on {}'.format(config.dataset))
+    print('Train on {}'.format(config.dataset))
     total_step = len(train_loader)
 
     # logging

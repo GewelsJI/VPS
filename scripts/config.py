@@ -17,11 +17,11 @@ parser.add_argument('--epoches', type=int, default=15)
 
 # data
 parser.add_argument('--data_statistics', type=str,
-                    default="utils/statistics.pth", help='The normalization statistics.')
+                    default="lib/dataloader/statistics.pth", help='The normalization statistics.')
 parser.add_argument('--dataset', type=str,
                     default="TrainDataset")
 parser.add_argument('--dataset_root', type=str,
-                    default="./data")
+                    default="./data/SUN-SEG")
 parser.add_argument('--size', type=tuple,
                     default=(256, 448))
 parser.add_argument('--batchsize', type=int, default=24)

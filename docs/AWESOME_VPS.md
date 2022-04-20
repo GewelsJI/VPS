@@ -4,50 +4,57 @@
 
 # 1. Preview
 
-This is a paper collection of **127** colonoscopy imaging-based AI scientific researches in recent **12** years.
+This is a paper collection of **122** colonoscopy imaging-based AI scientific researches in recent **12** years.
 
-In order to better understand the development of this field and to help researchers in their research process, we have divided the works into five tasks, including **92** papers on [image polyp segmentation](#2.1_Image_Polyp_Segmentation), **2** papers on [video polyp segmentation](#2.2_Video_Polyp_Segmentation), **7** papers on [image polyp detection](#2.3_Image_Polyp_Detection),  **9** papers on [video polyp detection](#2.4_Video_Polyp_Detection), **4** paper on [image polyp classification](#2.5_Image_Polyp_Classification), and **1** paper on [video polyp classification](#2.6_Video_Polyp_Classification).
+In order to better understand the development of this field and to help researchers in their research process, we have divided the works into five tasks, including **97** papers on [image polyp segmentation](#21-image-polyp-segmentation), **2** papers on [video polyp segmentation](#22-video-polyp-segmentation), **7** papers on [image polyp detection](#23-image-polyp-detection),  **9** papers on [video polyp detection](#24-video-polyp-detection), **4** paper on [image polyp classification](#25-image-polyp-classification),  **1** paper on [video polyp classification](#26-video-polyp-classification), **1** paper on [colonoscopy depth estimation](#27-colonoscopy-depth-estimation), and **1** paper on [colonoscopy deficient coverage detection](#28-colonoscopy-deficient-coverage-detection).
 
-Besides, we present the collection of **13** polyp related datasets, including **7** [Image Segmentation Datasets](#2.7_Image_Segmentation_Datasets), **2** [Video Segmentation Datasets](#2.8_Video_Segmentation_Datasets), **1** [Video Detection Datasets](#2.9_Video_Detection_Datasets), and **3** [Video Classification Datasets](#2.10_Video_Classification_Datasets).
+Besides, we present the collection of **14** polyp related datasets, including **7** [image segmentation datasets](#31-image-segmentation-datasets), **2** [video segmentation datasets](#32-video-segmentation-datasets), **1** [video detection dataset](#33-video-detection-datasets), **3** [video classification datasets](#34-video-classification-datasets), and **1** [colonoscopy depth dataset](#35-colonoscopy-depth-datasets).
 
 In addition, we provide links to each paper and its repository whenever possible. * denotes the corresponding paper cannot be downloaded or the link is connected to the journal.
 
 > Note that this page is under construction. If you have anything to recommend or any suggestions, please feel free to contact us via e-mail (gepengai.ji@gmail) or directly push a PR. 
 
 
---- *Last updated: 04/12/2022* --- 
+--- *Last updated: 04/20/2022* --- 
 
 ## 1.1. Table of Contents
 
 - [Awesome Video Polyp Segmentation](#awesome-video-polyp-segmentation)
 - [1. Preview](#1-preview)
   * [1.1. Table of Contents](#11-table-of-contents)
-- [2. Overview](#2-overview)
+- [2. Polyp Related Methods](#2-polyp-related-methods)
   * [2.1 Image Polyp Segmentation](#21-image-polyp-segmentation)
   * [2.2 Video Polyp Segmentation](#22-video-polyp-segmentation)
   * [2.3 Image Polyp Detection](#23-image-polyp-detection)
   * [2.4 Video Polyp Detection](#24-video-polyp-detection)
   * [2.5 Image Polyp Classification](#25-image-polyp-classification)
   * [2.6 Video Polyp Classification](#26-video-polyp-classification)
-  * [2.7 Image Segmentation Datasets](#27-image-segmentation-datasets)
-  * [2.8 Video Segmentation Datasets](#28-video-segmentation-datasets)
-  * [2.9 Video Detection Datasets](#29-video-detection-datasets)
-  * [2.10 Video Classification Datasets](#210-video-classification-datasets)
-- [3. Useful Resources](#3-useful-resources)
-  * [3.1 Colonoscopy Related](#31-colonoscopy-related)
-  * [3.2 AI Conference Deadlines](#32-ai-conference-deadlines)
+  * [2.7 Colonoscopy Depth Estimation](#27-colonoscopy-depth-estimation)
+  * [2.8 Colonoscopy Deficient Coverage Detection](#28-colonoscopy-deficient-coverage-detection)
+- [3. Polyp Related Datasets](#3-useful-resources)
+  * [3.1 Image Segmentation Datasets](#31-image-segmentation-datasets)
+  * [3.2 Video Segmentation Datasets](#32-video-segmentation-datasets)
+  * [3.3 Video Detection Datasets](#33-video-detection-datasets)
+  * [3.4 Video Classification Datasets](#34-video-classification-datasets)
+  * [3.5 Colonoscopy Depth Datasets](#35-colonoscopy-depth-datasets)
+- [4. Useful Resources](#4-useful-resources)
+  * [4.1 Colonoscopy Related](#41-colonoscopy-related)
+  * [4.2 AI Conference Deadlines](#42-ai-conference-deadlines)
   
-# 2. Overview
+# 2. Polyp Related Methods
 
 ## 2.1 Image Polyp Segmentation
 
 **Yr.** | **Pub.** | **Title** | **Links** 
-:-: | :-: | :-  | :-: 
-2022 | **IEEE TCyber** | PolypSeg+: A Lightweight Context-Aware Network for Real-Time Polyp Segmentation | [Paper](https://ieeexplore.ieee.org/abstract/document/9756512)/Code
-2022 | **JCDE** | SwinE-Net: hybrid deep learning approach to novel polyp segmentation using convolutional neural network and Swin Transformer | [Paper](https://academic.oup.com/jcde/article/9/2/616/6564811?login=true)/Code
+:-: | :-: | :-  | :-:
+2022 | **arXiv** | PlutoNet: An Efficient Polyp Segmentation Network | [Paper](https://arxiv.org/pdf/2204.03652.pdf)/Code
+2022 | **arXiv** | Automated Polyp Segmentation in Colonoscopy using MSRFNet | [Paper](https://www.researchgate.net/profile/Debesh-Jha/publication/359698512_Automated_Polyp_Segmentation_in_Colonoscopy_using_MSRFNet/links/624907bf8068956f3c6533c1/Automated-Polyp-Segmentation-in-Colonoscopy-using-MSRFNet.pdf)/Code
 2022 | **arXiv** | BlazeNeo: Blazing fast polyp segmentation and neoplasm detection | [Paper](https://arxiv.org/pdf/2203.00129.pdf)/Code
 2022 | **arXiv** | BDG-Net: Boundary Distribution Guided Network for Accurate Polyp Segmentation | [Paper](https://arxiv.org/pdf/2201.00767.pdf)/Code
 2022 | **arXiv** | Cross-level Contrastive Learning and Consistency Constraint for Semi-supervised Medical Image Segmentation | [Paper](https://arxiv.org/pdf/2202.04074.pdf)/Code
+2022 | **Diagnostics** | Performance of Convolutional Neural Networks for Polyp Localization on Public Colonoscopy Image Datasets | [Paper](https://www.mdpi.com/2075-4418/12/4/898/htm)/Code
+2022 | **IEEE TCyber** | PolypSeg+: A Lightweight Context-Aware Network for Real-Time Polyp Segmentation | [Paper](https://ieeexplore.ieee.org/abstract/document/9756512)/Code
+2022 | **JCDE** | SwinE-Net: hybrid deep learning approach to novel polyp segmentation using convolutional neural network and Swin Transformer | [Paper](https://academic.oup.com/jcde/article/9/2/616/6564811?login=true)/Code
 2022 | **IEEE JBHI** | Artificial Intelligence for Colonoscopy: Past, Present, and Future | [Paper](https://ieeexplore.ieee.org/document/9739863)/Code
 2021 | **ICONIP** | Multi-scale Fusion Attention Network for Polyp Segmentation | [Paper](https://link.springer.com/chapter/10.1007/978-3-030-92310-5_19)/Code
 2021 | **AAAI** | Precise yet Efficient Semantic Calibration and Refinement in ConvNets for Real-time Polyp Segmentation from Colonoscopy Videos | [Paper](https://www.aaai.org/AAAI21Papers/AAAI-5002.WuHS.pdf)/Code  
@@ -138,12 +145,16 @@ In addition, we provide links to each paper and its repository whenever possible
 2012 | **PR** | Towards Automatic Polyp Detection with a Polyp Appearance Model | [Paper](http://refbase.cvc.uab.es/files/BSV2012a.pdf)/Code
 2010 | **IEEE ICASSP** | Polyp detection in Wireless Capsule Endoscopy videos based on image segmentation and geometric feature | [Paper*](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5495103)/Code
 
+[Back to top](#1-preview)
+
 ## 2.2 Video Polyp Segmentation
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
 2021 | **MICCAI** | Progressively Normalized Self-Attention Network for Video Polyp Segmentation | [Paper](https://arxiv.org/pdf/2105.08468.pdf)/[Code](https://github.com/GewelsJI/PNS-Net)
 2020 | **MICCAI** | Endoscopic Polyp Segmentation Using a Hybrid 2D/3D CNN | [Paper](https://discovery.ucl.ac.uk/id/eprint/10114066/1/Endoscopic%20polyp%20segmentation%20using%20a%20hybrid%202D-3D%20CNN.pdf)/Code
+
+[Back to top](#1-preview)
 
 ## 2.3 Image Polyp Detection
 
@@ -156,6 +167,8 @@ In addition, we provide links to each paper and its repository whenever possible
 2019 | **IEEE Access** | Colonic Polyp Detection in Endoscopic Videos With Single Shot Detection Based Deep Convolutional Neural Network | [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8731913)/Code 
 2019 | **ICTAI** | An Efficient Spatial-Temporal Polyp Detection Framework for Colonoscopy Video | [Paper*](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8995313)/Code
 2015 | **IEEE TMI** | Automated Polyp Detection in Colonoscopy Videos Using Shape and Context Information | [Paper](https://sci-hub.se/10.1109/tmi.2015.2487997)/Code 
+
+[Back to top](#1-preview)
 
 ## 2.4 Video Polyp Detection
 
@@ -171,6 +184,8 @@ In addition, we provide links to each paper and its repository whenever possible
 2019 | **IEEE ISBI** | POLYP TRACKING IN VIDEO COLONOSCOPY USING OPTICAL FLOW WITH AN ON-THE-FLY TRAINED CNN | [Paper*](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8759180)/Code
 2017 | **JBHI** | Integrating Online and Offline Three-Dimensional Deep Learning for Automated Polyp Detection in Colonoscopy Videos | [Paper](http://www.cse.cuhk.edu.hk/~qdou/papers/2017/%5B2017%5D%5BJBHI%5DIntegrating%20online%20and%20offline%20three%20dimensional%20deep%20learning%20for%20automated%20polyp%20detection%20in%20colonoscopy%20videos.pdf)/Code 
 
+[Back to top](#1-preview)
+
 ## 2.5 Image Polyp Classification
 
 **Yr.** | **Pub.** | **Title** | **Links** 
@@ -180,13 +195,35 @@ In addition, we provide links to each paper and its repository whenever possible
 2020 | **MICCAI** | Two-Stream Deep Feature Modelling for Automated Video Endoscopy Data Analysis | [Paper](https://arxiv.org/pdf/2007.05914.pdf)/Code 
 2014 | **JICARS** | Towards embedded detection of polyps in WCE images for early diagnosis of colorectal cancer | [Paper](https://hal.archives-ouvertes.fr/hal-00843459/document)/[Code](https://polyp.grand-challenge.org/EtisLarib/)
 
+[Back to top](#1-preview)
+
 ## 2.6 Video Polyp Classification
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-:
 2022 | **arXiv** | Contrastive Transformer-based Multiple Instance Learning for Weakly Supervised Polyp Frame Detection | [Paper](https://arxiv.org/pdf/2203.12121.pdf)/Code
 
-## 2.7 Image Segmentation Datasets
+[Back to top](#1-preview)
+
+## 2.7 Colonoscopy Depth Estimation
+
+**Yr.** | **Pub.** | **Title** | **Links** 
+:-: | :-: | :-  | :-:
+2022 | **arXiv** | Task-Aware Active Learning for Endoscopic Image Analysis | [Paper](https://arxiv.org/pdf/2204.03440.pdf)/[Code](https://github.com/thetna/endo-active-learn)
+
+[Back to top](#1-preview)
+
+## 2.8 Colonoscopy Deficient Coverage Detection
+
+**Yr.** | **Pub.** | **Title** | **Links** 
+:-: | :-: | :-  | :-:
+2022 | **arXiv** | Detecting Deficient Coverage in Colonoscopies | [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9097918)/Code
+
+[Back to top](#1-preview)
+
+# 3. Colonoscopy Resources
+
+## 3.1 Image Segmentation Datasets
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
@@ -198,21 +235,26 @@ In addition, we provide links to each paper and its repository whenever possible
 2012 | **PR** | **CVC-ColonDB/CVC-300** - Towards Automatic Polyp Detection with a Polyp Appearance Model | [Paper](http://refbase.cvc.uab.es/files/BSV2012a.pdf)/[Project](http://mv.cvc.uab.es/projects/colon-qa/cvccolondb)
 _ | _ | **PICCOLO** - PICCOLO RGB/NBI (WIDEFIELD) IMAGE COLLECTION | [Project](https://www.biobancovasco.org/en/Sample-and-data-catalog/Databases/PD178-PICCOLO-EN.html)
 
-## 2.8 Video Segmentation Datasets
+[Back to top](#1-preview)
+
+## 3.2 Video Segmentation Datasets
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
 2017 | **EIO** | **KID Project** - KID Project: an internet-based digital video atlas of capsule endoscopy for research purposes | [Paper](https://www.thieme-connect.de/products/ejournals/pdf/10.1055/s-0043-105488.pdf)/[Project](https://mdss.uth.gr/datasets/endoscopy/kid/)
 2015 | **IEEE TMI** | **ASU-Mayo** - Automated Polyp Detection in Colonoscopy Videos Using Shape and Context Information | [Paper](https://sci-hub.se/10.1109/tmi.2015.2487997)/[Project](https://polyp.grand-challenge.org/AsuMayo/) 
 
+[Back to top](#1-preview)
 
-## 2.9 Video Detection Datasets
+## 3.3 Video Detection Datasets
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
 2021 | **GE** | **SUN Dataset** - Development of a computer-aided detection system for colonoscopy and a publicly accessible large colonoscopy video database (with video) | [Paper](https://pdf.sciencedirectassets.com/273305/1-s2.0-S0016510721X0003X/1-s2.0-S0016510720346551/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQCoLFri%2FY2qg1dLegjpE85SraDAQgXni4AstwVHir31FQIgSZt7d3LRM%2FDWZnrG2ob5NXTOCC6qrgtukFoyETMmG60qgwQIg%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAEGgwwNTkwMDM1NDY4NjUiDB6thtIGUd1PJRcyGSrXA7YEHw4pAwRRjdUrDIBxA5b6lw7vwYqXu%2FkyL8wa5THz4ls%2BQ79EWG1w9zl7j9F6A9bkKlVvKCAb0oi3e03KthHn%2B8g0l4OC0qix4pb0UUwreyZgOjArd70QgeuNuGUMxagQQ0SWaQUG%2FO%2B24Zr7sqoJjCFuNyulHGwblX4JXXI9rhGeb2yWr%2FKRTmbwiCKzuerSPMtbyJGK72cZ5qWuriDfQfUoNqKp49hRkitn7ZzSrz0wayxDzK6PKgPXLzx60HsPBgz%2BcPDKsLlEKdrtnOHcpTzINtfACgeTkvm8QP5WQq9SQO4PNfOgWKMEBxkkXqNaXRlWCriDE8ikkIxTS1wg1bBzX6bbq2VXPQ1HWzoCozUUBpla1%2FNddRj3cOdWNPV1CMDZKivYiFQGuB5ARoL7ijrhNH0igSNRe2WKoerxDKdKfOVmaRm9TYwuqVN6jS%2B1nS%2Bd2yY090PHBWsBHK0ZC2ACs2gHTJdafVkDObbFKhyzU3%2B6Q3rVKCjC6Rw4sJnNz0xsDPfGKVZ%2Ffhh4QAzGdJi18NBSmADUbEEXgV8gYg6HgQvblxNqFcwrZqmCab0QYWvg6q0%2FqyJhEYcmVWEdQJr9wVCWHGNSe2%2BPFfKR51sURtmWBTCX17WNBjqlAXvCE4xPsYowWXOcK%2BWOREDfMffE6zUdWetTgKWtCjFFzqvbe%2BaeKWuwEHXQl9BuG1rERZT9fY9aEEEVE2q6W0cDvbkVuFnmXxmhpxYw6qlJisddMBTNDWrLB8llUO0sASdIj0uz5uKqE1zqL%2FLVS1CRv1fbYzdXwEyRqrHux3g%2BArKgJ5uq92X9jznB8E0mLTrlwVI7OYjZfLdkwIXvry008gFE9g%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20211206T024723Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYQITTHIVX%2F20211206%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=9dff7d4ff54b70360044a95447978a4d661455c0e978adb1d72f44a240f04b2c&hash=96a9a5b1c7f87db2e806041f936f9262c2f0f8a853107bf2f6ef69c9e1d1db35&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0016510720346551&tid=spdf-21d9a413-2601-4aaf-8815-4d4142eeaf04&sid=ec558a9b400130484b2a9f1-fbc4af95d4adgxrqa&type=client)/[Project](http://amed8k.sundatabase.org)
 
-## 2.10 Video Classification Datasets
+[Back to top](#1-preview)
+
+## 3.4 Video Classification Datasets
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
@@ -220,13 +262,25 @@ _ | _ | **PICCOLO** - PICCOLO RGB/NBI (WIDEFIELD) IMAGE COLLECTION | [Project](h
 2017 | **ACM MSC** | **Kvasir** - KVASIR: A Multi-Class Image Dataset for Computer Aided Gastrointestinal Disease Detection | [Paper](https://dl.acm.org/doi/pdf/10.1145/3083187.3083212)/[Project](https://datasets.simula.no/kvasir/)
 2017 | **IEEE TMI** | **Colonoscopic Dataset** - Computer-Aided Classification of Gastrointestinal Lesions in Regular Colonoscopy | [Paper](https://hal.archives-ouvertes.fr/hal-01291797/document)/[Project](http://www.depeca.uah.es/colonoscopy_dataset/)
 
-# 3. Useful Resources 
+[Back to top](#1-preview)
 
-## 3.1 Colonoscopy Related 
+## 3.5 Colonoscopy Depth Datasets
+
+**Yr.** | **Pub.** | **Title** | **Links** 
+:-: | :-: | :-  | :-: 
+2019 | **IJCARS** | Implicit domain adaptation with conditional generative adversarial networks for depth prediction in endoscopy | [Paper](https://link.springer.com/content/pdf/10.1007/s11548-019-01962-w.pdf)/[Project](http://cmic.cs.ucl.ac.uk/ColonoscopyDepth/)
+
+[Back to top](#1-preview)
+
+# 4. Useful Resources 
+
+## 4.1 Colonoscopy Related 
 
 - [Deep Learning for Colonoscopy](https://github.com/GewelsJI/deep-learning-colonoscopy)
 
-## 3.2 AI Conference Deadlines 
+## 4.2 AI Conference Deadlines 
 
 - [Acceptance Rate for AI Conferences](https://github.com/lixin4ever/Conference-Acceptance-Rate)
 - [AI Conference Deadlines](https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM)
+
+[Back to top](#1-preview)
