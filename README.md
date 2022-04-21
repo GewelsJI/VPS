@@ -14,6 +14,7 @@
 - **Title:** Video Polyp Segmentation: A Deep Learning Perspective ( [arXiv](https://arxiv.org/abs/2203.14291) )
 - **Authors:** [Ge-Peng Ji](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=oaxKYKUAAAAJ)^, Guobao Xiao^, [Yu-Cheng Chou](https://scholar.google.com/citations?user=YVNRBTcAAAAJ&hl=en)^, [Deng-Ping Fan](https://dengpingfan.github.io/)*, [Kai Zhao](https://kaizhao.net/), [Geng Chen](https://scholar.google.com/citations?user=sJGCnjsAAAAJ&hl=en), [Huazhu Fu](https://hzfu.github.io/), and [Luc Van Gool](https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en).
 - **Contact:** This project is still work in progress, and we invite all to contribute in making it more acessible and useful. If you have any questions, please feel free to drop us an e-mail (gepengai.ji@gmail.com, johnson111788@gmail.com, dengpfan@gmail.com) or directly report it in the issue or push a PR. Your star is our motivation, let's enjoy it!
+- Welcome any discussions on video polyp segmentation at [![Gitter](https://badges.gitter.im/video-polyp-segmentation/community.svg)](https://gitter.im/video-polyp-segmentation/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) or WeChat group.
 
 # Contents<!-- omit in toc -->
 - [1. Features](#1-features)
