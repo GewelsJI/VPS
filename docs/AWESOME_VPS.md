@@ -4,9 +4,9 @@
 
 # 1. Preview
 
-This is a paper collection of **123** colonoscopy imaging-based AI scientific researches in recent **12** years.
+This is a paper collection of **124** colonoscopy imaging-based AI scientific researches in recent **12** years.
 
-In order to better understand the development of this field and to help researchers in their research process, we have divided the works into five tasks, including **98** papers on [image polyp segmentation](#21-image-polyp-segmentation), **2** papers on [video polyp segmentation](#22-video-polyp-segmentation), **7** papers on [image polyp detection](#23-image-polyp-detection),  **9** papers on [video polyp detection](#24-video-polyp-detection), **4** paper on [image polyp classification](#25-image-polyp-classification),  **1** paper on [video polyp classification](#26-video-polyp-classification), **1** paper on [colonoscopy depth estimation](#27-colonoscopy-depth-estimation), and **1** paper on [colonoscopy deficient coverage detection](#28-colonoscopy-deficient-coverage-detection).
+In order to better understand the development of this field and to help researchers in their research process, we have divided the works into five tasks, including **99** papers on [image polyp segmentation](#21-image-polyp-segmentation), **2** papers on [video polyp segmentation](#22-video-polyp-segmentation), **7** papers on [image polyp detection](#23-image-polyp-detection),  **9** papers on [video polyp detection](#24-video-polyp-detection), **4** paper on [image polyp classification](#25-image-polyp-classification),  **1** paper on [video polyp classification](#26-video-polyp-classification), **1** paper on [colonoscopy depth estimation](#27-colonoscopy-depth-estimation), and **1** paper on [colonoscopy deficient coverage detection](#28-colonoscopy-deficient-coverage-detection).
 
 Besides, we present the collection of **14** polyp related datasets, including **7** [image segmentation datasets](#31-image-segmentation-datasets), **2** [video segmentation datasets](#32-video-segmentation-datasets), **1** [video detection dataset](#33-video-detection-datasets), **3** [video classification datasets](#34-video-classification-datasets), and **1** [colonoscopy depth dataset](#35-colonoscopy-depth-datasets).
 
@@ -15,7 +15,7 @@ In addition, we provide links to each paper and its repository whenever possible
 > Note that this page is under construction. If you have anything to recommend or any suggestions, please feel free to contact us via e-mail (gepengai.ji@gmail) or directly push a PR. 
 
 
---- *Last updated: 04/26/2022* --- 
+--- *Last updated: 05/10/2022* --- 
 
 ## 1.1. Table of Contents
 
@@ -47,6 +47,7 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-:
+2022 | **MICCAI** | TGANet: Text-guided attention for improved polyp segmentation | [Paper](https://arxiv.org/pdf/2205.04280.pdf)/[Code](https://github.com/nikhilroxtomar/TGANet)
 2022 | **arXiv** | PlutoNet: An Efficient Polyp Segmentation Network | [Paper](https://arxiv.org/pdf/2204.03652.pdf)/Code
 2022 | **arXiv** | Automated Polyp Segmentation in Colonoscopy using MSRFNet | [Paper](https://www.researchgate.net/profile/Debesh-Jha/publication/359698512_Automated_Polyp_Segmentation_in_Colonoscopy_using_MSRFNet/links/624907bf8068956f3c6533c1/Automated-Polyp-Segmentation-in-Colonoscopy-using-MSRFNet.pdf)/Code
 2022 | **arXiv** | BlazeNeo: Blazing fast polyp segmentation and neoplasm detection | [Paper](https://arxiv.org/pdf/2203.00129.pdf)/Code
