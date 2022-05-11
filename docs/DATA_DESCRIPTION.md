@@ -23,6 +23,7 @@ As such, it yields the final version of our SUN-SEG dataset, which includes 49,1
   * [Label-V: Two Weak Labels (Scribble & Polygon)](#label-v--two-weak-labels--scribble---polygon-)
   * [Label-VI: Attributes Description](#label-vi--attributes-description)
   * [Reference](#reference)
+- [Rejected Labels](#reject-labels)
 
 
 # File Tree Organization
@@ -238,6 +239,15 @@ Next, we provide the complete attributes for our SUN-SEG dataset.
 | OCC  | Occlusion                    | Object becomes partially or fully occluded.                                                                                                      |
 | OV   | Out-of-view                  | Object is partially clipped by the image boundaries.                                                                                             |
 | SV   | Scale-Variation              | The average area ratio among any pair of bounding boxes enclosing the target object is smaller than $0.5$.                                       |
+
+# Rejected Labels
+
+To support learning strategies such as multi-rater agreement modeling, we follow the same file organization and relaese the rejected labels from our labeling process. 
+
+We release 49,136+17,422 labels in total, you can download the annotation file from [Google Drive](https://drive.google.com/file/d/1OtK2PR6gKQv56dIFjw0rXadcgGonf93S/view?usp=sharing) / [Baidu Drive](https://pan.baidu.com/s/18heWG-t4xNUruv-RGI5HoQ) (Password: tm1l, Size: 342MB). The label with `IMAGE_NAME_*.png` naming format is the rejected label and vice versa.
+There are 33,331 images with 1 label, 14,211 images with 2 labels, 1571 images with 3 labels, and 23 images with 4 labels.
+
+
 
 ## Reference
 
