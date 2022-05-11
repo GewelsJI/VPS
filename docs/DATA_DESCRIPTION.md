@@ -23,6 +23,7 @@ As such, it yields the final version of our SUN-SEG dataset, which includes 49,1
   * [Label-V: Two Weak Labels (Scribble & Polygon)](#label-v--two-weak-labels--scribble---polygon-)
   * [Label-VI: Attributes Description](#label-vi--attributes-description)
   * [Reference](#reference)
+- [Citations](#citations)
 - [Rejected Labels](#reject-labels)
 
 
@@ -248,6 +249,35 @@ We release 49,136+17,422 labels in total, you can download the annotation file f
 There are 33,331 images with 1 label, 14,211 images with 2 labels, 1571 images with 3 labels, and 23 images with 4 labels.
 
 
+# Citations
+
+If you have found our work useful, please use the following reference to cite this project:
+
+    @article{ji2022vps,
+        title={Deep Learning for Video Polyp Segmentation: A Comprehensive Study},
+        author={Ji, Ge-Peng and Xiao, Guobao and Chou, Yu-Cheng and Fan, Deng-Ping and Zhao, Kai and Chen, Geng and Fu, Huazhu and Van Gool, Luc},
+        journal={arXiv},
+        year={2022}
+    }
+
+    @inproceedings{ji2021pnsnet,
+        title={Progressively Normalized Self-Attention Network for Video Polyp Segmentation},
+        author={Ji, Ge-Peng and Chou, Yu-Cheng and Fan, Deng-Ping and Chen, Geng and Jha, Debesh and Fu, Huazhu and Shao, Ling},
+        booktitle={MICCAI},
+        pages={142--152},
+        year={2021}
+    }
+    
+    @article{misawa2021development,
+      title={Development of a computer-aided detection system for colonoscopy and a publicly accessible large colonoscopy video database (with video)},
+      author={Misawa, Masashi and Kudo, Shin-ei and Mori, Yuichi and Hotta, Kinichi and Ohtsuka, Kazuo and Matsuda, Takahisa and Saito, Shoichi and Kudo, Toyoki and Baba, Toshiyuki and Ishida, Fumio and others},
+      journal={Gastrointestinal endoscopy},
+      volume={93},
+      number={4},
+      pages={960--967},
+      year={2021},
+      publisher={Elsevier}
+    }
 
 ## Reference
 
