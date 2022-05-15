@@ -26,8 +26,9 @@
 - [5. VPS Benchmark](#5-vps-benchmark)
 - [6. Tracking Trends](#6-tracking-trends)
 - [7. Citations](#7-citations)
-- [8. License](#8-license)
-- [9. Acknowledgements](#9-acknowledgements)
+- [8. FAQ](#8-faq)
+- [9. License](#9-license)
+- [10. Acknowledgements](#10-acknowledgements)
 
 
 # 1. Features
@@ -42,6 +43,7 @@ In the deep learning era, we present the first comprehensive video polyp segment
 
 # 2. News
 
+- *[May/15/2022]* Many Thanks to [Tuo Wang (王拓)](victor_wt@qq.com) for solving the problem of [upgrading CUDA version of NS block](./docs/Upgrade%20environment%20for%20NS%20block.pdf).  
 - *[May/11/2022]* Release rejected labels: [SUN-SEG-Rejected-Labels](https://drive.google.com/file/d/1OtK2PR6gKQv56dIFjw0rXadcgGonf93S/view?usp=sharing). More details see [here](https://github.com/GewelsJI/VPS/blob/main/docs/DATA_DESCRIPTION.md#rejected-labels).
 - *[April/04/2022]* Create PaperWithCode page: [SUN-SEG-Easy](https://paperswithcode.com/dataset/sun-seg-easy) & [SUN-SEG-Hard](https://paperswithcode.com/dataset/sun-seg-hard).
 - *[March/27/2022]* Release pretrained checkpoints and whole benchamrks results.
@@ -184,8 +186,11 @@ If you have found our work useful, please use the following reference to cite th
         year={2021}
     }
 
+# 8. FAQ
 
-# 8. License
+- Thanks to [Tuo Wang (王拓)](victor_wt@qq.com) for providing a great solution to [upgrade the CUDA version when compling the NS block](./docs/Upgrade%20environment%20for%20NS%20block.pdf).
+
+# 9. License
 
 The dataset and source code is free for research and education use only. Any commercial usage should get formal permission first.
 
@@ -200,7 +205,7 @@ the decision.
 - **Distribution:** It is prohibited to sell, transfer, lend, lease, resell, distribute, etc., as it is, or copy, edit, or process this database, in whole or in part.
 
 
-# 9. Acknowledgements
+# 10. Acknowledgements
 
 - Our dataset is built upon SUN (Showa University and Nagoya University) Colonoscopy Video Database, thanks very much for their wonderful work!
 - This codebase is based on our conference version [PNSNet](https://github.com/GewelsJI/PNS-Net), which is accepted by MICCAI-2021 conference.
