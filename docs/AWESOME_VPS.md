@@ -47,6 +47,7 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-:
+2022 | **IEEE Access** | Polyp Segmentation of Colonoscopy Images by Exploring the Uncertain Areas | [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9775966)/Code
 2022 | **JBHI** | Boundary Constraint Network with Cross Layer Feature Integration for Polyp Segmentation | [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9772424)/Code
 2022 | **CMIG** | Polyp Segmentation Network with Hybrid Channel-Spatial Attention and Pyramid Global Context Guided Feature Fusion | [Paper](https://reader.elsevier.com/reader/sd/pii/S0895611122000453?token=1CC9A6070522894EA16E7984593F634B2A32CCB11CB9CBFD4CAA37916A13DE4D3F6AB47DFDDB5F6ED12F23B0CAD0FE20&originRegion=us-east-1&originCreation=20220515094414)/Code
 2022 | **MICCAI** | TGANet: Text-guided attention for improved polyp segmentation | [Paper](https://arxiv.org/pdf/2205.04280.pdf)/[Code](https://github.com/nikhilroxtomar/TGANet)
@@ -55,6 +56,7 @@ In addition, we provide links to each paper and its repository whenever possible
 2022 | **arXiv** | BlazeNeo: Blazing fast polyp segmentation and neoplasm detection | [Paper](https://arxiv.org/pdf/2203.00129.pdf)/Code
 2022 | **arXiv** | BDG-Net: Boundary Distribution Guided Network for Accurate Polyp Segmentation | [Paper](https://arxiv.org/pdf/2201.00767.pdf)/Code
 2022 | **arXiv** | Cross-level Contrastive Learning and Consistency Constraint for Semi-supervised Medical Image Segmentation | [Paper](https://arxiv.org/pdf/2202.04074.pdf)/Code
+2022 | **arXiv** | ColonFormer: An Efficient Transformer based Method for Colon Polyp Segmentation | [Paper](https://arxiv.org/pdf/2205.08473.pdf)/Code
 2022 | **KBS** | MIA-Net: Multi-information aggregation network combining transformers and convolutional feature learning for polyp segmentation | [Paper](https://www.sciencedirect.com/science/article/pii/S0950705122003926)/Code
 2022 | **Diagnostics** | Performance of Convolutional Neural Networks for Polyp Localization on Public Colonoscopy Image Datasets | [Paper](https://www.mdpi.com/2075-4418/12/4/898/htm)/Code
 2022 | **IEEE TCyber** | PolypSeg+: A Lightweight Context-Aware Network for Real-Time Polyp Segmentation | [Paper](https://ieeexplore.ieee.org/abstract/document/9756512)/Code
