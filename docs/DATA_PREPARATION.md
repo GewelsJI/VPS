@@ -27,11 +27,11 @@ As for video frames in SUN dataset, these are two groups of samples, which are d
 - **Unzip positive cases in SUN**
     - create directory: `mkdir ./data/SUN-Positive/`
     - unzip positive cases: `unzip -P sun_password -d ./SUN-Positive sundatabase_positive_part\*`, which will take up 11.5 + 9.7 GB of storage space. Please ensure your server has enough space to storage them, otherwise it will fail. Please replace the `sun_password` what you get from SUN's authors.
-    - check if correct: `find ./SUN-Positive -type f -name "*.jgp" | wc -l`, which should output 49,136 in your terminal.
+    - check if correct: `find ./SUN-Positive -type f -name "*.jpg" | wc -l`, which should output 49,136 in your terminal.
 - **Unzip negative cases in SUN (Optional)**
     - create directory: `mkdir ./data/SUN-Negative/`
     - unzip negative cases: `unzip -P sun_password -d ./SUN-Negative sundatabase_positive_part\*`, which will take up 11.6 + 10.7 + 11.5 + 10.5 GB of storage space. (This data partition is optional if we have no requirments to use them.)
-    - check if correct: `find ./SUN-Negative -type f -name "*.jgp" | wc -l`, which should output 109,554 in your terminal.
+    - check if correct: `find ./SUN-Negative -type f -name "*.jpg" | wc -l`, which should output 109,554 in your terminal.
 
 As for the annotations from our SUN-SGE, you are happy to execute:
 
