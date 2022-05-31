@@ -171,7 +171,7 @@ To better understand the development of this field and to quickly push researche
 If you have found our work useful, please use the following reference to cite this project:
 
     @article{ji2022vps,
-        title={Deep Learning for Video Polyp Segmentation: A Comprehensive Study},
+        title={Video Polyp Segmentation: A Deep Learning Perspective},
         author={Ji, Ge-Peng and Xiao, Guobao and Chou, Yu-Cheng and Fan, Deng-Ping and Zhao, Kai and Chen, Geng and Fu, Huazhu and Van Gool, Luc},
         journal={arXiv},
         year={2022}
