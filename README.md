@@ -187,7 +187,7 @@ If you have found our work useful, please use the following reference to cite th
 
 # 8. FAQ
 
-- Thanks to [Tuo Wang (王拓)](victor_wt@qq.com) for providing a great solution to [upgrade the CUDA version when compling the NS block](./docs/Upgrade%20environment%20for%20NS%20block.pdf).
+- Thanks to [Tuo Wang](victor_wt@qq.com) for providing a great solution to [upgrade the CUDA version when compling the NS block](./docs/Upgrade%20environment%20for%20NS%20block.pdf).
 
 # 9. License
 
