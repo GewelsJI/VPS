@@ -5,6 +5,8 @@ MODEL_NAMES=('2022-TMI-PNSPlus')
 
 for MODEL_NAME in ${MODEL_NAMES[*]}
 do
-  nohup python -u vps_evaluator.py --data_lst TestEasyDataset --model_lst $MODEL_NAME  --txt_name $MODEL_NAME >> ./loggings/$MODEL_NAME-1.log &
-  nohup python -u vps_evaluator.py --data_lst TestHardDataset --model_lst $MODEL_NAME  --txt_name $MODEL_NAME >> ./loggings/$MODEL_NAME-2.log &
+  nohup python -u vps_evaluator.py --data_lst TestEasyDataset/Unseen --model_lst $MODEL_NAME  --txt_name $MODEL_NAME >> ./loggings/$MODEL_NAME-1.log &
+  nohup python -u vps_evaluator.py --data_lst TestEasyDataset/Seen --model_lst $MODEL_NAME  --txt_name $MODEL_NAME >> ./loggings/$MODEL_NAME-2.log &
+  nohup python -u vps_evaluator.py --data_lst TestHardDataset/Unseen --model_lst $MODEL_NAME  --txt_name $MODEL_NAME >> ./loggings/$MODEL_NAME-2.log &
+  nohup python -u vps_evaluator.py --data_lst TestHardDataset/Seen --model_lst $MODEL_NAME  --txt_name $MODEL_NAME >> ./loggings/$MODEL_NAME-2.log &
 done
