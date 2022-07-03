@@ -42,9 +42,9 @@ In the deep learning era, we present the first comprehensive video polyp segment
 
 
 # 2. News
- 
+
+- *[July/03/2022]* We update a new version of SUN-SEG with more fine-grained data splits, including seen/unseen senarios. More details refer to our technical report. Also, the new PaperWithCode page refer to [SUN-SEG-Easy](https://paperswithcode.com/dataset/sun-seg-easy) & [SUN-SEG-Hard](https://paperswithcode.com/dataset/sun-seg-hard).
 - *[May/11/2022]* Release rejected labels: [SUN-SEG-Rejected-Labels](https://drive.google.com/file/d/1OtK2PR6gKQv56dIFjw0rXadcgGonf93S/view?usp=sharing). More details see [here](https://github.com/GewelsJI/VPS/blob/main/docs/DATA_DESCRIPTION.md#rejected-labels).
-- *[April/04/2022]* Create PaperWithCode page: [SUN-SEG-Easy](https://paperswithcode.com/dataset/sun-seg-easy) & [SUN-SEG-Hard](https://paperswithcode.com/dataset/sun-seg-hard).
 - *[March/27/2022]* Release pretrained checkpoints and whole benchamrks results.
 - *[March/18/2022]* Upload the whole training/testing code for our enhanced model PNS+.
 - *[March/15/2022]* Release the evaluation toolbox for the VPS task. Add a [Awesome_Video_Polyp_Segmentation.md](https://github.com/GewelsJI/VPS/blob/main/docs/AWESOME_VPS.md) for tracking latest trends of this community.
