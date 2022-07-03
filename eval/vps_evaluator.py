@@ -63,7 +63,7 @@ def eval_engine_vps(opt, txt_save_path):
     # evaluation for whole dataset
     for _data_name in opt.data_lst[0]:
         print('#' * 20, 'Current Dataset:', _data_name, '#' * 20)
-        filename = os.path.join(txt_save_path, '{}_eval.txt'.format(_data_name))
+        filename = os.path.join(txt_save_path, '{}_eval.txt'.format(_data_name.replace('/', '-')))
 
         with open(filename, 'w+') as file_to_write:
 
@@ -142,7 +142,7 @@ def eval_engine_vps(opt, txt_save_path):
 
 
                 final_score_list = ['{:.3f}'.format(case) for case in case_score_list]
-                tb.add_row([_data_name, _model_name] + list(final_score_list))
+                tb.add_row([_data_name.replace('/', '-'), _model_name] + list(final_score_list))
             print(tb)
             file_to_write.write(str(tb))
             file_to_write.close()
@@ -164,7 +164,7 @@ if __name__ == '__main__':
     parser.add_argument(
         '--data_lst', type=str, help='set the dataset what you wanna to test',
         nargs='+', action='append',
-        choices=['TestEasyDataset', 'TestHardDataset'])
+        choices=['TestEasyDataset/Seen', 'TestHardDataset/Seen', 'TestEasyDataset/Unseen', 'TestHardDataset/Unseen'])
     parser.add_argument(
         '--model_lst', type=str, help='candidate competitors',
         nargs='+', action='append',
