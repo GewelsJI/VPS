@@ -106,7 +106,7 @@ There are three simple-to-use steps to access our project code (PNS+):
 - Testing:
     
     Downloading pre-trained weights and move it into `snapshot/PNSPlus/epoch_15/PNSPlus.pth`, 
-    which can be found in this download link: [Google Drive](https://drive.google.com/drive/folders/1NboArbmI4qg9AMQA0VoJmg4g1FaMUh4Q?usp=sharing) / [Baidu Drive](https://pan.baidu.com/s/1mnd9GD2BiWFzsibv7WiwAA) (Password: g7sa, Size: 108MB).
+    which can be found in this download link: [OneDrive](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/EeisMVbuRjhJuevFzWeH1jIBsVM6DFjDABhJNONhWhHPLg?e=1gMnia) / [Baidu Drive](https://pan.baidu.com/s/1mnd9GD2BiWFzsibv7WiwAA) (Password: g7sa, Size: 108MB).
     ```bash
     python ./scripts/my_test.py
     ```
@@ -114,7 +114,7 @@ There are three simple-to-use steps to access our project code (PNS+):
 
 # 5. VPS Benchmark
 
-We provide an out-of-the-box evaluation toolbox for the VPS task, which is written in Python style. You can just run it to generate the evaluation results on your custom approach. Or you can directly download the complete VPS benchmark including prediction map of each competitor at download link: [Google Drive](https://drive.google.com/drive/folders/15xBWCFuWWg9YL5p4qdcfz8-yEeJlNFxg?usp=sharing) / [Baidu Drive](https://pan.baidu.com/s/1plDtddL9L_f0dqrREVkIPg) (Password: 9c4p, Size: 7.28G).
+We provide an out-of-the-box evaluation toolbox for the VPS task, which is written in Python style. You can just run it to generate the evaluation results on your custom approach. Or you can directly download the complete VPS benchmark including prediction map of each competitor at download link: [OneDrive](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/ESS2WHOQvLhMl5ci8wNO6yYBjnh6EVcp5vYO1z4JoOKUNg?e=nJe6Zi) / [Baidu Drive](https://pan.baidu.com/s/1Qu-0l9w0ja92nzrlWMRhoQ) (Password: 2t1l, Size: 5.45G).
 
 - More instructions about **Evaluation Toolbox** refer to [`PageLink`](https://github.com/GewelsJI/VPS/tree/main/eval).
 
@@ -139,7 +139,7 @@ Here, we present a variety of qualitative and quantitative results of VPS bencha
 <p align="center">
     <img src="./assets/ModelPerformance.png"/> <br />
     <em> 
-    Figure 4: Quantitative comparison on two testing sub-datasets, i.e., SUN-SEG-Easy and SUN-SEG-Hard. `R/T' represents we re-train the non-public model, whose code is provided by the original authors. The best scores are highlighted in bold.
+    Figure 4: Quantitative comparison on two testing sub-datasets, i.e., SUN-SEG-Easy (Unseen) and SUN-SEG-Hard (Unseen). `R/T' represents we re-train the non-public model, whose code is provided by the original authors. The best scores are highlighted in bold.
     </em>
 </p>
 
@@ -147,8 +147,8 @@ Here, we present a variety of qualitative and quantitative results of VPS bencha
 
 <p align="center">
     <img src="./assets/AttributePerformance.png"/> <br />
-    <em> 
-    Figure 5: Visual attributes-based performance on our SUN-SEG-Easy and SUN-SEG-Hard in terms of structure measure.
+    <em>  
+    Figure 5: Visual attributes-based performance on our SUN-SEG-Easy (Unseen) and SUN-SEG-Hard (Unseen) in terms of structure measure.
     </em>
 </p>
 
@@ -172,7 +172,7 @@ If you have found our work useful, please use the following reference to cite th
 
     @article{ji2022vps,
         title={Video Polyp Segmentation: A Deep Learning Perspective},
-        author={Ji, Ge-Peng and Xiao, Guobao and Chou, Yu-Cheng and Fan, Deng-Ping and Zhao, Kai and Chen, Geng and Van Gool, Luc},
+        author={Ji, Ge-Peng and Xiao, Guobao and Chou, Yu-Cheng and Fan, Deng-Ping and Zhao, Kai and Chen, Geng and Fu, Huazhu and Van Gool, Luc},
         journal={arXiv},
         year={2022}
     }
