@@ -31,7 +31,7 @@ class Normalize(object):
 class Test_Dataset(Dataset):
     def __init__(self, root, testset):
         time_interval = 1
-        self.video_filelist = testset
+
         self.time_clips = config.video_time_clips
         self.video_test_list = []
 
@@ -125,7 +125,7 @@ class AutoTest:
 
 if __name__ == "__main__":
 
-    at = AutoTest(["TestHardDataset", "TestEasyDataset"],
+    at = AutoTest(['TestEasyDataset/Seen', 'TestHardDataset/Seen', 'TestEasyDataset/Unseen', 'TestHardDataset/Unseen'],
                   config.video_testset_root,
                   "snapshot/PNSPlus/epoch_15/PNSPlus.pth")
     at.test()
