@@ -263,7 +263,7 @@ Next, we provide the complete attributes for our SUN-SEG dataset.
 
 To support learning strategies such as multi-rater agreement modeling, we follow the same file organization and relaese the rejected labels from our labeling process. 
 
-We release 49,136+17,422 labels in total, you can download the annotation file from [OneDrive](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/Ecqs8BmYEahNh25lpJ5sVEEBHJR-IlWUxwdMz2ewGs_x8w?e=6U93Ne) / [Baidu Drive](https://pan.baidu.com/s/1U7blw6drRjgoBichthIO0w) (Password: 18rp, Size: 120MB). The label with `IMAGE_NAME_*.png` naming format is the rejected label and vice versa.
+We release 49,136+17,422 labels in total, you can download the annotation file from [OneDrive](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/EQJgEgN7RLZMgOxIEjHOIUMBakeE3BUU6grmCG-J0r0IBQ?e=tk1XDz) / [Baidu Drive](https://pan.baidu.com/s/14v5LB7QrrhFm3JSwmoA2bQ) (Password: inqb, Size: 120MB). The label with `IMAGE_NAME_*.png` naming format is the rejected label and vice versa.
 There are 33,331 images with 1 label, 14,211 images with 2 labels, 1571 images with 3 labels, and 23 images with 4 labels.
 
 
