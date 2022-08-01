@@ -4,7 +4,7 @@
 ![LAST COMMIT](https://img.shields.io/github/last-commit/GewelsJI/VPS?style=flat-square)
 ![ISSUES](https://img.shields.io/github/issues/GewelsJI/VPS?style=flat-square)
 ![STARS](https://img.shields.io/github/stars/GewelsJI/VPS?style=flat-square)
-[![ARXIV PAPER](https://img.shields.io/badge/Arxiv-Paper-red?style=flat-square)](https://arxiv.org/pdf/2203.14291.pdf)
+[![ARXIV PAPER](https://img.shields.io/badge/Arxiv-Paper-red?style=flat-square)](https://arxiv.org/abs/2203.14291v2)
 [![Gitter](https://badges.gitter.im/video-polyp-segmentation/community.svg)](https://gitter.im/video-polyp-segmentation/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/video-polyp-segmentation-a-deep-learning/video-polyp-segmentation-on-sun-seg-easy)](https://paperswithcode.com/sota/video-polyp-segmentation-on-sun-seg-easy?p=video-polyp-segmentation-a-deep-learning)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/video-polyp-segmentation-a-deep-learning/video-polyp-segmentation-on-sun-seg-hard)](https://paperswithcode.com/sota/video-polyp-segmentation-on-sun-seg-hard?p=video-polyp-segmentation-a-deep-learning)
@@ -13,8 +13,8 @@
     <img src="./assets/background-min.gif"/> <br />
 </p>
 
-- **Title:** Video Polyp Segmentation: A Deep Learning Perspective ( [arXiv](https://arxiv.org/abs/2203.14291) )
-- **Authors:** [Ge-Peng Ji](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=oaxKYKUAAAAJ)^, Guobao Xiao^, [Yu-Cheng Chou](https://scholar.google.com/citations?user=YVNRBTcAAAAJ&hl=en)^, [Deng-Ping Fan](https://dengpingfan.github.io/)*, [Kai Zhao](https://kaizhao.net/), [Geng Chen](https://scholar.google.com/citations?user=sJGCnjsAAAAJ&hl=en), [Huazhu Fu](https://hzfu.github.io/), and [Luc Van Gool](https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en).
+- **Title:** Video Polyp Segmentation: A Deep Learning Perspective ( [arXiv](https://arxiv.org/abs/2203.14291v2) )
+- **Authors:** [Ge-Peng Ji](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=oaxKYKUAAAAJ)^, Guobao Xiao^, [Yu-Cheng Chou](https://scholar.google.com/citations?user=YVNRBTcAAAAJ&hl=en)^, [Deng-Ping Fan](https://dengpingfan.github.io/)*, [Kai Zhao](https://kaizhao.net/), [Geng Chen](https://scholar.google.com/citations?user=sJGCnjsAAAAJ&hl=en), and [Luc Van Gool](https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en).
 - **Contact:** This project is still work in progress, and we invite all to contribute in making it more acessible and useful. If you have any questions, please feel free to drop us an e-mail (gepengai.ji@gmail.com, johnson111788@gmail.com, dengpfan@gmail.com) or directly report it in the issue or push a PR. Your star is our motivation, let's enjoy it!
 - Welcome any discussions on video polyp segmentation at [Gitter room](https://gitter.im/video-polyp-segmentation/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link) or join our [WeChat group](https://github.com/GewelsJI/VPS/blob/main/assets/wechat_group.JPG).
 
@@ -42,9 +42,9 @@ In the deep learning era, we present the first comprehensive video polyp segment
 
 
 # 2. News
- 
+
+- *[July/03/2022]* :boom: We update a new version of SUN-SEG with more fine-grained data splits, including seen/unseen senarios. More details refer to our technical report. Also, the new PaperWithCode page refer to [SUN-SEG-Easy](https://paperswithcode.com/dataset/sun-seg-easy) & [SUN-SEG-Hard](https://paperswithcode.com/dataset/sun-seg-hard).
 - *[May/11/2022]* Release rejected labels: [SUN-SEG-Rejected-Labels](https://drive.google.com/file/d/1OtK2PR6gKQv56dIFjw0rXadcgGonf93S/view?usp=sharing). More details see [here](https://github.com/GewelsJI/VPS/blob/main/docs/DATA_DESCRIPTION.md#rejected-labels).
-- *[April/04/2022]* Create PaperWithCode page: [SUN-SEG-Easy](https://paperswithcode.com/dataset/sun-seg-easy) & [SUN-SEG-Hard](https://paperswithcode.com/dataset/sun-seg-hard).
 - *[March/27/2022]* Release pretrained checkpoints and whole benchamrks results.
 - *[March/18/2022]* Upload the whole training/testing code for our enhanced model PNS+.
 - *[March/15/2022]* Release the evaluation toolbox for the VPS task. Add a [Awesome_Video_Polyp_Segmentation.md](https://github.com/GewelsJI/VPS/blob/main/docs/AWESOME_VPS.md) for tracking latest trends of this community.
@@ -106,7 +106,7 @@ There are three simple-to-use steps to access our project code (PNS+):
 - Testing:
     
     Downloading pre-trained weights and move it into `snapshot/PNSPlus/epoch_15/PNSPlus.pth`, 
-    which can be found in this download link: [Google Drive](https://drive.google.com/drive/folders/1NboArbmI4qg9AMQA0VoJmg4g1FaMUh4Q?usp=sharing) / [Baidu Drive](https://pan.baidu.com/s/1mnd9GD2BiWFzsibv7WiwAA) (Password: g7sa, Size: 108MB).
+    which can be found in this download link: [OneDrive](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/EeisMVbuRjhJuevFzWeH1jIBsVM6DFjDABhJNONhWhHPLg?e=1gMnia) / [Baidu Drive](https://pan.baidu.com/s/1mnd9GD2BiWFzsibv7WiwAA) (Password: g7sa, Size: 108MB).
     ```bash
     python ./scripts/my_test.py
     ```
@@ -114,7 +114,7 @@ There are three simple-to-use steps to access our project code (PNS+):
 
 # 5. VPS Benchmark
 
-We provide an out-of-the-box evaluation toolbox for the VPS task, which is written in Python style. You can just run it to generate the evaluation results on your custom approach. Or you can directly download the complete VPS benchmark including prediction map of each competitor at download link: [Google Drive](https://drive.google.com/drive/folders/15xBWCFuWWg9YL5p4qdcfz8-yEeJlNFxg?usp=sharing) / [Baidu Drive](https://pan.baidu.com/s/1plDtddL9L_f0dqrREVkIPg) (Password: 9c4p, Size: 7.28G).
+We provide an out-of-the-box evaluation toolbox for the VPS task, which is written in Python style. You can just run it to generate the evaluation results on your custom approach. Or you can directly download the complete VPS benchmark including prediction map of each competitor at download link: [OneDrive](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/ESS2WHOQvLhMl5ci8wNO6yYBjnh6EVcp5vYO1z4JoOKUNg?e=nJe6Zi) / [Baidu Drive](https://pan.baidu.com/s/1Qu-0l9w0ja92nzrlWMRhoQ) (Password: 2t1l, Size: 5.45G).
 
 - More instructions about **Evaluation Toolbox** refer to [`PageLink`](https://github.com/GewelsJI/VPS/tree/main/eval).
 
@@ -139,7 +139,7 @@ Here, we present a variety of qualitative and quantitative results of VPS bencha
 <p align="center">
     <img src="./assets/ModelPerformance.png"/> <br />
     <em> 
-    Figure 4: Quantitative comparison on two testing sub-datasets, i.e., SUN-SEG-Easy and SUN-SEG-Hard. `R/T' represents we re-train the non-public model, whose code is provided by the original authors. The best scores are highlighted in bold.
+    Figure 4: Quantitative comparison on two testing sub-datasets, i.e., SUN-SEG-Easy (Unseen) and SUN-SEG-Hard (Unseen). `R/T' represents we re-train the non-public model, whose code is provided by the original authors. The best scores are highlighted in bold.
     </em>
 </p>
 
@@ -147,8 +147,8 @@ Here, we present a variety of qualitative and quantitative results of VPS bencha
 
 <p align="center">
     <img src="./assets/AttributePerformance.png"/> <br />
-    <em> 
-    Figure 5: Visual attributes-based performance on our SUN-SEG-Easy and SUN-SEG-Hard in terms of structure measure.
+    <em>  
+    Figure 5: Visual attributes-based performance on our SUN-SEG-Easy (Unseen) and SUN-SEG-Hard (Unseen) in terms of structure measure.
     </em>
 </p>
 
@@ -172,7 +172,7 @@ If you have found our work useful, please use the following reference to cite th
 
     @article{ji2022vps,
         title={Video Polyp Segmentation: A Deep Learning Perspective},
-        author={Ji, Ge-Peng and Xiao, Guobao and Chou, Yu-Cheng and Fan, Deng-Ping and Zhao, Kai and Chen, Geng and Van Gool, Luc},
+        author={Ji, Ge-Peng and Xiao, Guobao and Chou, Yu-Cheng and Fan, Deng-Ping and Zhao, Kai and Chen, Geng and Fu, Huazhu and Van Gool, Luc},
         journal={arXiv},
         year={2022}
     }

@@ -47,10 +47,16 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-:
+2022 | **BSPC** | FAPN: Feature Augmented Pyramid Network for polyp segmentation | [Paper](https://reader.elsevier.com/reader/sd/pii/S1746809422004074?token=FE011B0123F802F27442369ED87DD656B402B1920147F48DC6957C72D5D1859DFD0B1ADB80194C54FBB05A9220781C20&originRegion=us-east-1&originCreation=20220708075935)/Code
+2022 | **BSPC** | Automated polyp segmentation in colonoscopy images via deep network with lesion-aware feature selection and refinement | [Paper](https://www.sciencedirect.com/sdfe/reader/pii/S1746809422003688/pdf)/Code
+2022 | **ICFCS** | U-Shaped Xception-Residual Network for Polyps Region Segmentation | [Paper](https://link.springer.com/chapter/10.1007/978-981-19-0105-8_25)/Code
+2022 | **CBM** | Colorectal polyp region extraction using saliency detection network with neutrosophic enhancement | [Paper](https://reader.elsevier.com/reader/sd/pii/S0010482522005340?token=0E8C163715B86CD6B6EC6F0D60685AA70877424A885FF787BB2C776923BB44A84AF65684FBCAC9503E28CA794B58174B&originRegion=us-east-1&originCreation=20220708080248)/Code
+2022 | **IJCARS** | Examining the effect of synthetic data augmentation in polyp detection and segmentation | [Paper](https://link.springer.com/content/pdf/10.1007/s11548-022-02651-x.pdf)/Code
 2022 | **IEEE Access** | Polyp Segmentation of Colonoscopy Images by Exploring the Uncertain Areas | [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9775966)/Code
 2022 | **JBHI** | Boundary Constraint Network with Cross Layer Feature Integration for Polyp Segmentation | [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9772424)/Code
 2022 | **CMIG** | Polyp Segmentation Network with Hybrid Channel-Spatial Attention and Pyramid Global Context Guided Feature Fusion | [Paper](https://reader.elsevier.com/reader/sd/pii/S0895611122000453?token=1CC9A6070522894EA16E7984593F634B2A32CCB11CB9CBFD4CAA37916A13DE4D3F6AB47DFDDB5F6ED12F23B0CAD0FE20&originRegion=us-east-1&originCreation=20220515094414)/Code
 2022 | **MICCAI** | TGANet: Text-guided attention for improved polyp segmentation | [Paper](https://arxiv.org/pdf/2205.04280.pdf)/[Code](https://github.com/nikhilroxtomar/TGANet)
+2022 | **arXiv** | Automatic Polyp Segmentation with Multiple Kernel Dilated Convolution Network | [Paper](https://arxiv.org/pdf/2206.06264.pdf)/Code
 2022 | **arXiv** | PlutoNet: An Efficient Polyp Segmentation Network | [Paper](https://arxiv.org/pdf/2204.03652.pdf)/Code
 2022 | **arXiv** | Automated Polyp Segmentation in Colonoscopy using MSRFNet | [Paper](https://www.researchgate.net/profile/Debesh-Jha/publication/359698512_Automated_Polyp_Segmentation_in_Colonoscopy_using_MSRFNet/links/624907bf8068956f3c6533c1/Automated-Polyp-Segmentation-in-Colonoscopy-using-MSRFNet.pdf)/Code
 2022 | **arXiv** | BlazeNeo: Blazing fast polyp segmentation and neoplasm detection | [Paper](https://arxiv.org/pdf/2203.00129.pdf)/Code

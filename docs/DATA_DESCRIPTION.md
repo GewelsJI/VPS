@@ -13,18 +13,18 @@ As such, it yields the final version of our SUN-SEG dataset, which includes 49,1
 - [The Descriptions of SUN-SEG Dataset](#the-descriptions-of-sun-seg-dataset)
 - [File Tree Organization](#file-tree-organization)
 - [Dataset Statistics](#dataset-statistics)
-  * [Positive Part](#positive-part)
-  * [Negative Part](#negative-part)
+  - [Positive Part](#positive-part)
+  - [Negative Part](#negative-part)
 - [Label Description](#label-description)
-  * [Label-I: Category Classification Annotation](#label-i--category-classification-annotation)
-  * [Label-II: Object Mask](#label-ii--object-mask)
-  * [Label-III: Bounding Box](#label-iii--bounding-box)
-  * [Label-IV: Boundary](#label-iv--boundary)
-  * [Label-V: Two Weak Labels (Scribble & Polygon)](#label-v--two-weak-labels--scribble---polygon-)
-  * [Label-VI: Attributes Description](#label-vi--attributes-description)
-  * [Reference](#reference)
+  - [Label-I: Category Classification Annotation](#label-i-category-classification-annotation)
+  - [Label-II: Object Mask](#label-ii-object-mask)
+  - [Label-III: Bounding Box](#label-iii-bounding-box)
+  - [Label-IV: Boundary](#label-iv-boundary)
+  - [Label-V: Two Weak Labels (Scribble & Polygon)](#label-v-two-weak-labels-scribble--polygon)
+  - [Label-VI: Attributes Description](#label-vi-attributes-description)
+- [Rejected Labels](#rejected-labels)
 - [Citations](#citations)
-- [Rejected Labels](#reject-labels)
+  - [Reference](#reference)
 
 
 # File Tree Organization
@@ -35,7 +35,7 @@ The `Frame` folder contains the frames and the rest folders contain the correspo
 ├──data
     ├──SUN-SEG
         ├──TrainDataset
-            ├──Frame  # The images from the SUN dataset
+            ├──Frame  # The images from SUN dataset
                 ├──case1_1
                     ├──image_name_00001.jpg
                     |...
@@ -47,7 +47,7 @@ The `Frame` folder contains the frames and the rest folders contain the correspo
                     |...
                 ├──case1_3
                 |...
-            ├──Edge  # object-level segmentation mask
+            ├──Edge  # Weak label with edge
                 |...
             ├──Scribble  # Weak label with scribble
                 |...
@@ -58,21 +58,39 @@ The `Frame` folder contains the frames and the rest folders contain the correspo
             ├──Detection  # Bounding box
                 ├──bbox_annotation.json
         ├──TestEasyDataset
-            ├──Frame
-                ├──case2_3
+            ├──Seen
+                ├──Frame
+                    ├──case2_3
+                    |...
+                ├──GT
+                    ├──case2_3
+                    |...
                 |...
-            ├──GT
-                ├──case2_3
+            ├──Unseen
+                ├──Frame
+                    ├──case3_1
+                    |...
+                ├──GT
+                    ├──case3_1
+                    |...
                 |...
-            |...
         ├──TestHardDataset
-            ├──Frame
-                ├──case1_2
+            ├──Seen
+                ├──Frame
+                    ├──case1_2
+                    |...
+                ├──GT
+                    ├──case1_2
+                    |...
                 |...
-            ├──GT
-                ├──case1_2
+            ├──Unseen
+                ├──Frame
+                    ├──case10_1
+                    |...
+                ├──GT
+                    ├──case10_1
+                    |...
                 |...
-            |...
 ```
 
 
@@ -245,7 +263,7 @@ Next, we provide the complete attributes for our SUN-SEG dataset.
 
 To support learning strategies such as multi-rater agreement modeling, we follow the same file organization and relaese the rejected labels from our labeling process. 
 
-We release 49,136+17,422 labels in total, you can download the annotation file from [Google Drive](https://drive.google.com/file/d/1OtK2PR6gKQv56dIFjw0rXadcgGonf93S/view?usp=sharing) / [Baidu Drive](https://pan.baidu.com/s/18heWG-t4xNUruv-RGI5HoQ) (Password: tm1l, Size: 342MB). The label with `IMAGE_NAME_*.png` naming format is the rejected label and vice versa.
+We release 49,136+17,422 labels in total, you can download the annotation file from [OneDrive](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/EQJgEgN7RLZMgOxIEjHOIUMBakeE3BUU6grmCG-J0r0IBQ?e=tk1XDz) / [Baidu Drive](https://pan.baidu.com/s/14v5LB7QrrhFm3JSwmoA2bQ) (Password: inqb, Size: 120MB). The label with `IMAGE_NAME_*.png` naming format is the rejected label and vice versa.
 There are 33,331 images with 1 label, 14,211 images with 2 labels, 1571 images with 3 labels, and 23 images with 4 labels.
 
 

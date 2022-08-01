@@ -18,7 +18,7 @@ So first, you guys need to request the origin colonoscopy video frame from them.
 
 And then, you can feel free to download the complete annotation provided by our SUN-SEG.
 
-- **Request for annotations from SUN-SEG:** Our re-organized annotations could be downloaded at download link: [Google Drive](https://drive.google.com/drive/folders/1MnBHu9IcDduqq3379mCD18wNTLF41gCR?usp=sharing) / [Baidu Drive](https://pan.baidu.com/s/1HMmDdnXb39eg57ALlasmsg) (Password: 0525, Size: 1.14GB).
+- **Request for annotations from SUN-SEG:** Our re-organized annotations could be downloaded at download link: [OneDrive](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/ESYYJtYBZBNLuqcrMbCCmtIBn5eCDn6zZnGanpZ85VbDuw?e=wK2USn) / [Baidu Drive](https://pan.baidu.com/s/1EVr5zsJiwffimv1_YhZnAg) (Password: v9d8, Size: 375 MB).
 
 # Step-2: Unzip SUN dataset
 
@@ -65,11 +65,19 @@ After prepare all the files, your file structure will be the same as below:
             ├──Detection
                 ├──bbox_annotation.json
         ├──TestEasyDataset
-            ├──GT
-            |...
+            ├──Seen
+                ├──GT
+                |...
+            ├──Unseen
+                ├──GT
+                |...
         ├──TestHardDataset
-            ├──GT
-            |...
+            ├──Seen
+                ├──GT
+                |...
+            ├──Unseen
+                ├──GT
+                |...
 ```
 
 You will notice that the file structure of images in `SUN-Positive` is different from the one of annotation in `SUN-SEG-Annotation`. To reconcile the file structure, you need to follow next step to finish the data preparation.
@@ -105,19 +113,37 @@ By running `sh ./utils/reorganize.sh`, the original file structure in SUN-datase
             ├──Detection  # Bounding box
                 ├──bbox_annotation.json
         ├──TestEasyDataset
-            ├──Frame
-                ├──case2_3
+            ├──Seen
+                ├──Frame
+                    ├──case2_3
+                    |...
+                ├──GT
+                    ├──case2_3
+                    |...
                 |...
-            ├──GT
-                ├──case2_3
+            ├──Unseen
+                ├──Frame
+                    ├──case3_1
+                    |...
+                ├──GT
+                    ├──case3_1
+                    |...
                 |...
-            |...
         ├──TestHardDataset
-            ├──Frame
-                ├──case1_2
+            ├──Seen
+                ├──Frame
+                    ├──case1_2
+                    |...
+                ├──GT
+                    ├──case1_2
+                    |...
                 |...
-            ├──GT
-                ├──case1_2
+            ├──Unseen
+                ├──Frame
+                    ├──case10_1
+                    |...
+                ├──GT
+                    ├──case10_1
+                    |...
                 |...
-            |...
 ```
