@@ -47,6 +47,12 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-:
+2022 | **IJCAI** | ICGNet: Integration Context-Based Reverse-Contour Guidance Network for Polyp Segmentation | [Paper](https://www.ijcai.org/proceedings/2022/0123.pdf)/Code
+2022 | **IJCAI** | TCCNet: Temporally Consistent Context-Free Network for Semi-supervised Video Polyp Segmentation | [Paper](https://www.ijcai.org/proceedings/2022/0155.pdf)/[Code](https://github.com/wener-yung/TCCNet)
+2022 | **AIM** | An end-to-end tracking method for polyp detectors in colonoscopy videos | [Paper](https://reader.elsevier.com/reader/sd/pii/S0933365722001270?token=85406D788AF1B59597BD0BCA3456A70DD2ECE3040EBCB1C3D669584B712F58FA656224415F80070007005E3D36B81F8D&originRegion=us-east-1&originCreation=20220801152429)/Code
+2022 | **MIUA** | Polyp2Seg: Improved Polyp Segmentation with Vision Transformer | [Paper](https://link.springer.com/content/pdf/10.1007/978-3-031-12053-4_39.pdf)/Code
+2022 | **CVIP** | Localization of Polyps in WCE Images Using Deep Learning Segmentation Methods: A Comparative Study | [Paper](https://link.springer.com/content/pdf/10.1007/978-3-031-11346-8_46.pdf)/Code
+2022 | **AIMD** | SARM-Net: A Spatial Attention-Based Residual M-Net for Polyp Segmentation | [Paper](https://link.springer.com/chapter/10.1007/978-981-19-0151-5_33)/Code
 2022 | **BSPC** | FAPN: Feature Augmented Pyramid Network for polyp segmentation | [Paper](https://reader.elsevier.com/reader/sd/pii/S1746809422004074?token=FE011B0123F802F27442369ED87DD656B402B1920147F48DC6957C72D5D1859DFD0B1ADB80194C54FBB05A9220781C20&originRegion=us-east-1&originCreation=20220708075935)/Code
 2022 | **BSPC** | Automated polyp segmentation in colonoscopy images via deep network with lesion-aware feature selection and refinement | [Paper](https://www.sciencedirect.com/sdfe/reader/pii/S1746809422003688/pdf)/Code
 2022 | **ICFCS** | U-Shaped Xception-Residual Network for Polyps Region Segmentation | [Paper](https://link.springer.com/chapter/10.1007/978-981-19-0105-8_25)/Code
