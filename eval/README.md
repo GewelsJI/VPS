@@ -25,7 +25,7 @@ If you have found our work useful, please use the following reference to cite th
 
     @article{ji2022vps,
         title={Deep Learning for Video Polyp Segmentation: A Comprehensive Study},
-        author={Ji, Ge-Peng and Xiao, Guobao and Chou, Yu-Cheng and Fan, Deng-Ping and Zhao, Kai and Chen, Geng and Fu, Huazhu and Gool, Luc Van},
+        author={Ji, Ge-Peng and Xiao, Guobao and Chou, Yu-Cheng and Fan, Deng-Ping and Zhao, Kai and Chen, Geng and Gool, Luc Van},
         journal={arXiv},
         year={2022}
     }
