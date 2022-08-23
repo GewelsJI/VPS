@@ -47,6 +47,10 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-:
+2022 | **Gastroenterology Insights** | UPolySeg: A U-Net-Based Polyp Segmentation Network Using Colonoscopy Images | [Paper](https://www.mdpi.com/2036-7422/13/3/27/pdf?version=1660117945)/Code
+2022 | **Electronics** | A Segmentation Algorithm of Colonoscopy Images Based on Multi-Scale Feature Fusion | [Paper](https://www.mdpi.com/2079-9292/11/16/2501/pdf?version=1660199760)/Code
+2022 | **TCSVT** | Polyp-Mixer: An Efficient Context-Aware MLP-based Paradigm for Polyp Segmentation | [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9852486)/[Code](https://github.com/shijinghuihub/Polyp-Mixer)
+2022 | **TETCI** | Adaptive Context Exploration Network for Polyp Segmentation in Colonoscopy Images | [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9852746)/Code
 2022 | **IJCAI** | ICGNet: Integration Context-Based Reverse-Contour Guidance Network for Polyp Segmentation | [Paper](https://www.ijcai.org/proceedings/2022/0123.pdf)/Code
 2022 | **IJCAI** | TCCNet: Temporally Consistent Context-Free Network for Semi-supervised Video Polyp Segmentation | [Paper](https://www.ijcai.org/proceedings/2022/0155.pdf)/[Code](https://github.com/wener-yung/TCCNet)
 2022 | **AIM** | An end-to-end tracking method for polyp detectors in colonoscopy videos | [Paper](https://reader.elsevier.com/reader/sd/pii/S0933365722001270?token=85406D788AF1B59597BD0BCA3456A70DD2ECE3040EBCB1C3D669584B712F58FA656224415F80070007005E3D36B81F8D&originRegion=us-east-1&originCreation=20220801152429)/Code
@@ -178,6 +182,7 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
+2022 | **IJCARS** | Positive-gradient-weighted object activation mapping: visual explanation of object detector towards precise colorectal-polyp localisation | [Paper](https://link.springer.com/content/pdf/10.1007/s11548-022-02696-y.pdf)/Code
 2022 | **arXiv** | Colonoscopy polyp detection with massive endoscopic images | [Paper](https://arxiv.org/pdf/2202.08730.pdf)/Code
 2021 | **arXiv** | Detecting, Localising and Classifying Polyps from Colonoscopy Videos using Deep Learning | [Paper](https://arxiv.org/pdf/2101.03285.pdf)/Code 
 2020 | **IEEE ISBI** | Reduce false-positive rate by active learning for automatic polyp detection in colonoscopy videos | [Paper](https://www.researchgate.net/profile/Zhe-Guo-12/publication/322563091_Automatic_polyp_recognition_from_colonoscopy_images_based_on_bag_of_visual_words/links/5f9b60a7299bf1b53e512f47/Automatic-polyp-recognition-from-colonoscopy-images-based-on-bag-of-visual-words.pdf)/Code 
