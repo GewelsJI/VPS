@@ -43,6 +43,7 @@ In the deep learning era, we present the first comprehensive video polyp segment
 
 # 2. News
 
+- *[August/24/2022]* :boom: Our paper has been accepted by [Machine Intelligence Research (MIR)](https://www.springer.com/journal/11633) journal.
 - *[July/03/2022]* :boom: We update a new version of SUN-SEG with more fine-grained data splits, including seen/unseen senarios. More details refer to our technical report. Also, the new PaperWithCode page refer to [SUN-SEG-Easy](https://paperswithcode.com/dataset/sun-seg-easy) & [SUN-SEG-Hard](https://paperswithcode.com/dataset/sun-seg-hard).
 - *[May/11/2022]* Release rejected labels: [SUN-SEG-Rejected-Labels](https://drive.google.com/file/d/1OtK2PR6gKQv56dIFjw0rXadcgGonf93S/view?usp=sharing). More details see [here](https://github.com/GewelsJI/VPS/blob/main/docs/DATA_DESCRIPTION.md#rejected-labels).
 - *[March/27/2022]* Release pretrained checkpoints and whole benchamrks results.
@@ -173,7 +174,7 @@ If you have found our work useful, please use the following reference to cite th
     @article{ji2022vps,
         title={Video Polyp Segmentation: A Deep Learning Perspective},
         author={Ji, Ge-Peng and Xiao, Guobao and Chou, Yu-Cheng and Fan, Deng-Ping and Zhao, Kai and Chen, Geng and Van Gool, Luc},
-        journal={arXiv},
+        journal={Machine Intelligence Research},
         year={2022}
     }
 
