@@ -274,7 +274,7 @@ If you have found our work useful, please use the following reference to cite th
     @article{ji2022vps,
         title={Video Polyp Segmentation: A Deep Learning Perspective},
         author={Ji, Ge-Peng and Xiao, Guobao and Chou, Yu-Cheng and Fan, Deng-Ping and Zhao, Kai and Chen, Geng and Fu, Huazhu and Van Gool, Luc},
-        journal={arXiv},
+        journal={Machine Intelligence Research},
         year={2022}
     }
 
