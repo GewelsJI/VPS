@@ -1,10 +1,10 @@
-# <p align=center>`Video Polyp Segmentation: A Deep Learning Perspective`</p><!-- omit in toc -->
+# <p align=center>`Video Polyp Segmentation: A Deep Learning Perspective (MIR 2022)`</p><!-- omit in toc -->
 
 [![license: mit](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![LAST COMMIT](https://img.shields.io/github/last-commit/GewelsJI/VPS?style=flat-square)
 ![ISSUES](https://img.shields.io/github/issues/GewelsJI/VPS?style=flat-square)
 ![STARS](https://img.shields.io/github/stars/GewelsJI/VPS?style=flat-square)
-[![ARXIV PAPER](https://img.shields.io/badge/Arxiv-Paper-red?style=flat-square)](https://arxiv.org/abs/2203.14291v2)
+[![ARXIV PAPER](https://img.shields.io/badge/Arxiv-Paper-red?style=flat-square)](https://arxiv.org/pdf/2203.14291v3.pdf)
 [![Gitter](https://badges.gitter.im/video-polyp-segmentation/community.svg)](https://gitter.im/video-polyp-segmentation/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/video-polyp-segmentation-a-deep-learning/video-polyp-segmentation-on-sun-seg-easy)](https://paperswithcode.com/sota/video-polyp-segmentation-on-sun-seg-easy?p=video-polyp-segmentation-a-deep-learning)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/video-polyp-segmentation-a-deep-learning/video-polyp-segmentation-on-sun-seg-hard)](https://paperswithcode.com/sota/video-polyp-segmentation-on-sun-seg-hard?p=video-polyp-segmentation-a-deep-learning)
@@ -13,7 +13,7 @@
     <img src="./assets/background-min.gif"/> <br />
 </p>
 
-- **Title:** Video Polyp Segmentation: A Deep Learning Perspective ( [arXiv](https://arxiv.org/abs/2203.14291v2) )
+- **Title:** Video Polyp Segmentation: A Deep Learning Perspective ( [Paper](https://arxiv.org/pdf/2203.14291v3.pdf) )
 - **Authors:** [Ge-Peng Ji](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=oaxKYKUAAAAJ)^, Guobao Xiao^, [Yu-Cheng Chou](https://scholar.google.com/citations?user=YVNRBTcAAAAJ&hl=en)^, [Deng-Ping Fan](https://dengpingfan.github.io/)*, [Kai Zhao](https://kaizhao.net/), [Geng Chen](https://scholar.google.com/citations?user=sJGCnjsAAAAJ&hl=en), and [Luc Van Gool](https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en).
 - **Contact:** This project is still work in progress, and we invite all to contribute in making it more acessible and useful. If you have any questions, please feel free to drop us an e-mail (gepengai.ji@gmail.com, johnson111788@gmail.com, dengpfan@gmail.com) or directly report it in the issue or push a PR. Your star is our motivation, let's enjoy it!
 - Welcome any discussions on video polyp segmentation at [Gitter room](https://gitter.im/video-polyp-segmentation/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link) or join our [WeChat group](https://github.com/GewelsJI/VPS/blob/main/assets/wechat_group.JPG).
