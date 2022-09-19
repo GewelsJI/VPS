@@ -4,7 +4,7 @@
 
 # 1. Preview
 
-This is a paper collection of **126** colonoscopy imaging-based AI scientific researches in recent **12** years.
+This is a paper collection of **131** colonoscopy imaging-based AI scientific researches in recent **12** years.
 
 In order to better understand the development of this field and to help researchers in their research process, we have divided the works into five tasks, including **101** papers on [image polyp segmentation](#21-image-polyp-segmentation), **2** papers on [video polyp segmentation](#22-video-polyp-segmentation), **7** papers on [image polyp detection](#23-image-polyp-detection),  **9** papers on [video polyp detection](#24-video-polyp-detection), **4** paper on [image polyp classification](#25-image-polyp-classification),  **1** paper on [video polyp classification](#26-video-polyp-classification), **1** paper on [colonoscopy depth estimation](#27-colonoscopy-depth-estimation), and **1** paper on [colonoscopy deficient coverage detection](#28-colonoscopy-deficient-coverage-detection).
 
@@ -47,6 +47,11 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-:
+2022 | **MICCAI** | Using Guided Self-Attention with Local Information for Polyp Segmentation | [Paper](https://link.springer.com/chapter/10.1007/978-3-031-16440-8_60)/Code
+2022 | **MICCAI** | Task-Relevant Feature Replenishment for Cross-Centre Polyp Segmentation|  [Paper](https://link.springer.com/chapter/10.1007/978-3-031-16440-8_57)/[Code](https://github.com/CathyS1996/TRFRNet)
+2022 | **MICCAI** | TGANet: Text-guided attention for improved polyp segmentation | [Paper](https://arxiv.org/pdf/2205.04280.pdf)/[Code](https://github.com/nikhilroxtomar/TGANet)
+2022 | **MICCAI** | Lesion-Aware Dynamic Kernel for Polyp Segmentation | [Paper](https://link.springer.com/chapter/10.1007/978-3-031-16437-8_10)/Code
+2022 | **MICCAI** | Semi-Supervised Spatial Temporal Attention Network for Video Polyp Segmentation | [Paper](https://link.springer.com/chapter/10.1007/978-3-031-16437-8_7)/Code
 2022 | **Gastroenterology Insights** | UPolySeg: A U-Net-Based Polyp Segmentation Network Using Colonoscopy Images | [Paper](https://www.mdpi.com/2036-7422/13/3/27/pdf?version=1660117945)/Code
 2022 | **Electronics** | A Segmentation Algorithm of Colonoscopy Images Based on Multi-Scale Feature Fusion | [Paper](https://www.mdpi.com/2079-9292/11/16/2501/pdf?version=1660199760)/Code
 2022 | **TCSVT** | Polyp-Mixer: An Efficient Context-Aware MLP-based Paradigm for Polyp Segmentation | [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9852486)/[Code](https://github.com/shijinghuihub/Polyp-Mixer)
@@ -65,7 +70,6 @@ In addition, we provide links to each paper and its repository whenever possible
 2022 | **IEEE Access** | Polyp Segmentation of Colonoscopy Images by Exploring the Uncertain Areas | [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9775966)/Code
 2022 | **JBHI** | Boundary Constraint Network with Cross Layer Feature Integration for Polyp Segmentation | [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9772424)/Code
 2022 | **CMIG** | Polyp Segmentation Network with Hybrid Channel-Spatial Attention and Pyramid Global Context Guided Feature Fusion | [Paper](https://reader.elsevier.com/reader/sd/pii/S0895611122000453?token=1CC9A6070522894EA16E7984593F634B2A32CCB11CB9CBFD4CAA37916A13DE4D3F6AB47DFDDB5F6ED12F23B0CAD0FE20&originRegion=us-east-1&originCreation=20220515094414)/Code
-2022 | **MICCAI** | TGANet: Text-guided attention for improved polyp segmentation | [Paper](https://arxiv.org/pdf/2205.04280.pdf)/[Code](https://github.com/nikhilroxtomar/TGANet)
 2022 | **arXiv** | Automatic Polyp Segmentation with Multiple Kernel Dilated Convolution Network | [Paper](https://arxiv.org/pdf/2206.06264.pdf)/Code
 2022 | **arXiv** | PlutoNet: An Efficient Polyp Segmentation Network | [Paper](https://arxiv.org/pdf/2204.03652.pdf)/Code
 2022 | **arXiv** | Automated Polyp Segmentation in Colonoscopy using MSRFNet | [Paper](https://www.researchgate.net/profile/Debesh-Jha/publication/359698512_Automated_Polyp_Segmentation_in_Colonoscopy_using_MSRFNet/links/624907bf8068956f3c6533c1/Automated-Polyp-Segmentation-in-Colonoscopy-using-MSRFNet.pdf)/Code
@@ -197,6 +201,8 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
+2022 | **MICCAI** | Semi-Supervised Spatial Temporal Attention Network for Video Polyp Segmentation | [Paper](https://link.springer.com/chapter/10.1007/978-3-031-16440-8_44)/Code
+2022 | **AAAI** | TCCNet: Temporally Consistent Context-Free Network for Semi-supervised Video Polyp Segmentation | [Paper](https://www.ijcai.org/proceedings/2022/0155.pdf)/Code
 2021 | **BSPC** | Real-time automatic polyp detection in colonoscopy using feature enhancement module and spatiotemporal similarity correlation unit | [Paper](https://sci-hub.se/10.1016/j.bspc.2021.102503)/Code 
 2021 | **EIO** | Real-time deep learning-based colorectal polyp localization on clinical video footage achievable with a wide array of hardware configurations | [Paper](https://www.thieme-connect.com/products/ejournals/pdf/10.1055/a-1388-6735.pdf)/Code
 2021 | **MICCAI** | Multi-frame Collaboration for Effective Endoscopic Video Polyp Detection via Spatial-Temporal Feature Transformation | [Paper](https://arxiv.org/pdf/2107.03609.pdf)/[Code](https://github.com/lingyunwu14/STFT)
