@@ -4,7 +4,7 @@
 
 # 1. Preview
 
-This is a paper collection of **131** colonoscopy imaging-based AI scientific researches in recent **12** years.
+This is a paper collection of **133** colonoscopy imaging-based AI scientific researches in recent **12** years.
 
 In order to better understand the development of this field and to help researchers in their research process, we have divided the works into five tasks, including **101** papers on [image polyp segmentation](#21-image-polyp-segmentation), **2** papers on [video polyp segmentation](#22-video-polyp-segmentation), **7** papers on [image polyp detection](#23-image-polyp-detection),  **9** papers on [video polyp detection](#24-video-polyp-detection), **4** paper on [image polyp classification](#25-image-polyp-classification),  **1** paper on [video polyp classification](#26-video-polyp-classification), **1** paper on [colonoscopy depth estimation](#27-colonoscopy-depth-estimation), and **1** paper on [colonoscopy deficient coverage detection](#28-colonoscopy-deficient-coverage-detection).
 
