@@ -177,6 +177,9 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
+2022 | **MICCAI** | Semi-Supervised Spatial Temporal Attention Network for Video Polyp Segmentation | [Paper](https://link.springer.com/chapter/10.1007/978-3-031-16440-8_44)/Code
+2022 | **AAAI** | TCCNet: Temporally Consistent Context-Free Network for Semi-supervised Video Polyp Segmentation | [Paper](https://www.ijcai.org/proceedings/2022/0155.pdf)/Code
+2022 | **MIR** | Video Polyp Segmentation: A Deep Learning Perspective | [Paper](https://arxiv.org/pdf/2203.14291v3.pdf)/[Code](https://github.com/GewelsJI/VPS)
 2021 | **MICCAI** | Progressively Normalized Self-Attention Network for Video Polyp Segmentation | [Paper](https://arxiv.org/pdf/2105.08468.pdf)/[Code](https://github.com/GewelsJI/PNS-Net)
 2020 | **MICCAI** | Endoscopic Polyp Segmentation Using a Hybrid 2D/3D CNN | [Paper](https://discovery.ucl.ac.uk/id/eprint/10114066/1/Endoscopic%20polyp%20segmentation%20using%20a%20hybrid%202D-3D%20CNN.pdf)/Code
 
@@ -201,8 +204,6 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
-2022 | **MICCAI** | Semi-Supervised Spatial Temporal Attention Network for Video Polyp Segmentation | [Paper](https://link.springer.com/chapter/10.1007/978-3-031-16440-8_44)/Code
-2022 | **AAAI** | TCCNet: Temporally Consistent Context-Free Network for Semi-supervised Video Polyp Segmentation | [Paper](https://www.ijcai.org/proceedings/2022/0155.pdf)/Code
 2021 | **BSPC** | Real-time automatic polyp detection in colonoscopy using feature enhancement module and spatiotemporal similarity correlation unit | [Paper](https://sci-hub.se/10.1016/j.bspc.2021.102503)/Code 
 2021 | **EIO** | Real-time deep learning-based colorectal polyp localization on clinical video footage achievable with a wide array of hardware configurations | [Paper](https://www.thieme-connect.com/products/ejournals/pdf/10.1055/a-1388-6735.pdf)/Code
 2021 | **MICCAI** | Multi-frame Collaboration for Effective Endoscopic Video Polyp Detection via Spatial-Temporal Feature Transformation | [Paper](https://arxiv.org/pdf/2107.03609.pdf)/[Code](https://github.com/lingyunwu14/STFT)
