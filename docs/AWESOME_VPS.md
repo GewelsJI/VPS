@@ -47,7 +47,7 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-:
-2022 | **MICCAI** | Using Guided Self-Attention with Local Information for Polyp Segmentation | [Paper](https://link.springer.com/chapter/10.1007/978-3-031-16440-8_60)/Code
+2022 | **MICCAI** | :fire: Using Guided Self-Attention with Local Information for Polyp Segmentation | [Paper](https://link.springer.com/chapter/10.1007/978-3-031-16440-8_60)/Code
 2022 | **MICCAI** | Task-Relevant Feature Replenishment for Cross-Centre Polyp Segmentation|  [Paper](https://link.springer.com/chapter/10.1007/978-3-031-16440-8_57)/[Code](https://github.com/CathyS1996/TRFRNet)
 2022 | **MICCAI** | TGANet: Text-guided attention for improved polyp segmentation | [Paper](https://arxiv.org/pdf/2205.04280.pdf)/[Code](https://github.com/nikhilroxtomar/TGANet)
 2022 | **MICCAI** | Lesion-Aware Dynamic Kernel for Polyp Segmentation | [Paper](https://link.springer.com/chapter/10.1007/978-3-031-16437-8_10)/Code
@@ -179,7 +179,7 @@ In addition, we provide links to each paper and its repository whenever possible
 :-: | :-: | :-  | :-: 
 2022 | **MICCAI** | Semi-Supervised Spatial Temporal Attention Network for Video Polyp Segmentation | [Paper](https://link.springer.com/chapter/10.1007/978-3-031-16440-8_44)/Code
 2022 | **AAAI** | TCCNet: Temporally Consistent Context-Free Network for Semi-supervised Video Polyp Segmentation | [Paper](https://www.ijcai.org/proceedings/2022/0155.pdf)/Code
-2022 | **MIR** | Video Polyp Segmentation: A Deep Learning Perspective | [Paper](https://arxiv.org/pdf/2203.14291v3.pdf)/[Code](https://github.com/GewelsJI/VPS)
+2022 | **MIR** | :fire: Video Polyp Segmentation: A Deep Learning Perspective | [Paper](https://arxiv.org/pdf/2203.14291v3.pdf)/[Code](https://github.com/GewelsJI/VPS)
 2021 | **MICCAI** | Progressively Normalized Self-Attention Network for Video Polyp Segmentation | [Paper](https://arxiv.org/pdf/2105.08468.pdf)/[Code](https://github.com/GewelsJI/PNS-Net)
 2020 | **MICCAI** | Endoscopic Polyp Segmentation Using a Hybrid 2D/3D CNN | [Paper](https://discovery.ucl.ac.uk/id/eprint/10114066/1/Endoscopic%20polyp%20segmentation%20using%20a%20hybrid%202D-3D%20CNN.pdf)/Code
 
