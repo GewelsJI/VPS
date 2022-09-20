@@ -6,7 +6,7 @@
 
 This is a paper collection of **133** colonoscopy imaging-based AI scientific researches in recent **12** years.
 
-In order to better understand the development of this field and to help researchers in their research process, we have divided the works into five tasks, including **105** papers on [image polyp segmentation](#21-image-polyp-segmentation), **5** papers on [video polyp segmentation](#22-video-polyp-segmentation), **7** papers on [image polyp detection](#23-image-polyp-detection),  **9** papers on [video polyp detection](#24-video-polyp-detection), **4** paper on [image polyp classification](#25-image-polyp-classification),  **1** paper on [video polyp classification](#26-video-polyp-classification), **1** paper on [colonoscopy depth estimation](#27-colonoscopy-depth-estimation), and **1** paper on [colonoscopy deficient coverage detection](#28-colonoscopy-deficient-coverage-detection).
+In order to better understand the development of this field and to help researchers in their research process, we have divided the works into five tasks, including **105** papers on [image polyp segmentation](#21-image-polyp-segmentation), **5** papers on [video polyp segmentation](#22-video-polyp-segmentation), **7** papers on [image polyp detection](#23-image-polyp-detection),  **9** papers on [video polyp detection](#24-video-polyp-detection), **5** paper on [image polyp classification](#25-image-polyp-classification),  **1** paper on [video polyp classification](#26-video-polyp-classification), **1** paper on [colonoscopy depth estimation](#27-colonoscopy-depth-estimation), and **1** paper on [colonoscopy deficient coverage detection](#28-colonoscopy-deficient-coverage-detection).
 
 Besides, we present the collection of **14** polyp related datasets, including **7** [image segmentation datasets](#31-image-segmentation-datasets), **2** [video segmentation datasets](#32-video-segmentation-datasets), **1** [video detection dataset](#33-video-detection-datasets), **3** [video classification datasets](#34-video-classification-datasets), and **1** [colonoscopy depth dataset](#35-colonoscopy-depth-datasets).
 
@@ -220,6 +220,8 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
+2022 | **MICCAI** | Toward Clinically Assisted Colorectal Polyp Recognition via Structured Cross-Modal Representation Consistency
+ | [Paper](https://link.springer.com/content/pdf/10.1007/978-3-031-16437-8_14.pdf)/[Code](https://github.com/WeijieMax/CPC-Trans)
 2020 | **IEEE ISBI** | Photoshopping Colonoscopy Video Frames | [Paper](https://arxiv.org/pdf/1910.10345v1.pdf)/Code
 2020 | **MICCAI** | Few-Shot Anomaly Detection for Polyp Frames from Colonoscopy | [Paper](https://arxiv.org/pdf/2006.14811.pdf)/[Code](https://github.com/tianyu0207/FSAD-Net%20)
 2020 | **MICCAI** | Two-Stream Deep Feature Modelling for Automated Video Endoscopy Data Analysis | [Paper](https://arxiv.org/pdf/2007.05914.pdf)/Code 
@@ -231,6 +233,8 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-:
+2022 | **MICCAI** | Contrastive Transformer-based Multiple Instance Learning for Weakly Supervised Polyp Frame Detection
+ | [Paper](https://link.springer.com/content/pdf/10.1007/978-3-031-16437-8_9.pdf)/[Code](https://github.com/tianyu0207/weakly-polyp)
 2022 | **arXiv** | Contrastive Transformer-based Multiple Instance Learning for Weakly Supervised Polyp Frame Detection | [Paper](https://arxiv.org/pdf/2203.12121.pdf)/Code
 
 [Back to top](#1-preview)
