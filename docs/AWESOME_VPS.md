@@ -221,8 +221,7 @@ In addition, we provide links to each paper and its repository whenever possible
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
 2022 | **MICCAI** | FFCNet: Fourier Transform-Based Frequency Learning and Complex Convolutional Network for Colon Disease Classification | [Paper](https://link.springer.com/chapter/10.1007/978-3-031-16437-8_8)/[Code](https://github.com/soleilssss/FFCNet)
-2022 | **MICCAI** | Toward Clinically Assisted Colorectal Polyp Recognition via Structured Cross-Modal Representation Consistency
- | [Paper](https://link.springer.com/content/pdf/10.1007/978-3-031-16437-8_14.pdf)/[Code](https://github.com/WeijieMax/CPC-Trans)
+2022 | **MICCAI** | Toward Clinically Assisted Colorectal Polyp Recognition via Structured Cross-Modal Representation Consistency | [Paper](https://link.springer.com/content/pdf/10.1007/978-3-031-16437-8_14.pdf)/[Code](https://github.com/WeijieMax/CPC-Trans)
 2020 | **IEEE ISBI** | Photoshopping Colonoscopy Video Frames | [Paper](https://arxiv.org/pdf/1910.10345v1.pdf)/Code
 2020 | **MICCAI** | Few-Shot Anomaly Detection for Polyp Frames from Colonoscopy | [Paper](https://arxiv.org/pdf/2006.14811.pdf)/[Code](https://github.com/tianyu0207/FSAD-Net%20)
 2020 | **MICCAI** | Two-Stream Deep Feature Modelling for Automated Video Endoscopy Data Analysis | [Paper](https://arxiv.org/pdf/2007.05914.pdf)/Code 
@@ -234,8 +233,7 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-:
-2022 | **MICCAI** | Contrastive Transformer-based Multiple Instance Learning for Weakly Supervised Polyp Frame Detection
- | [Paper](https://link.springer.com/content/pdf/10.1007/978-3-031-16437-8_9.pdf)/[Code](https://github.com/tianyu0207/weakly-polyp)
+2022 | **MICCAI** | Contrastive Transformer-based Multiple Instance Learning for Weakly Supervised Polyp Frame Detection | [Paper](https://link.springer.com/content/pdf/10.1007/978-3-031-16437-8_9.pdf)/[Code](https://github.com/tianyu0207/weakly-polyp)
 2022 | **arXiv** | Contrastive Transformer-based Multiple Instance Learning for Weakly Supervised Polyp Frame Detection | [Paper](https://arxiv.org/pdf/2203.12121.pdf)/Code
 
 [Back to top](#1-preview)
