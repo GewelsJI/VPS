@@ -261,6 +261,7 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
+2022 | **arXiv** | ERS: a novel comprehensive endoscopy image dataset for machine learning, compliant with the MST 3.0 specification | [Paper](https://arxiv.org/abs/2201.08746)/[Project](https://cvlab.eti.pg.gda.pl/publications/endoscopy-dataset)
 2022 | **arXiv** | Synthetic data for unsupervised polyp segmentation | [Paper](https://arxiv.org/pdf/2202.08680.pdf)/[Code](https://github.com/enric1994/synth-colon)/[Project](https://enric1994.github.io/synth-colon)
 2020 | **ICMM** | **Kvasir-SEG** - Kvasir-seg: A segmented polyp dataset | [Paper](https://arxiv.org/pdf/1911.07069.pdf)/[Code](https://datasets.simula.no/kvasir-seg/)
 2017 | **JHE** | **CVC-EndoSceneStill** - A Benchmark for Endoluminal Scene Segmentation of Colonoscopy Images | [Paper](https://downloads.hindawi.com/journals/jhe/2017/4037190.pdf)/[Project](http://www.cvc.uab.es/CVC-Colon/index.php/databases/cvc-endoscenestill/)
