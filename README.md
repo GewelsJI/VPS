@@ -172,12 +172,16 @@ To better understand the development of this field and to quickly push researche
 If you have found our work useful, please use the following reference to cite this project:
 
     @article{ji2022vps,
-        title={Video Polyp Segmentation: A Deep Learning Perspective},
-        author={Ji, Ge-Peng and Xiao, Guobao and Chou, Yu-Cheng and Fan, Deng-Ping and Zhao, Kai and Chen, Geng and Van Gool, Luc},
-        journal={Machine Intelligence Research},
-        year={2022}
+      title={Video polyp segmentation: A deep learning perspective},
+      author={Ji, Ge-Peng and Xiao, Guobao and Chou, Yu-Cheng and Fan, Deng-Ping and Zhao, Kai and Chen, Geng and Van Gool, Luc},
+      journal={Machine Intelligence Research},
+      pages={531–549},
+      year={2022},
+      volume={19},
+      number={6},
+      publisher={Springer}
     }
-
+    
     @inproceedings{ji2021pnsnet,
         title={Progressively Normalized Self-Attention Network for Video Polyp Segmentation},
         author={Ji, Ge-Peng and Chou, Yu-Cheng and Fan, Deng-Ping and Chen, Geng and Jha, Debesh and Fu, Huazhu and Shao, Ling},
