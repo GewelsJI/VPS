@@ -1,21 +1,24 @@
 # Awesome Video Polyp Segmentation
 
+<img src="https://img.shields.io/badge/Contributions-Welcome-278ea5" alt="Contrib"/> 
+<img src="https://img.shields.io/badge/Number%20of%20Papers-192-FF6F00" alt="PaperNum"/>
+
 ![](../assets/the-reading-list.png)
 
 # 1. Preview
 
 This is a paper collection of **133** colonoscopy imaging-based AI scientific researches in recent **12** years.
 
-In order to better understand the development of this field and to help researchers in their research process, we have divided the works into five tasks, including **106** papers on [image polyp segmentation](#21-image-polyp-segmentation), **5** papers on [video polyp segmentation](#22-video-polyp-segmentation), **7** papers on [image polyp detection](#23-image-polyp-detection),  **9** papers on [video polyp detection](#24-video-polyp-detection), **6** paper on [image polyp classification](#25-image-polyp-classification),  **1** paper on [video polyp classification](#26-video-polyp-classification), **1** paper on [colonoscopy depth estimation](#27-colonoscopy-depth-estimation), and **1** paper on [colonoscopy deficient coverage detection](#28-colonoscopy-deficient-coverage-detection).
+In order to better understand the development of this field and to help researchers in their research process, we have divided the works into five tasks, including **133** papers on [image polyp segmentation](#21-image-polyp-segmentation), **5** papers on [video polyp segmentation](#22-video-polyp-segmentation), **17** papers on [image polyp detection](#23-image-polyp-detection),  **11** papers on [video polyp detection](#24-video-polyp-detection), **6** paper on [image polyp classification](#25-image-polyp-classification),  **1** paper on [video polyp classification](#26-video-polyp-classification), **2** paper on [colonoscopy depth estimation](#27-colonoscopy-depth-estimation), **1** paper on [colonoscopy deficient coverage detection](#28-colonoscopy-deficient-coverage-detection), and **1** paper on [colon polyp image synthesis](#29-colon-polyp-image-synthesis).
 
-Besides, we present the collection of **14** polyp related datasets, including **7** [image segmentation datasets](#31-image-segmentation-datasets), **2** [video segmentation datasets](#32-video-segmentation-datasets), **1** [video detection dataset](#33-video-detection-datasets), **3** [video classification datasets](#34-video-classification-datasets), and **1** [colonoscopy depth dataset](#35-colonoscopy-depth-datasets).
+Besides, we present the collection of **14** polyp related datasets, including **8** [image segmentation datasets](#31-image-segmentation-datasets), **2** [video segmentation datasets](#32-video-segmentation-datasets), **1** [video detection dataset](#33-video-detection-datasets), **3** [video classification datasets](#34-video-classification-datasets), and **2** [colonoscopy depth dataset](#35-colonoscopy-depth-datasets).
 
 In addition, we provide links to each paper and its repository whenever possible. * denotes the corresponding paper cannot be downloaded or the link is connected to the journal.
 
 > Note that this page is under construction. If you have anything to recommend or any suggestions, please feel free to contact us via e-mail (gepengai.ji@gmail) or directly push a PR. 
 
 
---- *Last updated: 05/15/2022* --- 
+--- *Last updated: 12/07/2022* --- 
 
 ## 1.1. Table of Contents
 
@@ -31,6 +34,7 @@ In addition, we provide links to each paper and its repository whenever possible
   * [2.6 Video Polyp Classification](#26-video-polyp-classification)
   * [2.7 Colonoscopy Depth Estimation](#27-colonoscopy-depth-estimation)
   * [2.8 Colonoscopy Deficient Coverage Detection](#28-colonoscopy-deficient-coverage-detection)
+  * [2.9 Colon Polyp Image Synthesis](#29-colon-polyp-image-synthesis)
 - [3. Polyp Related Datasets](#3-useful-resources)
   * [3.1 Image Segmentation Datasets](#31-image-segmentation-datasets)
   * [3.2 Video Segmentation Datasets](#32-video-segmentation-datasets)
@@ -47,7 +51,15 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-:
-2022 | **MICCAI** | :fire: Using Guided Self-Attention with Local Information for Polyp Segmentation | [Paper](https://link.springer.com/chapter/10.1007/978-3-031-16440-8_60)/Code
+2022 | **ISICT** | Incremental Boundary Refinement using Self Axial Reverse Attention and Uncertainty-aware Gate for Colon Polyp Segmentation | [Paper*](https://dl.acm.org/doi/abs/10.1145/3568562.3568663)/Code
+2022 | **TVCJ** | DCANet: deep context attention network for automatic polyp segmentation | [Paper](https://link.springer.com/content/pdf/10.1007/s00371-022-02677-x.pdf?pdf=button)/Code
+2022 | **arXiv** | Towards Automated Polyp Segmentation Using Weakly- and Semi-Supervised Learning and Deformable Transformers | [Paper](https://arxiv.org/pdf/2211.11847.pdf)/Code
+2022 | **arXiv** | Spatially Exclusive Pasting: A General Data Augmentation for the Polyp Segmentation | [Paper](https://arxiv.org/pdf/2211.08284.pdf)/Code 
+2022 | **CBM** | MSRAformer: Multiscale spatial reverse attention network for polyp segmentation | [Paper*](https://www.sciencedirect.com/science/article/abs/pii/S0010482522009829)/Code
+2022 | **CBM** | DBMF: Dual Branch Multiscale Feature Fusion Network for polyp segmentation | [Paper*](https://www.sciencedirect.com/science/article/abs/pii/S0010482522010125)/Code
+2022 | **ICAISM** | Automatic Polyp Segmentation in Colonoscopy Images Using Single Network Model: SegNet | [Paper](https://link.springer.com/content/pdf/10.1007/978-981-16-2183-3_69.pdf?pdf=inline%20link)/Code
+2022 | **ICMAR** | Polyp segmentation algorithm combining multi-scale attention and multi-layer loss | [Paper*](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12331/123314W/Polyp-segmentation-algorithm-combining-multi-scale-attention-and-multi-layer/10.1117/12.2652907.short?SSO=1)/Code
+2022 | **MICCAI** | Using Guided Self-Attention with Local Information for Polyp Segmentation | [Paper](https://link.springer.com/chapter/10.1007/978-3-031-16440-8_60)/Code
 2022 | **MICCAI** | Task-Relevant Feature Replenishment for Cross-Centre Polyp Segmentation|  [Paper](https://link.springer.com/chapter/10.1007/978-3-031-16440-8_57)/[Code](https://github.com/CathyS1996/TRFRNet)
 2022 | **MICCAI** | TGANet: Text-guided attention for improved polyp segmentation | [Paper](https://arxiv.org/pdf/2205.04280.pdf)/[Code](https://github.com/nikhilroxtomar/TGANet)
 2022 | **MICCAI** | Lesion-Aware Dynamic Kernel for Polyp Segmentation | [Paper](https://link.springer.com/chapter/10.1007/978-3-031-16437-8_10)/Code
@@ -164,6 +176,7 @@ In addition, we provide links to each paper and its repository whenever possible
 2018 | **Medical Robotics Res** | Automatic polyp segmentation using convolution neural networks | [Paper](https://arxiv.org/pdf/2004.10792.pdf)/Code 
 2017 | **ISOP** | Fully convolutional neural networks for polyp segmentation in colonoscopy | [Paper](https://discovery.ucl.ac.uk/id/eprint/1540136/7/Rosa%20Brandao_101340F.pdf)/Code 
 2017 | **SPMB** | Superpixel based segmentation and classification of polyps in wireless capsule endoscopy | [Paper](https://arxiv.org/pdf/1710.07390.pdf)/Code 
+2016 | **IEEE TMI** | Convolutional Neural Networks for Medical Image Analysis: Full Training or Fine Tuning? | [Paper](https://arxiv.org/pdf/1706.00712.pdf)/Code
 2016 | **ComNet** | Advanced Algorithm for Polyp Detection Using Depth Segmentation in Colon Endoscopy | [Paper*](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7824010)/Code
 2015 | **MICCAI** | U-net: Convolutional networks for biomedical image segmentation | [Paper](https://link.springer.com/content/pdf/10.1007/978-3-319-24574-4_28.pdf)/[Code](https://lmb.informatik.uni-freiburg.de/resources/opensource/unet/) 
 2015 | **CMIG** | WM-DOVA Maps for Accurate Polyp Highlighting in Colonoscopy: Validation vs. Saliency Maps from Physicians | [Paper](http://158.109.8.37/files/BSF2015.pdf)/[Code](https://polyp.grand-challenge.org/CVCClinicDB/)
@@ -190,14 +203,23 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
+2022 | **JSJU** | Improving Colonoscopy Polyp Detection Rate Using Semi-Supervised Learning | [Paper](https://link.springer.com/content/pdf/10.1007/s12204-022-2519-1.pdf?pdf=inline%20link)/Code
 2022 | **IJCARS** | Positive-gradient-weighted object activation mapping: visual explanation of object detector towards precise colorectal-polyp localisation | [Paper](https://link.springer.com/content/pdf/10.1007/s11548-022-02696-y.pdf)/Code
 2022 | **arXiv** | Colonoscopy polyp detection with massive endoscopic images | [Paper](https://arxiv.org/pdf/2202.08730.pdf)/Code
 2021 | **arXiv** | Detecting, Localising and Classifying Polyps from Colonoscopy Videos using Deep Learning | [Paper](https://arxiv.org/pdf/2101.03285.pdf)/Code 
+2020 | **Scientific Data** | HyperKvasir, a comprehensive multi-class image and video dataset for gastrointestinal endoscopy | [Paper](https://www.nature.com/articles/s41597-020-00622-y.pdf)/[Project](https://datasets.simula.no/hyper-kvasir/)
+2020 | **Scientific reports** | Real-time detection of colon polyps  during colonoscopy using deep learning: systematic validation with four independent datasets | [Paper](https://www.nature.com/articles/s41598-020-65387-1)/Code
 2020 | **IEEE ISBI** | Reduce false-positive rate by active learning for automatic polyp detection in colonoscopy videos | [Paper](https://www.researchgate.net/profile/Zhe-Guo-12/publication/322563091_Automatic_polyp_recognition_from_colonoscopy_images_based_on_bag_of_visual_words/links/5f9b60a7299bf1b53e512f47/Automatic-polyp-recognition-from-colonoscopy-images-based-on-bag-of-visual-words.pdf)/Code 
 2020 | **TransAI** | Artifact Detection in Endoscopic Video with Deep Convolutional Neural Networks | [Paper*](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9253131)/Code
 2019 | **IEEE Access** | Colonic Polyp Detection in Endoscopic Videos With Single Shot Detection Based Deep Convolutional Neural Network | [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8731913)/Code 
 2019 | **ICTAI** | An Efficient Spatial-Temporal Polyp Detection Framework for Colonoscopy Video | [Paper*](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8995313)/Code
+2018 | **arXiv** | Y-net: A deep convolutional neural network for polyp detection | [Paper](https://arxiv.org/pdf/1806.01907.pdf)/Code
+2017 | **IEEE TMI** | Comparative validation of polyp detection methods in video colonoscopy: results from the MICCAI 2015 endoscopic vision challenge | [Paper](http://clok.uclan.ac.uk/17023/2/17023%20Final%20Version.pdf)/Code 
 2015 | **IEEE TMI** | Automated Polyp Detection in Colonoscopy Videos Using Shape and Context Information | [Paper](https://sci-hub.se/10.1109/tmi.2015.2487997)/Code 
+2009 | **Bildverarbeitung fur die Medizin** | Texturebased polyp detection in colonoscopy | [Paper](http://ftp.informatik.rwth-aachen.de/Publications/CEUR-WS/Vol-446/p346.pdf)/Code 
+2009 | **Proc. SPIE** |  A comparison of blood vessel features and local binary patterns for colorectal polyp classification |  [Paper](https://www.lfb.rwth-aachen.de/files/publications/2009/GRO09a.pdf)/Code 
+2007 | **IEEE ICIP** | Polyp detection in colonoscopy video using elliptical shape feature | [Paper](https://projet.liris.cnrs.fr/imagine/pub/proceedings/ICIP-2007/pdfs/0200465.pdf)/Code
+
 
 [Back to top](#1-preview)
 
@@ -214,6 +236,8 @@ In addition, we provide links to each paper and its repository whenever possible
 2020 | **MICCAI** | Asynchronous in Parallel Detection and Tracking (AIPDT): Real-Time Robust Polyp Detection | [Paper*](https://link.springer.com/content/pdf/10.1007%2F978-3-030-59716-0.pdf)/Code
 2019 | **IEEE ISBI** | POLYP TRACKING IN VIDEO COLONOSCOPY USING OPTICAL FLOW WITH AN ON-THE-FLY TRAINED CNN | [Paper*](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8759180)/Code
 2017 | **JBHI** | Integrating Online and Offline Three-Dimensional Deep Learning for Automated Polyp Detection in Colonoscopy Videos | [Paper](http://www.cse.cuhk.edu.hk/~qdou/papers/2017/%5B2017%5D%5BJBHI%5DIntegrating%20online%20and%20offline%20three%20dimensional%20deep%20learning%20for%20automated%20polyp%20detection%20in%20colonoscopy%20videos.pdf)/Code 
+2015 | **IPMI** | A Comprehensive Computer-Aided Polyp Detection System for Colonoscopy Videos | [Paper](https://link.springer.com/content/pdf/10.1007/978-3-319-19992-4_25.pdf?pdf=inline%20link)/Code
+2015 | **IEEE ISBI** | Automatic polyp detection in colonoscopy videos using an ensemble of convolutional neural networks | [Paper](https://www.researchgate.net/profile/Nima-Tajbakhsh/publication/283464973_Automatic_polyp_detection_in_colonoscopy_videos_using_an_ensemble_of_convolutional_neural_networks/links/5718b4a708aed43f63221b27/Automatic-polyp-detection-in-colonoscopy-videos-using-an-ensemble-of-convolutional-neural-networks.pdf)/Code
 
 [Back to top](#1-preview)
 
@@ -235,7 +259,6 @@ In addition, we provide links to each paper and its repository whenever possible
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-:
 2022 | **MICCAI** | Contrastive Transformer-based Multiple Instance Learning for Weakly Supervised Polyp Frame Detection | [Paper](https://link.springer.com/content/pdf/10.1007/978-3-031-16437-8_9.pdf)/[Code](https://github.com/tianyu0207/weakly-polyp)
-2022 | **arXiv** | Contrastive Transformer-based Multiple Instance Learning for Weakly Supervised Polyp Frame Detection | [Paper](https://arxiv.org/pdf/2203.12121.pdf)/Code
 
 [Back to top](#1-preview)
 
@@ -244,6 +267,7 @@ In addition, we provide links to each paper and its repository whenever possible
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-:
 2022 | **arXiv** | Task-Aware Active Learning for Endoscopic Image Analysis | [Paper](https://arxiv.org/pdf/2204.03440.pdf)/[Code](https://github.com/thetna/endo-active-learn)
+2019 | **IJCARS** | Implicit domain adaptation with conditional generative adversarial networks for depth prediction in endoscopy | [Paper](https://link.springer.com/content/pdf/10.1007/s11548-019-01962-w.pdf?pdf=button%20sticky)/Code/[Project](http://cmic.cs.ucl.ac.uk/ColonoscopyDepth)
 
 [Back to top](#1-preview)
 
@@ -251,7 +275,15 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-:
-2022 | **arXiv** | Detecting Deficient Coverage in Colonoscopies | [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9097918)/Code
+2020 | **IEEE TMI** | Detecting Deficient Coverage in Colonoscopies | [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9097918)/Code
+
+[Back to top](#1-preview)
+
+## 2.9 Colon Polyp Image Synthesis
+
+**Yr.** | **Pub.** | **Title** | **Links** 
+:-: | :-: | :-  | :-:
+2018 | **IEEE Access** | Abnormal Colon Polyp Image Synthesis Using Conditional Adversarial Networks for Improved Detection Performance | [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8478237)/Code
 
 [Back to top](#1-preview)
 
@@ -303,6 +335,7 @@ _ | _ | **PICCOLO** - PICCOLO RGB/NBI (WIDEFIELD) IMAGE COLLECTION | [Project](h
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
+2020 | **IEEE TMI** | Detecting Deficient Coverage in Colonoscopies | [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9097918)/Code/[Project](https://dl.google.com/datasets/CC20/Google-CC20-dataset.tar.gz)
 2019 | **IJCARS** | Implicit domain adaptation with conditional generative adversarial networks for depth prediction in endoscopy | [Paper](https://link.springer.com/content/pdf/10.1007/s11548-019-01962-w.pdf)/[Project](http://cmic.cs.ucl.ac.uk/ColonoscopyDepth/)
 
 [Back to top](#1-preview)
