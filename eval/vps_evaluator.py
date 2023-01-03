@@ -170,7 +170,7 @@ if __name__ == '__main__':
         nargs='+', action='append',
         choices=['2015-MICCAI-UNet', '2018-TMI-UNet++', '2020-MICCAI-ACSNet', '2020-MICCAI-PraNet',
                  '2021-MICCAI-SANet', '2019-TPAMI-COSNet', '2020-AAAI-PCSA', '2020-MICCAI-23DCNN', '2020-TIP-MATNet',
-                 '2021-ICCV-DCFNet', '2021-ICCV-FSNet', '2021-MICCAI-PNSNet', '2021-NIPS-AMD', '2022-TMI-PNSPlus'])
+                 '2021-ICCV-DCFNet', '2021-ICCV-FSNet', '2021-MICCAI-PNSNet', '2021-NIPS-AMD', '2022-MIR-PNSPlus'])
     parser.add_argument(
         '--txt_name', type=str, help='logging root',
         default='Benchmark')
