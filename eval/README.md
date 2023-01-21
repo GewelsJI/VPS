@@ -23,17 +23,32 @@ This toolbox is used to evaluate the performance of video polyp segmentation tas
 
 If you have found our work useful, please use the following reference to cite this project:
 
-    @article{ji2022vps,
-        title={Deep Learning for Video Polyp Segmentation: A Comprehensive Study},
-        author={Ji, Ge-Peng and Xiao, Guobao and Chou, Yu-Cheng and Fan, Deng-Ping and Zhao, Kai and Chen, Geng and Gool, Luc Van},
-        journal={arXiv},
-        year={2022}
+    @article{ji2022video,
+      title={Video polyp segmentation: A deep learning perspective},
+      author={Ji, Ge-Peng and Xiao, Guobao and Chou, Yu-Cheng and Fan, Deng-Ping and Zhao, Kai and Chen, Geng and Van Gool, Luc},
+      journal={Machine Intelligence Research},
+      volume={19},
+      number={6},
+      pages={531--549},
+      year={2022},
+      publisher={Springer}
     }
 
-    @inproceedings{ji2021pnsnet,
-        title={Progressively Normalized Self-Attention Network for Video Polyp Segmentation},
-        author={Ji, Ge-Peng and Chou, Yu-Cheng and Fan, Deng-Ping and Chen, Geng and Jha, Debesh and Fu, Huazhu and Shao, Ling},
-        booktitle={MICCAI},
-        pages={142--152},
-        year={2021}
+
+    @inproceedings{ji2021progressively,
+      title={Progressively normalized self-attention network for video polyp segmentation},
+      author={Ji, Ge-Peng and Chou, Yu-Cheng and Fan, Deng-Ping and Chen, Geng and Fu, Huazhu and Jha, Debesh and Shao, Ling},
+      booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+      pages={142--152},
+      year={2021},
+      organization={Springer}
+    }
+
+    @inproceedings{fan2020pranet,
+      title={Pranet: Parallel reverse attention network for polyp segmentation},
+      author={Fan, Deng-Ping and Ji, Ge-Peng and Zhou, Tao and Chen, Geng and Fu, Huazhu and Shen, Jianbing and Shao, Ling},
+      booktitle={International conference on medical image computing and computer-assisted intervention},
+      pages={263--273},
+      year={2020},
+      organization={Springer}
     }
