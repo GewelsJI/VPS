@@ -18,7 +18,9 @@ So first, you guys need to request the origin colonoscopy video frame from them.
 
 And then, you can feel free to download the complete annotation provided by our SUN-SEG.
 
-- **Request for annotations from SUN-SEG:** Our re-organized annotations could be downloaded at download link: [OneDrive](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/ESYYJtYBZBNLuqcrMbCCmtIBn5eCDn6zZnGanpZ85VbDuw?e=wK2USn) / [Baidu Drive](https://pan.baidu.com/s/1EVr5zsJiwffimv1_YhZnAg) (Password: v9d8, Size: 375 MB).
+- **Request for annotations from SUN-SEG:** Our re-organized annotations could be downloaded at download link:
+    - [OneDrive](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/Ecffd4D2mdFMtM6Z3QC0oEYBH0t68wCOLZUtjN3o6HgSwQ?e=Kmc0Js)
+    - [Baidu Drive](https://pan.baidu.com/s/1f6SKKYtm0IrTxk8Dxnu9KQ?pwd=39iu) (Passcode: 39iu)
 
 # Step-2: Unzip SUN dataset
 
