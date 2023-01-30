@@ -43,7 +43,7 @@ In the deep learning era, we present the first comprehensive video polyp segment
 
 # 2. News
 
-- *[Jan/30/2023]* We update the bounding box annotation with COCO-like format, ie, `[x,y,width,height]` where x and y are the upper-left coordinates of the bounding box. Please download the latest compressed file at [here](https://github.com/GewelsJI/VPS/blob/main/docs/DATA_PREPARATION.md#step-1-request-and-download). Thanks for Yingling Lu for point out this issue.
+- *[Jan/30/2023]* We update the bounding box annotation with COCO-like format, ie, `[x,y,width,height]` where x and y are the upper-left coordinates of the bounding box. Please download the latest compressed file at [here](https://github.com/GewelsJI/VPS/blob/main/docs/DATA_PREPARATION.md#step-1-request-and-download). Thanks for Yingling Lu for pointing out this issue.
 - *[August/24/2022]* :boom: Our paper has been accepted by [Machine Intelligence Research (MIR)](https://www.springer.com/journal/11633) journal.
 - *[July/03/2022]* :boom: We update a new version of SUN-SEG with more fine-grained data splits, including seen/unseen senarios. More details refer to our technical report. Also, the new PaperWithCode page refer to [SUN-SEG-Easy](https://paperswithcode.com/dataset/sun-seg-easy) & [SUN-SEG-Hard](https://paperswithcode.com/dataset/sun-seg-hard).
 - *[May/11/2022]* Release rejected labels: [SUN-SEG-Rejected-Labels](https://drive.google.com/file/d/1OtK2PR6gKQv56dIFjw0rXadcgGonf93S/view?usp=sharing). More details see [here](https://github.com/GewelsJI/VPS/blob/main/docs/DATA_DESCRIPTION.md#rejected-labels).
