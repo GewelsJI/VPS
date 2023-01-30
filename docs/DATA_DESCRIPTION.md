@@ -183,7 +183,7 @@ We present the bounding box annotation for each polyp-existing frame. In `./data
             ...], 
         'annotation': [{
             'id': 'case1_1-a2-image0001', 
-            'bbox': [262, 72, 68, 81]},  # Each element represnets the [min_x, min_y, width, height].
+            'bbox': [72, 262, 68, 81]},  # Each element represnets the [min_x, min_y, width, height], where min_x and min_y are the upper-left coordinates of the bounding box.
             ...]
     }
 
