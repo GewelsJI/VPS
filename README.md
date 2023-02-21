@@ -43,6 +43,7 @@ In the deep learning era, we present the first comprehensive video polyp segment
 
 # 2. News
 
+- *[Jan/30/2023]* We update the bounding box annotation with COCO-like format, ie, `[x,y,width,height]` where x and y are the upper-left coordinates of the bounding box. Please download the latest compressed file at [here](https://github.com/GewelsJI/VPS/blob/main/docs/DATA_PREPARATION.md#step-1-request-and-download). Thanks for Yingling Lu for pointing out this issue.
 - *[August/24/2022]* :boom: Our paper has been accepted by [Machine Intelligence Research (MIR)](https://www.springer.com/journal/11633) journal.
 - *[July/03/2022]* :boom: We update a new version of SUN-SEG with more fine-grained data splits, including seen/unseen senarios. More details refer to our technical report. Also, the new PaperWithCode page refer to [SUN-SEG-Easy](https://paperswithcode.com/dataset/sun-seg-easy) & [SUN-SEG-Hard](https://paperswithcode.com/dataset/sun-seg-hard).
 - *[May/11/2022]* Release rejected labels: [SUN-SEG-Rejected-Labels](https://drive.google.com/file/d/1OtK2PR6gKQv56dIFjw0rXadcgGonf93S/view?usp=sharing). More details see [here](https://github.com/GewelsJI/VPS/blob/main/docs/DATA_DESCRIPTION.md#rejected-labels).
@@ -171,25 +172,35 @@ To better understand the development of this field and to quickly push researche
 
 If you have found our work useful, please use the following reference to cite this project:
 
-    @article{ji2022vps,
+    @article{ji2022video,
       title={Video polyp segmentation: A deep learning perspective},
       author={Ji, Ge-Peng and Xiao, Guobao and Chou, Yu-Cheng and Fan, Deng-Ping and Zhao, Kai and Chen, Geng and Van Gool, Luc},
       journal={Machine Intelligence Research},
-      pages={531–549},
-      year={2022},
       volume={19},
       number={6},
+      pages={531--549},
+      year={2022},
       publisher={Springer}
     }
-    
-    @inproceedings{ji2021pnsnet,
-        title={Progressively Normalized Self-Attention Network for Video Polyp Segmentation},
-        author={Ji, Ge-Peng and Chou, Yu-Cheng and Fan, Deng-Ping and Chen, Geng and Jha, Debesh and Fu, Huazhu and Shao, Ling},
-        booktitle={MICCAI},
-        pages={142--152},
-        year={2021}
+
+
+    @inproceedings{ji2021progressively,
+      title={Progressively normalized self-attention network for video polyp segmentation},
+      author={Ji, Ge-Peng and Chou, Yu-Cheng and Fan, Deng-Ping and Chen, Geng and Fu, Huazhu and Jha, Debesh and Shao, Ling},
+      booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+      pages={142--152},
+      year={2021},
+      organization={Springer}
     }
 
+    @inproceedings{fan2020pranet,
+      title={Pranet: Parallel reverse attention network for polyp segmentation},
+      author={Fan, Deng-Ping and Ji, Ge-Peng and Zhou, Tao and Chen, Geng and Fu, Huazhu and Shen, Jianbing and Shao, Ling},
+      booktitle={International conference on medical image computing and computer-assisted intervention},
+      pages={263--273},
+      year={2020},
+      organization={Springer}
+    }
 # 8. FAQ
 
 - Thanks to [Tuo Wang](victor_wt@qq.com) for providing a great solution to [upgrade the CUDA version when compling the NS block](./docs/Upgrade%20environment%20for%20NS%20block.pdf).
