@@ -228,6 +228,7 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
+2023 | **MICCAI** | YONA: You Only Need One Adjacent Reference-frame for Accurate and Fast Video Polyp Detection | [Paper](https://arxiv.org/pdf/2306.03686.pdf)/[Code]()
 2021 | **BSPC** | Real-time automatic polyp detection in colonoscopy using feature enhancement module and spatiotemporal similarity correlation unit | [Paper](https://sci-hub.se/10.1016/j.bspc.2021.102503)/Code 
 2021 | **EIO** | Real-time deep learning-based colorectal polyp localization on clinical video footage achievable with a wide array of hardware configurations | [Paper](https://www.thieme-connect.com/products/ejournals/pdf/10.1055/a-1388-6735.pdf)/Code
 2021 | **MICCAI** | Multi-frame Collaboration for Effective Endoscopic Video Polyp Detection via Spatial-Temporal Feature Transformation | [Paper](https://arxiv.org/pdf/2107.03609.pdf)/[Code](https://github.com/lingyunwu14/STFT)
