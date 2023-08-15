@@ -51,6 +51,9 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-:
+2023 | **arXiv** | Can SAM Segment Polyps? | [Paper](https://arxiv.org/abs/2304.07583)
+2023 | **arXiv** | Polyp-SAM++: Can A Text Guided SAM Perform Better for Polyp Segmentation? | [Paper](https://www.researchgate.net/publication/373091859_Polyp-SAM_Can_A_Text_Guided_SAM_Perform_Better_for_Polyp_Segmentation)
+2023 | **arXiv** | Polyp-SAM: Transfer SAM for Polyp Segmentation | [Paper](https://arxiv.org/abs/2305.00293)
 2023 | **PR** | Cross-level Feature Aggregation Network for Polyp Segmentation | [Paper](https://www.sciencedirect.com/science/article/pii/S0031320323002558)/[Code](https://github.com/taozh2017/CFANet)
 2022 | **ISICT** | Incremental Boundary Refinement using Self Axial Reverse Attention and Uncertainty-aware Gate for Colon Polyp Segmentation | [Paper*](https://dl.acm.org/doi/abs/10.1145/3568562.3568663)/Code
 2022 | **TVCJ** | DCANet: deep context attention network for automatic polyp segmentation | [Paper](https://link.springer.com/content/pdf/10.1007/s00371-022-02677-x.pdf?pdf=button)/Code
