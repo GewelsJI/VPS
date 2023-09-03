@@ -51,6 +51,13 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-:
+2023 | **MICCAI** | WeakPolyp: You Only Look Bounding Box for Polyp Segmentation | [Paper](https://arxiv.org/pdf/2307.10912.pdf)/[Code](https://github.com/weijun88/WeakPolyp)
+2023 | **MICCAI** | Revisiting Feature Propagation and Aggregation in Polyp Segmentation | Paper
+2023 | **MICCAI** | Probabilistic Modeling Ensemble Vision Transformer Improves Complex Polyp Segmentation | Paper
+2023 | **MICCAI** | S2ME: Spatial-Spectral Mutual Teaching and Ensemble Learning for Scribble-supervised Polyp Segmentation | [Paper](https://arxiv.org/abs/2306.00451)/[Code](https://github.com/lofrienger/S2ME)
+2023 | **arXiv** | Can SAM Segment Polyps? | [Paper](https://arxiv.org/abs/2304.07583)
+2023 | **arXiv** | Polyp-SAM++: Can A Text Guided SAM Perform Better for Polyp Segmentation? | [Paper](https://www.researchgate.net/publication/373091859_Polyp-SAM_Can_A_Text_Guided_SAM_Perform_Better_for_Polyp_Segmentation)
+2023 | **arXiv** | Polyp-SAM: Transfer SAM for Polyp Segmentation | [Paper](https://arxiv.org/abs/2305.00293)
 2023 | **PR** | Cross-level Feature Aggregation Network for Polyp Segmentation | [Paper](https://www.sciencedirect.com/science/article/pii/S0031320323002558)/[Code](https://github.com/taozh2017/CFANet)
 2022 | **ISICT** | Incremental Boundary Refinement using Self Axial Reverse Attention and Uncertainty-aware Gate for Colon Polyp Segmentation | [Paper*](https://dl.acm.org/doi/abs/10.1145/3568562.3568663)/Code
 2022 | **TVCJ** | DCANet: deep context attention network for automatic polyp segmentation | [Paper](https://link.springer.com/content/pdf/10.1007/s00371-022-02677-x.pdf?pdf=button)/Code
@@ -228,6 +235,7 @@ In addition, we provide links to each paper and its repository whenever possible
 
 **Yr.** | **Pub.** | **Title** | **Links** 
 :-: | :-: | :-  | :-: 
+2023 | **MICCAI** | Self-Supervised Polyp Re-Identification in Colonoscopy | [Paper](https://arxiv.org/pdf/2306.08591.pdf)/[Code]()
 2023 | **MICCAI** | YONA: You Only Need One Adjacent Reference-frame for Accurate and Fast Video Polyp Detection | [Paper](https://arxiv.org/pdf/2306.03686.pdf)/[Code]()
 2021 | **BSPC** | Real-time automatic polyp detection in colonoscopy using feature enhancement module and spatiotemporal similarity correlation unit | [Paper](https://sci-hub.se/10.1016/j.bspc.2021.102503)/Code 
 2021 | **EIO** | Real-time deep learning-based colorectal polyp localization on clinical video footage achievable with a wide array of hardware configurations | [Paper](https://www.thieme-connect.com/products/ejournals/pdf/10.1055/a-1388-6735.pdf)/Code
