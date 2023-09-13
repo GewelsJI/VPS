@@ -13,6 +13,12 @@
     <img src="./assets/background-min.gif"/> <br />
 </p>
 
+The following is a video to quickly access the core points of our work.
+
+https://github.com/GewelsJI/VPS/assets/38354957/9bea01ae-9582-494f-8bf6-f83307eebc08
+
+
+
 - **Title:** Video Polyp Segmentation: A Deep Learning Perspective (accepted by Machine Intelligence Research, please see [arXiv version](https://arxiv.org/pdf/2203.14291v3.pdf) & [Spriner version](https://link.springer.com/article/10.1007/s11633-022-1371-y))
 - **Authors:** [Ge-Peng Ji](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=oaxKYKUAAAAJ)^, [Guobao Xiao](https://guobaoxiao.github.io)^, [Yu-Cheng Chou](https://sites.google.com/view/yu-cheng-chou)^, [Deng-Ping Fan](https://dengpingfan.github.io/)*, [Kai Zhao](https://kaizhao.net/), [Geng Chen](https://scholar.google.com/citations?user=sJGCnjsAAAAJ&hl=en), and [Luc Van Gool](https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en).
 - **Contact:** This project is still work in progress, and we invite all to contribute in making it more acessible and useful. If you have any questions, please feel free to drop us an e-mail (gepengai.ji@gmail.com, johnson111788@gmail.com, dengpfan@gmail.com) or directly report it in the issue or push a PR. Your star is our motivation, let's enjoy it!
