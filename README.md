@@ -13,16 +13,13 @@
     <img src="./assets/background-min.gif"/> <br />
 </p>
 
-The following is a video to quickly access the core points of our work.
-
-https://github.com/GewelsJI/VPS/assets/38354957/9bea01ae-9582-494f-8bf6-f83307eebc08
-
-
-
 - **Title:** Video Polyp Segmentation: A Deep Learning Perspective (accepted by Machine Intelligence Research, please see [arXiv version](https://arxiv.org/pdf/2203.14291v3.pdf) & [Spriner version](https://link.springer.com/article/10.1007/s11633-022-1371-y))
 - **Authors:** [Ge-Peng Ji](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=oaxKYKUAAAAJ)^, [Guobao Xiao](https://guobaoxiao.github.io)^, [Yu-Cheng Chou](https://sites.google.com/view/yu-cheng-chou)^, [Deng-Ping Fan](https://dengpingfan.github.io/)*, [Kai Zhao](https://kaizhao.net/), [Geng Chen](https://scholar.google.com/citations?user=sJGCnjsAAAAJ&hl=en), and [Luc Van Gool](https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en).
-- **Contact:** This project is still work in progress, and we invite all to contribute in making it more acessible and useful. If you have any questions, please feel free to drop us an e-mail (gepengai.ji@gmail.com, johnson111788@gmail.com, dengpfan@gmail.com) or directly report it in the issue or push a PR. Your star is our motivation, let's enjoy it!
+- **Contact:** This project is still a work in progress, and we invite all to contribute to making it more accessible and useful. If you have any questions, please feel free to drop us an e-mail (gepengai.ji@gmail.com, johnson111788@gmail.com, dengpfan@gmail.com) or directly report the issue or push a PR. Your star is our motivation, let's enjoy it!
 - Welcome any discussions on video polyp segmentation at [Gitter room](https://gitter.im/video-polyp-segmentation/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link) or join our [WeChat group](https://github.com/GewelsJI/VPS/blob/main/assets/wechat_group_qr_code_20230913.jpg).
+- The following is a video to quickly access the core points of our work.
+
+https://github.com/GewelsJI/VPS/assets/38354957/9bea01ae-9582-494f-8bf6-f83307eebc08
 
 # Contents<!-- omit in toc -->
 - [1. Features](#1-features)
@@ -39,11 +36,11 @@ https://github.com/GewelsJI/VPS/assets/38354957/9bea01ae-9582-494f-8bf6-f83307ee
 
 # 1. Features
 
-In the deep learning era, we present the first comprehensive video polyp segmentation (VPS) study. Over the years, developments on VPS are not moving forward with ease since large-scale fine-grained segmentation masks are still not made publicly available. To tackle this issue, we first introduce a long-awaited high-quality per-frame annotated VPS dataset. There are four features of our work:
+In the deep learning era, we present the first comprehensive video polyp segmentation (VPS) study. Over the years, developments on VPS have not moved forward with ease since large-scale fine-grained segmentation masks are still not made publicly available. To tackle this issue, we first introduce a long-awaited high-quality per-frame annotated VPS dataset. There are four features of our work:
 
-- **VPS Dataset:** We recognize the importance of annotated medical data for substantial progress in research on medical AI systems’ development. And thus, our SUN-SEG dataset is open access, a non-profit database of the high-quality, large-scale, densely-annotated dataset for facilitating the colonoscopy diagnosis, localization, and derivative tasks. Our vision aims to provide data and knowledge to aid and educate clinicians, and also for the development of automated medical decision support systems.
-- **VPS Baseline:** We propose a simple but efficient baseline, which outperforms the 13 cutting-edge polyp segmentation approaches and run in super real-time (170fps). We hope such a baseline could attract more researchers to join our community and inspire them to develop more interesting solutions.
-- **VPS Benchmark:** For a fair comparison, we build an online leaderboard to keep up with the new progress of VPS community. Besides, we provide an out-of-the-box evaluation toolbox for the VPS task.
+- **VPS Dataset:** We recognize the importance of annotated medical data for substantial progress in research on medical AI systems’ development. Thus, our SUN-SEG dataset is open access, a non-profit database of the high-quality, large-scale, densely annotated dataset for facilitating colonoscopy diagnosis, localization, and derivative tasks. Our vision aims to provide data and knowledge to aid and educate clinicians, and also for the development of automated medical decision support systems.
+- **VPS Baseline:** We propose a simple but efficient baseline, which outperforms the 13 cutting-edge polyp segmentation approaches and runs in super real-time (170fps). We hope such a baseline could attract more researchers to join our community and inspire them to develop more interesting solutions.
+- **VPS Benchmark:** For a fair comparison, we build an online leaderboard to keep up with the new progress of the VPS community. Besides, we provide an out-of-the-box evaluation toolbox for the VPS task.
 - **Tracking Trends:** We elaborately collect a paper reading list (:boom:[Awesome Paper List](https://github.com/GewelsJI/VPS/blob/main/docs/AWESOME_VPS.md):boom:) to continuously track the latest updates in this rapidly advancing field.
 
 
@@ -51,8 +48,8 @@ In the deep learning era, we present the first comprehensive video polyp segment
 
 - *[Jan/30/2023]* We update the bounding box annotation with COCO-like format, ie, `[x,y,width,height]` where x and y are the upper-left coordinates of the bounding box. Please download the latest compressed file at [here](https://github.com/GewelsJI/VPS/blob/main/docs/DATA_PREPARATION.md#step-1-request-and-download). Thanks for Yingling Lu for pointing out this issue.
 - *[August/24/2022]* :boom: Our paper has been accepted by [Machine Intelligence Research (MIR)](https://www.springer.com/journal/11633) journal.
-- *[July/03/2022]* :boom: We update a new version of SUN-SEG with more fine-grained data splits, including seen/unseen senarios. More details refer to our technical report. Also, the new PaperWithCode page refer to [SUN-SEG-Easy](https://paperswithcode.com/dataset/sun-seg-easy) & [SUN-SEG-Hard](https://paperswithcode.com/dataset/sun-seg-hard).
-- *[May/11/2022]* Release rejected labels: [SUN-SEG-Rejected-Labels (Google Drive, 120.7MB)](https://drive.google.com/file/d/1OtK2PR6gKQv56dIFjw0rXadcgGonf93S/view?usp=sharing). More details see [here](https://github.com/GewelsJI/VPS/blob/main/docs/DATA_DESCRIPTION.md#rejected-labels).
+- *[July/03/2022]* :boom: We update a new version of SUN-SEG with more fine-grained data splits, including seen/unseen scenarios. For more details refer to our technical report. Also, the new PaperWithCode page refers to [SUN-SEG-Easy](https://paperswithcode.com/dataset/sun-seg-easy) & [SUN-SEG-Hard](https://paperswithcode.com/dataset/sun-seg-hard).
+- *[May/11/2022]* Release rejected labels: [SUN-SEG-Rejected-Labels (Google Drive, 120.7MB)](https://drive.google.com/file/d/1OtK2PR6gKQv56dIFjw0rXadcgGonf93S/view?usp=sharing). For more details see [here](https://github.com/GewelsJI/VPS/blob/main/docs/DATA_DESCRIPTION.md#rejected-labels).
 - *[March/27/2022]* Release pretrained checkpoints and whole benchamrks results.
 - *[March/18/2022]* Upload the whole training/testing code for our enhanced model PNS+.
 - *[March/15/2022]* Release the evaluation toolbox for the VPS task. Add a [Awesome_Video_Polyp_Segmentation.md](https://github.com/GewelsJI/VPS/blob/main/docs/AWESOME_VPS.md) for tracking latest trends of this community.
@@ -64,7 +61,7 @@ In the deep learning era, we present the first comprehensive video polyp segment
 <p align="center">
     <img src="./assets/Pathological-min.gif"/> <br />
     <em> 
-    Figure 1: Annotation of SUN-SEG dataset. The object-level segmentation masks in SUN-SEG dataset of different pathological categories, which is densely annotated with experienced annotators and verified by colonoscopy-related researchers to ensure the quality of the proposed dataset. 
+    Figure 1: Annotation of SUN-SEG dataset. The object-level segmentation masks in the SUN-SEG dataset of different pathological categories, which is densely annotated with experienced annotators and verified by colonoscopy-related researchers to ensure the quality of the proposed dataset. 
     </em>
 </p>
 
@@ -122,15 +119,15 @@ There are three simple-to-use steps to access our project code (PNS+):
 
 # 5. VPS Benchmark
 
-We provide an out-of-the-box evaluation toolbox for the VPS task, which is written in Python style. You can just run it to generate the evaluation results on your custom approach. Or you can directly download the complete VPS benchmark including prediction map of each competitor at download link: [Google Drive, 5.45GB](https://drive.google.com/file/d/1Liva1oR1-1ihWaTNNM5WDKZVETAF587M/view?usp=sharing) / [Baidu Drive](https://pan.baidu.com/s/1Qu-0l9w0ja92nzrlWMRhoQ) (Password: 2t1l, Size: 5.45G).
+We provide an out-of-the-box evaluation toolbox for the VPS task, which is written in Python style. You can just run it to generate the evaluation results on your custom approach. Or you can directly download the complete VPS benchmark including the prediction map of each competitor at the download link: [Google Drive, 5.45GB](https://drive.google.com/file/d/1Liva1oR1-1ihWaTNNM5WDKZVETAF587M/view?usp=sharing) / [Baidu Drive](https://pan.baidu.com/s/1Qu-0l9w0ja92nzrlWMRhoQ) (Password: 2t1l, Size: 5.45G).
 
 - More instructions about **Evaluation Toolbox** refer to [`PageLink`](https://github.com/GewelsJI/VPS/tree/main/eval).
 
-We also build an online leaderboard to keep up with the new progress of other competitors. We believe this is a fun way to learn about new research directions and stay in tune with our VPS community.
+We also built an online leaderboard to keep up with the new progress of other competitors. We believe this is a fun way to learn about new research directions and stay in tune with our VPS community.
 
 - Online leaderboard is publicly avaliable at PaperWithCode: [SUN-SEG-Easy](https://paperswithcode.com/dataset/sun-seg-easy) & [SUN-SEG-Hard](https://paperswithcode.com/dataset/sun-seg-hard).
 
-Here, we present a variety of qualitative and quantitative results of VPS benchamrk:
+Here, we present a variety of qualitative and quantitative results of VPS benchmarks:
 
 
 - Visual prediction of top-performance competitors:
@@ -167,9 +164,9 @@ Here, we present a variety of qualitative and quantitative results of VPS bencha
     <img src="./assets/the-reading-list.png"/> <br />
 </p>
 
-To better understand the development of this field and to quickly push researchers in their research process, we elaborately build a **Paper Reading List**. It includes **119** colonoscopy imaging-based AI scientific research in recent 12 years. It includes several fields, such as image polyp segmentation, video polyp segmentation, image polyp detection, video polyp detection, and image polyp classification. Besides, we will provide some interesting resources about human colonoscopy. 
+To better understand the development of this field and to quickly push researchers in their research process, we elaborately build a **Paper Reading List**. It includes **119** colonoscopy imaging-based AI scientific research in the past 12 years. It includes several fields, such as image polyp segmentation, video polyp segmentation, image polyp detection, video polyp detection, and image polyp classification. Besides, we will provide some interesting resources about human colonoscopy. 
 
-> **Note:** If we miss some treasure works, please let me know via e-mail or directly push a PR. We will work on it as soon as possible. Many thanks for your active feedbacks.
+> **Note:** If we miss some treasure works, please let me know via e-mail or directly push a PR. We will work on it as soon as possible. Many thanks for your active feedback.
 
 - The latest paper reading list and some interesting resources refer to [`Awesome-Video-Polyp-Segmentation.md`](https://github.com/GewelsJI/VPS/blob/main/docs/AWESOME_VPS.md)
 
@@ -209,24 +206,24 @@ If you have found our work useful, please use the following reference to cite th
     }
 # 8. FAQ
 
-- Thanks to [Tuo Wang](victor_wt@qq.com) for providing a great solution to [upgrade the CUDA version when compling the NS block](./docs/Upgrade%20environment%20for%20NS%20block.pdf).
+- Thanks to [Tuo Wang](victor_wt@qq.com) for providing a great solution to [upgrade the CUDA version when compiling the NS block](./docs/Upgrade%20environment%20for%20NS%20block.pdf).
 
 # 9. License
 
 The dataset and source code is free for research and education use only. Any commercial usage should get formal permission first.
 
-- **Video Source:** SUN (Showa University and Nagoya University) Colonoscopy Video Database is the colonoscopy-video database for the evaluation of automated colorectal-polyp detection. The database comprises still images of videos, which are collected at the Showa University Northern Yokohama Hospital. Mori Laboratory, Graduate School of Informatics, Nagoya University developed this database. Every frame in the database was annotated by the expert endoscopists at Showa University.
+- **Video Source:** SUN (Showa University and Nagoya University) Colonoscopy Video Database is the colonoscopy video database for the evaluation of automated colorectal-polyp detection. The database comprises still images of videos, which are collected at the Showa University Northern Yokohama Hospital. Mori Laboratory, Graduate School of Informatics, Nagoya University developed this database. Every frame in the database was annotated by the expert endoscopists at Showa University.
 
-- **Intended Use:** This database is available for only non-commercial use in research or educational purpose. 
+- **Intended Use:** This database is available for only non-commercial use in research or educational purposes. 
 As long as you use the database for these purposes, you can edit or process images and annotations in this database. 
 Without permission from Mori Lab., commercial use of this dataset is prohibited even after copying, editing, 
-processing or any operations of this database. Please contact us for commercial use or if you are uncertain about
+processing, or any operations of this database. Please contact us for commercial use or if you are uncertain about
 the decision.
 
 - **Distribution:** It is prohibited to sell, transfer, lend, lease, resell, distribute, etc., as it is, or copy, edit, or process this database, in whole or in part.
 
 
-# 10. Acknowledgements
+# 10. Acknowledgments
 
-- Our dataset is built upon SUN (Showa University and Nagoya University) Colonoscopy Video Database, thanks very much for their wonderful work!
-- This codebase is based on our conference version [PNSNet](https://github.com/GewelsJI/PNS-Net), which is accepted by MICCAI-2021 conference.
+- Our dataset is built upon the SUN (Showa University and Nagoya University) Colonoscopy Video Database, Thanks very much for their wonderful work!
+- This codebase is based on our conference version [PNSNet](https://github.com/GewelsJI/PNS-Net), which is accepted by the MICCAI-2021 conference.
