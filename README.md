@@ -41,7 +41,7 @@ In the deep learning era, we present the first comprehensive video polyp segment
 - **VPS Dataset:** We recognize the importance of annotated medical data for substantial progress in research on medical AI systems’ development. Thus, our SUN-SEG dataset is open access, a non-profit database of the high-quality, large-scale, densely annotated dataset for facilitating colonoscopy diagnosis, localization, and derivative tasks. Our vision aims to provide data and knowledge to aid and educate clinicians, and also for the development of automated medical decision support systems.
 - **VPS Baseline:** We propose a simple but efficient baseline, which outperforms the 13 cutting-edge polyp segmentation approaches and runs in super real-time (170fps). We hope such a baseline could attract more researchers to join our community and inspire them to develop more interesting solutions.
 - **VPS Benchmark:** For a fair comparison, we build an online leaderboard to keep up with the new progress of the VPS community. Besides, we provide an out-of-the-box evaluation toolbox for the VPS task.
-- **Tracking Trends:** We elaborately collect a paper reading list (:boom:[Awesome Paper List](https://github.com/GewelsJI/VPS/blob/main/docs/AWESOME_VPS.md):boom:) to continuously track the latest updates in this rapidly advancing field.
+- **Tracking Trends:** We elaborately collect a paper reading list ( :boom: [Awesome Paper List](https://github.com/GewelsJI/VPS/blob/main/docs/AWESOME_VPS.md) :boom: ) to continuously track the latest updates in this rapidly advancing field.
 
 
 # 2. News
