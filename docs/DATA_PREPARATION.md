@@ -19,8 +19,7 @@ So first, you guys need to request the original colonoscopy video frame from the
 And then, you can feel free to download the complete annotation provided by our SUN-SEG.
 
 - **Request for annotations from SUN-SEG:** Our re-organized annotations can be downloaded at the download link:
-    - [Google Drive, 375.7MB](https://drive.google.com/file/d/12qXLbKFaYIa2qGpiDo132OHKIPGlUmGm/view?usp=sharing)
-    - [Baidu Drive](https://pan.baidu.com/s/1f6SKKYtm0IrTxk8Dxnu9KQ?pwd=39iu) (Passcode: 39iu)
+    - (July 15, 2024) Updated link: [google drive](https://drive.google.com/file/d/1Drw_U7YklqDh3KY7870bNQSoVcXl5iy2/view?usp=sharing)
 
 # Step-2: Unzip SUN dataset
 
