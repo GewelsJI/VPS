@@ -46,6 +46,7 @@ In the deep learning era, we present the first comprehensive video polyp segment
 
 # 2. News
 
+- *[Jul/15/2024]* Thanks to [@Jingyi Liu](https://github.com/Jancsi9981) for pointing out some index issues in the bounding box labels of our SUN-SEG-Hard-Unseen, which affected 154 samples. Everything is now fixed, so please refer to the link ([google drive](https://drive.google.com/file/d/1Drw_U7YklqDh3KY7870bNQSoVcXl5iy2/view?usp=sharing)) for the updated information. 
 - *[Oct/26/2023]* The video-level attributes have released at [Google Drive](https://docs.google.com/spreadsheets/d/1J33EvrEcZp5CMWtKN_4VNdhp4EQsjMSf/edit?usp=sharing&ouid=117958307137184272405&rtpof=true&sd=true).
 - *[Jan/30/2023]* We update the bounding box annotation with COCO-like format, ie, `[x,y,width,height]` where x and y are the upper-left coordinates of the bounding box. Please download the latest compressed file at [here](https://github.com/GewelsJI/VPS/blob/main/docs/DATA_PREPARATION.md#step-1-request-and-download). Thanks for Yingling Lu for pointing out this issue.
 - *[August/24/2022]* :boom: Our paper has been accepted by [Machine Intelligence Research (MIR)](https://www.springer.com/journal/11633) journal.
