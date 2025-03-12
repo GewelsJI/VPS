@@ -44,7 +44,7 @@ class Test_Dataset(Dataset):
             tmp_list = os.listdir(cls_path)
 
             tmp_list.sort(key=lambda name: (
-
+                int(name.split('-')[0].split('_')[-1]),
                 int(name.split('_a')[1].split('_')[0]),
                 int(name.split('_image')[1].split('.jpg')[
                         0])))
