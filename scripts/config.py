@@ -29,4 +29,6 @@ parser.add_argument('--video_time_clips', type=int, default=5)
 
 parser.add_argument('--save_path', type=str, default='snapshot/PNSPlus/')
 
+parser.add_argument('--video_testset_root', type=str, default='./data/SUN-SEG')
+
 config = parser.parse_args()
