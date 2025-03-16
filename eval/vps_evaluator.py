@@ -96,6 +96,7 @@ def eval_engine_vps(opt, txt_save_path):
                             key=lambda name: (int(name.split("/")[-2].split('case')[1].split('_')[0]),
                                               0 if not len(name.split('/')[-2].split('_')) > 1 else int(
                                                   name.split('/')[-2].split('_')[1]),
+                                              int(name.split('/')[-1].split('-')[0].split('_')[-1]),
                                               int(name.split('/')[-1].split('_a')[1].split('_')[0]),
                                               int(name.split('/')[-1].split('_image')[1].split('.png')[
                                                       0])))
