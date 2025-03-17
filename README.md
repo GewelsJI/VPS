@@ -9,6 +9,11 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/video-polyp-segmentation-a-deep-learning/video-polyp-segmentation-on-sun-seg-easy)](https://paperswithcode.com/sota/video-polyp-segmentation-on-sun-seg-easy?p=video-polyp-segmentation-a-deep-learning)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/video-polyp-segmentation-a-deep-learning/video-polyp-segmentation-on-sun-seg-hard)](https://paperswithcode.com/sota/video-polyp-segmentation-on-sun-seg-hard?p=video-polyp-segmentation-a-deep-learning)
 
+
+
+:boom: :boom: :boom: We’re excited to introduce “[IntelliScope Project](https://github.com/ai4colonoscopy/IntelliScope),” which offers a deep dive into the latest advancements in intelligent colonoscopy (📖 **ColonSurvey**). We’re also pushing for three key initiatives to embrace the multimodal era in colonoscopy: a pioneering large-scale instruction tuning dataset (🏥 **ColonINST**), a colonoscopy-specific multimodal language model (🤖 **ColonGPT**), and a **multimdoal benchmark** 💯 for comparing different approaches. :boom: :boom: :boom: 
+
+
 <p align="center">
     <img src="./assets/background-min.gif"/> <br />
 </p>
@@ -45,9 +50,7 @@ In the deep learning era, we present the first comprehensive video polyp segment
 
 
 # 2. News
-
-- :boom: We’re excited to introduce “[IntelliScope Project](https://github.com/ai4colonoscopy/IntelliScope),” which offers a deep dive into the latest advancements in intelligent colonoscopy (📖 **ColonSurvey**). We’re also pushing for three key initiatives to embrace the multimodal era in colonoscopy: a pioneering large-scale instruction tuning dataset (🏥 **ColonINST**), a colonoscopy-specific multimodal language model (🤖 **ColonGPT**), and a **multimdoal benchmark** 💯 for comparing different approaches.
-- *[Jul/15/2024]* Thanks to [@Jingyi Liu](https://github.com/Jancsi9981) for pointing out some index issues in the bounding box labels of our SUN-SEG-Hard-Unseen, which affected 154 samples. Everything is now fixed, so please refer to the link ([google drive](https://drive.google.com/file/d/1ytmhpg0YaW0XZBAEfSFkMhaI6jnGLSg3/view?usp=sharing)) for the updated information. 
+- *[Jul/15/2024]* Thanks to [@Yuli Zhou](https://github.com/zhoustan) for raising up the frame sorting issues in the inference and evaluation code (check out the pull request here: https://github.com/GewelsJI/VPS/pull/48). It turns out it only slightly impacted our final evaluation performance (check out the evidence [here](https://github.com/GewelsJI/VPS/blob/main/docs/RELEASE_NOTES.md)).
 - *[Oct/26/2023]* The video-level attributes have released at [Google Drive](https://docs.google.com/spreadsheets/d/1J33EvrEcZp5CMWtKN_4VNdhp4EQsjMSf/edit?usp=sharing&ouid=117958307137184272405&rtpof=true&sd=true).
 - *[Jan/30/2023]* We update the bounding box annotation with COCO-like format, ie, `[x,y,width,height]` where x and y are the upper-left coordinates of the bounding box. Please download the latest compressed file at [here](https://github.com/GewelsJI/VPS/blob/main/docs/DATA_PREPARATION.md#step-1-request-and-download). Thanks for Yingling Lu for pointing out this issue.
 - *[August/24/2022]* :boom: Our paper has been accepted by [Machine Intelligence Research (MIR)](https://www.springer.com/journal/11633) journal.
