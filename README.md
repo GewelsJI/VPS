@@ -10,8 +10,12 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/video-polyp-segmentation-a-deep-learning/video-polyp-segmentation-on-sun-seg-hard)](https://paperswithcode.com/sota/video-polyp-segmentation-on-sun-seg-hard?p=video-polyp-segmentation-a-deep-learning)
 
 
-
-:boom: :boom: :boom: We’re excited to introduce “[IntelliScope Project](https://github.com/ai4colonoscopy/IntelliScope),” which offers a deep dive into the latest advancements in intelligent colonoscopy (📖 **ColonSurvey**). We’re also pushing for three key initiatives to embrace the multimodal era in colonoscopy: a pioneering large-scale instruction tuning dataset (🏥 **ColonINST**), a colonoscopy-specific multimodal language model (🤖 **ColonGPT**), and a **multimdoal benchmark** 💯 for comparing different approaches. :boom: :boom: :boom: 
+> [!note]
+> Regarding large volume of data requests recently, due to the original website of SUN-database (http://amed8k.sundatabase.org/) is no longer maintained. Suggest you emailing me at gepengai.ji@gmail.com for alternative access options.
+>
+> We're currently pushing intelligent colonoscopy into the multimodal era. Recommen you reading two research works from our team:
+> - :boom: The pioneering multimodal analysis solution for colonoscopy: **ColonINST** & **ColonGPT** ([paper](https://arxiv.org/abs/2410.17241) & [project page](https://github.com/ai4colonoscopy/IntelliScope))
+> - :boom: The current largest multimodal dataset **ColonVQA (1.1+ million entries)** in colonoscopy. We also introduce the first reasoning-centric dataset **ColonReason**, along with an R1-styled model, **ColonR1**, tailored for colonoscopy tasks. ([paper](https://arxiv.org/abs/2512.03667) & [project page](https://github.com/ai4colonoscopy/Colon-X))
 
 
 <p align="center">
@@ -50,7 +54,6 @@ In the deep learning era, we present the first comprehensive video polyp segment
 
 
 # 2. News
-- *[Dec/12/2025]* :boom: Regarding large volume of data requests recently, due to the original website of SUN-database is no longer maintained. Suggest you emailing me at gepengai.ji@gmail.com for alternative access options.
 - *[Jul/15/2024]* Thanks to [@Yuli Zhou](https://github.com/zhoustan) for raising up the frame sorting issues in the inference and evaluation code (check out the pull request here: https://github.com/GewelsJI/VPS/pull/48). It turns out it only slightly impacted our final evaluation performance (check out the evidence [here](https://github.com/GewelsJI/VPS/blob/main/docs/RELEASE_NOTES.md)).
 - *[Oct/26/2023]* The video-level attributes have released at [Google Drive](https://docs.google.com/spreadsheets/d/1J33EvrEcZp5CMWtKN_4VNdhp4EQsjMSf/edit?usp=sharing&ouid=117958307137184272405&rtpof=true&sd=true).
 - *[Jan/30/2023]* We update the bounding box annotation with COCO-like format, ie, `[x,y,width,height]` where x and y are the upper-left coordinates of the bounding box. Please download the latest compressed file at [here](https://github.com/GewelsJI/VPS/blob/main/docs/DATA_PREPARATION.md#step-1-request-and-download). Thanks for Yingling Lu for pointing out this issue.
