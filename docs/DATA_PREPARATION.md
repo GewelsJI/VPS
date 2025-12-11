@@ -8,20 +8,18 @@ We introduce a high-quality per-frame annotated VPS dataset, named SUN-SEG, whic
 - [Step-3: Re-organize the file structure](#step-3--re-organize-the-file-structure)
 
 
-# Step-1: Request and Download
+# Step-1: Request the raw SUN-database
 
-> **Note:** The origin colonoscopy video frames in our SUN-SEG dataset are selected from [SUN dataset](http://amed8k.sundatabase.org), while we could not distribute the video data due to the strict license. 
+The origin colonoscopy video frames in our SUN-SEG dataset are selected from [SUN dataset](http://amed8k.sundatabase.org), while we could not distribute the video data due to the strict license.  So first, you guys need to request the original colonoscopy video frame from them. In this step, you should download the polyp samples of 100 cases and non-polyp samples of 13 cases from the links provided by the SUN dataset. 
 
-So first, you guys need to request the original colonoscopy video frame from them. In this step, you should download the polyp samples of 100 cases and non-polyp samples of 13 cases from the links provided by the SUN dataset. 
+- **Request for video frames from SUN:** Please follow the instruction on [SUN dataset](http://amed8k.sundatabase.org) to request SUN-dataset and download the dataset by yourself. **Please use your educational email to apply for it and claim it without any commercial purpose.** Thank you for your understanding! Let me know (gepengai.ji@gmail.com) if you have any questions.
 
-- **Request for video frames from SUN:** Please follow the instruction on [SUN dataset](http://amed8k.sundatabase.org) to request SUN-dataset and download the dataset by yourself. **Please use your educational email to apply for it and claim it without any commercial purpose.** Thank you for your understanding!
+# ⭐ Step-2: Download our annotations
 
-And then, you can feel free to download the complete annotation provided by our SUN-SEG.
+Then, you need to download the complete annotation provided in our SUN-SEG, which can be downloaded at the download link:
+- (July 17, 2024) Updated link: [annotation.v2 - google drive](https://drive.google.com/file/d/1ytmhpg0YaW0XZBAEfSFkMhaI6jnGLSg3/view?usp=sharing)
 
-- **Request for annotations from SUN-SEG:** Our re-organized annotations can be downloaded at the download link:
-    - (July 17, 2024) Updated link: [annotation.v2 - google drive](https://drive.google.com/file/d/1ytmhpg0YaW0XZBAEfSFkMhaI6jnGLSg3/view?usp=sharing)
-
-# Step-2: Unzip SUN dataset
+# Step-3: Unzip SUN dataset
 
 As for video frames in the SUN dataset, these are two groups of samples, which are divided into multiple compressed file formats as zip files. To decompress each zip file downloaded, please input the password provided by the origin authors of the SUN dataset (i.e., the same as the password that you used for login).
 
@@ -83,7 +81,7 @@ After preparing all the files, your file structure will be the same as below:
 
 You will notice that the file structure of images in `SUN-Positive` is different from the one of annotation in `SUN-SEG-Annotation`. To reconcile the file structure, you need to follow next step to finish the data preparation.
 
-# Step-3: Re-organize the file structure
+# Step-4: Re-organize the file structure
 
 By running `sh ./utils/reorganize.sh`, the original file structure in SUN-dataset will be reorganised to the same as SUN-SEG for better length balance. Finally, the folder `Frame` which is originated from `SUN-Positive`, and `GT`, as long as other annotations folders, will share the same file structure as shown below:
 
