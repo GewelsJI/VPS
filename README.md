@@ -1,5 +1,16 @@
 # <p align=center>`Video Polyp Segmentation: A Deep Learning Perspective (MIR 2022)`</p><!-- omit in toc -->
 
+[![license: mit](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+![LAST COMMIT](https://img.shields.io/github/last-commit/GewelsJI/VPS)
+![ISSUES](https://img.shields.io/github/issues/GewelsJI/VPS)
+![STARS](https://img.shields.io/github/stars/GewelsJI/VPS)
+[![ARXIV PAPER](https://img.shields.io/badge/Arxiv-Paper-red)](https://arxiv.org/pdf/2203.14291v3.pdf)
+[![Gitter](https://badges.gitter.im/video-polyp-segmentation/community.svg)](https://gitter.im/video-polyp-segmentation/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/video-polyp-segmentation-a-deep-learning/video-polyp-segmentation-on-sun-seg-easy)](https://paperswithcode.com/sota/video-polyp-segmentation-on-sun-seg-easy?p=video-polyp-segmentation-a-deep-learning)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/video-polyp-segmentation-a-deep-learning/video-polyp-segmentation-on-sun-seg-hard)](https://paperswithcode.com/sota/video-polyp-segmentation-on-sun-seg-hard?p=video-polyp-segmentation-a-deep-learning)
+
+---
+
 > [!note]
 > The original SUN Database website (http://amed8k.sundatabase.org/) is no longer maintained and is sometimes inaccessible, we provide a backup website for the SUN Database here: [website backup](https://github.com/GewelsJI/VPS/blob/main/docs/%5Boriginal%20backup%5D%20SUN%20Colonoscopy%20Video%20Database.pdf)
 >
@@ -10,16 +21,6 @@
 > - :boom: The current largest multimodal dataset **ColonVQA (1.1+ million entries)** in colonoscopy. We also introduce the first reasoning-centric dataset **ColonReason**, along with an R1-styled model, **ColonR1**, tailored for colonoscopy tasks. ([paper](https://arxiv.org/abs/2512.03667) & [project page](https://github.com/ai4colonoscopy/Colon-X))
 
 ---
-
-[![license: mit](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-![LAST COMMIT](https://img.shields.io/github/last-commit/GewelsJI/VPS)
-![ISSUES](https://img.shields.io/github/issues/GewelsJI/VPS)
-![STARS](https://img.shields.io/github/stars/GewelsJI/VPS)
-[![ARXIV PAPER](https://img.shields.io/badge/Arxiv-Paper-red)](https://arxiv.org/pdf/2203.14291v3.pdf)
-[![Gitter](https://badges.gitter.im/video-polyp-segmentation/community.svg)](https://gitter.im/video-polyp-segmentation/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/video-polyp-segmentation-a-deep-learning/video-polyp-segmentation-on-sun-seg-easy)](https://paperswithcode.com/sota/video-polyp-segmentation-on-sun-seg-easy?p=video-polyp-segmentation-a-deep-learning)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/video-polyp-segmentation-a-deep-learning/video-polyp-segmentation-on-sun-seg-hard)](https://paperswithcode.com/sota/video-polyp-segmentation-on-sun-seg-hard?p=video-polyp-segmentation-a-deep-learning)
-
 
 <p align="center">
     <img src="./assets/background-min.gif"/> <br />
