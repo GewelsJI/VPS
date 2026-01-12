@@ -1,5 +1,16 @@
 # <p align=center>`Video Polyp Segmentation: A Deep Learning Perspective (MIR 2022)`</p><!-- omit in toc -->
 
+> [!note]
+> The original SUN Database website (http://amed8k.sundatabase.org/) is no longer maintained and is sometimes inaccessible, we provide a backup website for the SUN Database here: [website backup](https://github.com/GewelsJI/VPS/blob/main/docs/Upgrade%20environment%20for%20NS%20block.pdf)
+>
+> Regarding recent requests for a large volume of data, we suggest you emailing me at gepengai.ji@gmail.com for alternative access options.
+>
+> 🔴 We're currently pushing intelligent colonoscopy (refer to our [research gallery](https://github.com/ai4colonoscopy) page) into the multimodal era. Recommen you reading two new research works from our team:
+> - :boom: The pioneering multimodal analysis solution for colonoscopy: **ColonINST** & **ColonGPT** ([paper](https://arxiv.org/abs/2410.17241) & [project page](https://github.com/ai4colonoscopy/IntelliScope))
+> - :boom: The current largest multimodal dataset **ColonVQA (1.1+ million entries)** in colonoscopy. We also introduce the first reasoning-centric dataset **ColonReason**, along with an R1-styled model, **ColonR1**, tailored for colonoscopy tasks. ([paper](https://arxiv.org/abs/2512.03667) & [project page](https://github.com/ai4colonoscopy/Colon-X))
+
+---
+
 [![license: mit](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![LAST COMMIT](https://img.shields.io/github/last-commit/GewelsJI/VPS)
 ![ISSUES](https://img.shields.io/github/issues/GewelsJI/VPS)
@@ -8,14 +19,6 @@
 [![Gitter](https://badges.gitter.im/video-polyp-segmentation/community.svg)](https://gitter.im/video-polyp-segmentation/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/video-polyp-segmentation-a-deep-learning/video-polyp-segmentation-on-sun-seg-easy)](https://paperswithcode.com/sota/video-polyp-segmentation-on-sun-seg-easy?p=video-polyp-segmentation-a-deep-learning)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/video-polyp-segmentation-a-deep-learning/video-polyp-segmentation-on-sun-seg-hard)](https://paperswithcode.com/sota/video-polyp-segmentation-on-sun-seg-hard?p=video-polyp-segmentation-a-deep-learning)
-
-
-> [!note]
-> Regarding large volume of data requests recently, due to the original website of SUN-database (http://amed8k.sundatabase.org/) is no longer maintained. Suggest you emailing me at gepengai.ji@gmail.com for alternative access options.
->
-> We're currently pushing intelligent colonoscopy (refer to our [🔴research gallery](https://github.com/ai4colonoscopy) page) into the multimodal era. Recommen you reading two research works from our team:
-> - :boom: The pioneering multimodal analysis solution for colonoscopy: **ColonINST** & **ColonGPT** ([paper](https://arxiv.org/abs/2410.17241) & [project page](https://github.com/ai4colonoscopy/IntelliScope))
-> - :boom: The current largest multimodal dataset **ColonVQA (1.1+ million entries)** in colonoscopy. We also introduce the first reasoning-centric dataset **ColonReason**, along with an R1-styled model, **ColonR1**, tailored for colonoscopy tasks. ([paper](https://arxiv.org/abs/2512.03667) & [project page](https://github.com/ai4colonoscopy/Colon-X))
 
 
 <p align="center">
